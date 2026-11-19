@@ -69,7 +69,19 @@ S.Log = function(L, c)
     end
 end
 
+local function pinChecks(L)
+    local cfg = ns.db.char.pocketPins
+    L:Check("Show pickpocket spots on the minimap", cfg.enabled, function(v) ns.MinimapPins.Toggle(v) UI.Refresh() end,
+        "Researched spots that have coordinates (near your level) and the spots where you picked pockets. Open world only. /frogue pins")
+    if cfg.enabled then
+        L:Check("  Researched spots (fan guides, GoldScout hotspots)", cfg.research, function(v) cfg.research = v ns.MinimapPins.Refresh() UI.Refresh() end)
+        L:Check("  My own spots (from the log)", cfg.mine, function(v) cfg.mine = v ns.MinimapPins.Refresh() UI.Refresh() end)
+    end
+end
+UI.PocketPinChecks = pinChecks
+
 S["Best targets"] = function(L, c)
+    pinChecks(L)
     L:Columns({ 0.5, 0.5 })
     L:Label(gold("From your own log"))
     local mine = ns.Pockets.BestMobs(3, 10)

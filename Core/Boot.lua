@@ -32,6 +32,7 @@ local function OnLogin()
     ns.Gold.Register()
     ns.Locks.Register()
     ns.RefreshBars()
+    pcall(ns.MinimapPins.Refresh)
     ns.DualSpec.Register(f)
     lastZone = ns.Rogue.ZoneName()
 
@@ -135,6 +136,7 @@ f:SetScript("OnEvent", function(_, event, ...)
             ns.Hud.Toast("New lesson: " .. l.title, "Open Learn the Rogue (/frogue learn).", "Interface\\Icons\\INV_Misc_Book_07")
         end
         ns.db.char.lastLevel = level
+        pcall(ns.MinimapPins.Invalidate)
         SoftRefresh()
         BagRefresh()
     elseif event == "PLAYER_REGEN_DISABLED" then
@@ -199,6 +201,7 @@ f:SetScript("OnEvent", function(_, event, ...)
             C_Timer.After(2, function() CheckReminders(true) end)
         end
         lastZone = zone or lastZone
+        pcall(ns.MinimapPins.Invalidate)
         SoftRefresh()
     elseif event == "UNIT_INVENTORY_CHANGED" then
         local unit = ...
@@ -280,6 +283,8 @@ local function Slash(msg)
         else
             ns.UI.Open("settings", "Rogue bar")
         end
+    elseif cmd == "pins" then
+        ns.MinimapPins.Toggle(arg == "on" and true or (arg == "off" and false or nil))
     elseif cmd == "remind" then
         CheckReminders(true)
     elseif tabs[cmd] then
@@ -287,7 +292,7 @@ local function Slash(msg)
     else
         ns.Print("/frogue [home|rotation|gear|pvp|pockets|poisons|leveling|talents|gold|learn|news|settings]")
         ns.Print("also: log targets boxes locks doors reagents bags weapons farms energy cooldowns trainer quests riding reminders sources about")
-        ns.Print("/frogue spec [ass|combat|sub] · /frogue profile [A|B] · /frogue hud · /frogue reset-hud · /frogue remind · /frogue bar [reset|debug]")
+        ns.Print("/frogue spec [ass|combat|sub] · /frogue profile [A|B] · /frogue hud · /frogue reset-hud · /frogue remind · /frogue bar [reset|debug] · /frogue pins [on|off]")
     end
 end
 

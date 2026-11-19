@@ -49,6 +49,9 @@ Screens: **Home** · *Play:* Rotation, Gear, PvP · *Rogue:* Pockets & Locks, Po
   totals, copper per pickpocket, pickpockets per hour, a refill timer per mob) · *Best targets* (your best mobs next to
   GoldScout's community data, with sample sizes and an "unconfirmed" badge) · *Boxes* (bags and bank, can you open it,
   value from Auctionator or the vendor) · *Lockpicking* (skill vs cap, next route step, Thieves' Tools) · *Doors*.
+- **Minimap pins:** pickpocket spots near your level that the research has coordinates for (fan guides, GoldScout
+  junkbox hotspots), plus the spots where you picked pockets yourself. Open world only; toggle with `/frogue pins` or on
+  Pockets & Locks › Best targets.
 - **Poisons:** what's on each weapon (poison and stone together), stock, suggested poison per hand, pin your own,
   reagents & tools.
 - **Rogue bar:** Pick Lock button (`/cast Pick Lock` + `/use` the next box you can open), main-hand and off-hand poison

@@ -208,7 +208,18 @@ In game: `/reload`, then `/frogue`. Debug the bar with `/frogue bar debug`.
 - `ca51cab` Forever Rogue v0.1: Rogue companion for WoW Forever
 - The STATUS/gap-normalization commit that follows it (see `git log`)
 
+## Unreleased (branch `feature/minimap-pins`, 2026-11-19)
+
+- **Minimap pins for pickpocket spots** (Tim's idea, built at his request): `Modules/PocketPins.lua` + `UI/MinimapPins.lua`.
+  - Shows researched spots that carry sourced coordinates (6 fan-guide targets + the GoldScout junkbox hotspots), filtered to 10 levels below / 5 above you, plus **your own spots**: every Pick Pocket in the open world now records where you stood (rounded, one spot per mob per ~2% of the map, 8 per mob).
+  - Most GoldScout targets have no coordinates, so they get no pin (nothing invented).
+  - **On by default**, toggles: Pockets & Locks › Best targets, Settings › Rogue bar, `/frogue pins [on|off]`; researched and own spots switch separately. Hidden in instances (no position there) and when your position isn't readable. Pins are plain textures (hover tooltip), up to 25, nearest first; off-minimap spots sit on the edge, faded.
+  - Placement: `C_Map.GetPlayerMapPosition`, `C_Map.GetWorldPosFromMapPos` (zone size in yards), `Minimap:GetZoom()`, `IsIndoors()`, `rotateMinimap` + `GetPlayerFacing()`, and the client's fixed yards-per-zoom table (same constants as HereBeDragons-Pins). Default = on is an addon default; Tim can turn it off.
+  - Tests: 41/41 (2 new: placement math incl. rotation and edge clamp; spot selection, own-spot recording, instance hiding, toggles).
+
 ## Still to check in game
+
+0. **Minimap pins:** do they line up with the real spots at every zoom level, indoors, and with "Rotate Minimap" on? Does `C_Map.GetPlayerMapPosition` work in the open world on Forever (it's secret/blocked in instances)? Does a Pick Pocket record your spot?
 
 1. **Slash command:** is `/frogue` free?
 2. **Pick Pocket log** (the headline feature):

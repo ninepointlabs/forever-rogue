@@ -899,5 +899,91 @@ test("map: Mark on map pins coordinates, never guesses without them", function()
     eq(#M.waypoints, 1)
 end)
 
+test("minimap pins: placement math (north up, rotation, edge clamp)", function()
+    local P = ns.PocketPins
+    local size = { w = 1000, h = 800 }
+    local r = P.MinimapRadiusYards(0, false)
+    near(r, 233.33333333, "outdoor zoom 0 radius")
+    eq(P.MinimapRadiusYards(5, true), 25, "indoor zoom 5 radius")
+    local ox, oy, dist, inside = P.Offset(0.5, 0.5, 0.6, 0.5, size, r, 70)
+    near(dist, 100); near(ox, 30); near(oy, 0); eq(inside, true)
+    ox, oy = P.Offset(0.5, 0.5, 0.5, 0.4, size, r, 70)
+    near(ox, 0); near(oy, 80 * 70 / r, "north is up")
+    ox, oy, dist, inside = P.Offset(0.5, 0.5, 0.9, 0.5, size, r, 70)
+    eq(inside, false); near(dist, 400); near(ox, 70, "clamped to the edge")
+    ox, oy = P.Offset(0.5, 0.5, 0.6, 0.5, size, r, 70, math.pi / 2)
+    near(ox, 0, "rotated minimap"); truthy(math.abs(oy) > 29, "rotated minimap moves the pin")
+    local yards = P.MapYards(2200)
+    near(yards.w, 1000); near(yards.h, 800)
+end)
+
+test("minimap pins: researched spots near your level plus your own spots; hidden in instances and when off", function()
+    local P = ns.PocketPins
+    S.level = 39
+    -- a researched target with sourced coordinates in Riverglades (fixture), one out of level range
+    table.insert(ns.Data.PickpocketTargets, { mob = "Fixture Raider", zone = "Riverglades", coords = { 40, 50 }, level_min = 39, level_max = 40, source_url = "x", checked = "x" })
+    table.insert(ns.Data.PickpocketTargets, { mob = "Fixture Elder", zone = "Riverglades", coords = { 60, 50 }, level_min = 58, level_max = 60, source_url = "x", checked = "x" })
+    S.playerPos = { 2200, 0.45, 0.5 }
+    local cfg = ns.db.char.pocketPins
+    eq(cfg.enabled, true, "on by default")
+    local list = P.SpotsFor(2200, 39, 0.45, 0.5)
+    local names = {}
+    for _, sp in ipairs(list) do names[sp.title] = sp end
+    truthy(names["Fixture Raider"], "level-appropriate researched spot")
+    truthy(not names["Fixture Elder"], "level-58 spot hidden at 39")
+    for _, sp in ipairs(P.ResearchSpots()) do truthy(sp.rec.source_url, "researched spots are sourced") end
+    -- your own spot: a Pick Pocket in Riverglades records where you stood
+    S.targetName, S.targetGUID, S.units.target = "Twilight Shadowmancer", "Creature-0-9", { level = 39 }
+    ns.Pockets.BeginAttempt(S.wallTime)
+    S.loot = { { money = true, name = "1 Silver" } }
+    ns.Pockets.OnLootOpened()
+    S.money = S.money + 100
+    local e = ns.Pockets.OnLootClosed()
+    eq(e.map, 2200); near(e.x, 0.45); near(e.y, 0.5)
+    local m = ns.db.char.pockets.byMob["Twilight Shadowmancer"]
+    eq(#m.spots, 1, "spot remembered")
+    ns.Pockets.Record({ mob = "Twilight Shadowmancer", map = 2200, x = 0.451, y = 0.501, copper = 0, items = {} })
+    eq(#m.spots, 1, "nearby repeat doesn't add a second spot")
+    ns.MinimapPins.Refresh()
+    local n = ns.MinimapPins.Update()
+    local all = P.SpotsFor(2200, 39, 0.45, 0.5)
+    local mine, research = 0, 0
+    for _, sp in ipairs(all) do if sp.kind == "mine" then mine = mine + 1 else research = research + 1 end end
+    eq(mine, 1, "one own spot")
+    truthy(research >= 1, "researched spots (fixture + any real GoldScout hotspots in Riverglades)")
+    eq(n, #all, "one pin per spot")
+    -- the API knows nothing about Northern Barrens coordinates in this fixture -> no pins there
+    S.playerPos = { 10, 0.5, 0.5 }
+    ns.MinimapPins.Invalidate()
+    eq(ns.MinimapPins.Update(), 0, "nothing sourced in this zone")
+    -- instances: no position, no pins
+    S.playerPos = { 2200, 0.45, 0.5 }
+    S.instanceType = "party"
+    eq(ns.MinimapPins.Update(), 0, "hidden in instances")
+    S.instanceType = nil
+    ns.MinimapPins.Invalidate()
+    eq(ns.MinimapPins.Update(), #all)
+    -- toggles
+    cfg.mine = false
+    ns.MinimapPins.Refresh()
+    eq(ns.MinimapPins.Update(), #all - 1, "own spots off")
+    cfg.mine = true
+    SlashCmdList.FOREVERROGUE("pins")
+    eq(cfg.enabled, false, "/frogue pins toggles off")
+    eq(ns.MinimapPins.Update(), 0, "off -> no pins")
+    SlashCmdList.FOREVERROGUE("pins on")
+    eq(cfg.enabled, true)
+    M.texts = {}
+    ns.UI.Open("pockets", "Best targets")
+    truthy(textHas("Show pickpocket spots on the minimap"), "toggle on the Best targets tab")
+    M.texts = {}
+    ns.UI.Open("settings", "Rogue bar")
+    truthy(textHas("Show pickpocket spots on the minimap"), "toggle in Settings")
+    table.remove(ns.Data.PickpocketTargets)
+    table.remove(ns.Data.PickpocketTargets)
+    S.playerPos, S.loot, S.targetName, S.targetGUID, S.units.target = nil, nil, nil, nil, nil
+    ns.MinimapPins.Refresh()
+end)
+
 print(("%d passed, %d failed"):format(passed, failed))
 os.exit(failed == 0 and 0 or 1)

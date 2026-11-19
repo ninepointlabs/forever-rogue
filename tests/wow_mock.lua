@@ -106,6 +106,7 @@ G.CreateFrame = function(kind, name) local f = newObject(kind) if name then _G[n
 G.UIParent = newObject("UIParent")
 G.ChatFontNormal = newObject("Font")
 G.Minimap = newObject("Minimap")
+G.Minimap.GetZoom = function() return S.minimapZoom or 0 end
 G.GameTooltip = newObject("GameTooltip")
 G.ItemRefTooltip = newObject("ItemRefTooltip")
 G.UISpecialFrames = {}
@@ -252,7 +253,7 @@ G.ContainerFrameCombinedBags.EnumerateValidItems = function() return ipairs(bagB
 local function vec(x, y) return { GetXY = function() return x, y end } end
 M.waypoints = {}
 G.C_Map = {
-    GetBestMapForUnit = function() return 10 end,
+    GetBestMapForUnit = function() return (S.playerPos and S.playerPos[1]) or 10 end,
     GetFallbackWorldMapID = function() return 947 end,
     GetMapInfo = function(id)
         local maps = { [947] = { name = "Azeroth", parentMapID = 0 }, [10] = { name = "Northern Barrens", parentMapID = 947 },
@@ -265,6 +266,17 @@ G.C_Map = {
     CanSetUserWaypointOnMap = function() return true end,
     SetUserWaypoint = function(p) table.insert(M.waypoints, p) end,
 }
+-- Player position and map size: S.playerPos = { mapID, x, y }; maps are 1000 x 800 yards.
+G.C_Map.GetPlayerMapPosition = function(mapID, unit)
+    local p = S.playerPos
+    if not p or p[1] ~= mapID then return nil end
+    return { GetXY = function() return p[2], p[3] end }
+end
+G.C_Map.GetWorldPosFromMapPos = function(mapID, v)
+    local x, y = v:GetXY()
+    return 0, { GetXY = function() return -y * 800, -x * 1000 end } -- world axes swapped/negated like the client
+end
+G.CreateVector2D = function(x, y) return { GetXY = function() return x, y end } end
 G.UiMapPoint = { CreateFromCoordinates = function(mapID, x, y) return { mapID = mapID, x = x, y = y } end }
 G.C_SuperTrack = { SetSuperTrackedUserWaypoint = function(v) M.superTracked = v end }
 G.C_EncounterJournal = {
@@ -376,7 +388,7 @@ local OPTIONAL = {
     ForeverRogueDB = true, ForeverRogueCharDB = true, ForeverRogueFrame = true, ForeverRogueHud = true,
     ForeverRogueMinimapButton = true, SLASH_FOREVERROGUE1 = true, SLASH_FOREVERROGUE2 = true,
     ForeverRogue_OnCompartmentClick = true, OpenWorldMap = true, Auctionator = true, GetComboPoints = true,
-    GetZoneText = true, UnitIsPVP = true, UnitPVPRank = true, GetPVPRankInfo = true, GetPVPRankProgress = true,
+    GetZoneText = true, IsIndoors = true, GetPlayerFacing = true, ForeverRoguePinHolder = true, UnitIsPVP = true, UnitPVPRank = true, GetPVPRankInfo = true, GetPVPRankProgress = true,
     GetPVPSessionStats = true, GetPVPLifetimeStats = true, GetZonePVPInfo = true, C_CurrencyInfo = true,
 }
 

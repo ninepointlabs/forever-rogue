@@ -38,6 +38,7 @@ Modules\Gold.lua
 Modules\Locks.lua
 Modules\Poisons.lua
 Modules\BagSpace.lua
+Modules\PocketPins.lua
 Modules\Cooldowns.lua
 Modules\Reminders.lua
 Modules\Rotation.lua
@@ -71,4 +72,5 @@ UI\Bags.lua
 UI\RogueBar.lua
 UI\RogueButtons.lua
 UI\Minimap.lua
+UI\MinimapPins.lua
 Core\Boot.lua

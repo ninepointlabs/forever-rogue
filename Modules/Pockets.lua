@@ -123,6 +123,8 @@ function Pockets.Record(e)
         end
         p.lastByGuid[e.guid] = e.t
     end
+    if ns.PocketPins then ns.PocketPins.RememberSpot(e) end
+    if ns.MinimapPins then ns.MinimapPins.Invalidate() end
     ns.Fire("POCKETS_CHANGED", e)
     return e
 end
@@ -212,6 +214,11 @@ function Pockets.BeginAttempt(t)
         t = t or now(), started = GetTime(), money = money(), zone = ns.Rogue.ZoneName(),
         mob = info.name, level = info.level, guid = (not inside) and info.guid or nil, instance = inside or nil,
     }
+    -- Where you stood (open world only), for your own minimap spots.
+    if not inside and ns.PocketPins then
+        local mapID, x, y = ns.PocketPins.PlayerPosition()
+        if mapID then pending.map, pending.x, pending.y = mapID, math.floor(x * 1000 + 0.5) / 1000, math.floor(y * 1000 + 0.5) / 1000 end
+    end
     if C_Timer and C_Timer.After then
         local mine = pending
         C_Timer.After(Pockets.ATTEMPT_WINDOW, function()
@@ -273,6 +280,7 @@ function Pockets.OnLootClosed()
     local after = money()
     local e = {
         t = p.t, mob = p.mob, level = p.level, zone = p.zone, guid = p.guid, instance = p.instance,
+        map = p.map, x = p.x, y = p.y,
         copper = (after and p.money) and math.max(0, after - p.money) or 0,
         coinUnknown = (after == nil or p.money == nil) or nil,
         items = {},

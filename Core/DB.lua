@@ -86,6 +86,9 @@ DB.charDefaults = {
     poisonOH = { enabled = true, key = nil, override = nil },
     reagentCells = { enabled = true },
     pocketCounter = { enabled = true },
+    -- Pickpocket spots on the minimap (UI/MinimapPins.lua): researched spots with
+    -- sourced coordinates and your own logged spots. On by default; /frogue pins.
+    pocketPins = { enabled = true, research = true, mine = true },
     rogueBar = { point = nil },
     pvp = { rewardGoal = nil },
     window = { tab = "home" },
