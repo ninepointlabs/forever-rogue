@@ -1,0 +1,972 @@
+{
+ "class": "Rogue",
+ "version": "70755-6b631983",
+ "client_build": 70755,
+ "trees": [
+  {
+   "name": "Assassination",
+   "talents": [
+    {
+     "name": "Improved Gouge",
+     "row": 1,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 0,
+     "icon": 132155,
+     "node_id": 105742,
+     "url_id": "0",
+     "rank_spell_ids": [
+      13741,
+      13741,
+      13741
+     ],
+     "desc_rank1": "Increases the duration of your Gouge ability by 0.5 sec.",
+     "desc_max": "Increases the duration of your Gouge ability by 1.5 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Remorseless Attacks",
+     "row": 1,
+     "col": 2,
+     "max_rank": 2,
+     "required_points": 0,
+     "icon": 132151,
+     "node_id": 105723,
+     "url_id": "1",
+     "rank_spell_ids": [
+      14144,
+      14144
+     ],
+     "desc_rank1": "After killing a non-trivial enemy, gives you a 20% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec.",
+     "desc_max": "After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Malice",
+     "row": 1,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 0,
+     "icon": 132277,
+     "node_id": 105722,
+     "url_id": "2",
+     "rank_spell_ids": [
+      14138,
+      14138,
+      14138,
+      14138,
+      14138
+     ],
+     "desc_rank1": "Increases your critical strike chance with all attacks and Poisons by 1%.",
+     "desc_max": "Increases your critical strike chance with all attacks and Poisons by 5%.",
+     "change": "changed"
+    },
+    {
+     "name": "Ruthlessness",
+     "row": 2,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132122,
+     "node_id": 105721,
+     "url_id": "3",
+     "rank_spell_ids": [
+      14156,
+      14156,
+      14156
+     ],
+     "desc_rank1": "Gives your finishing moves a 20% chance to add a Combo Point to your target.",
+     "desc_max": "Gives your finishing moves a 60% chance to add a Combo Point to your target.",
+     "change": ""
+    },
+    {
+     "name": "Improved Expose Armor",
+     "row": 2,
+     "col": 2,
+     "max_rank": 2,
+     "required_points": 5,
+     "icon": 132354,
+     "node_id": 105717,
+     "url_id": "7",
+     "rank_spell_ids": [
+      14168,
+      14168
+     ],
+     "desc_rank1": "Reduces the Energy cost of your Expose Armor ability by 5, and refunds 1 Combo Point when cast with 5 Combo Points.",
+     "desc_max": "Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points.",
+     "change": "changed"
+    },
+    {
+     "name": "Improved Slice and Dice",
+     "row": 2,
+     "col": 4,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132306,
+     "node_id": 105739,
+     "url_id": "5",
+     "rank_spell_ids": [
+      14165,
+      14165,
+      14165
+     ],
+     "desc_rank1": "Increases the duration of your Slice and Dice ability by 15%.",
+     "desc_max": "Increases the duration of your Slice and Dice ability by 45%.",
+     "change": ""
+    },
+    {
+     "name": "Vigor",
+     "row": 3,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 10,
+     "icon": 136023,
+     "node_id": 105720,
+     "url_id": "4",
+     "rank_spell_ids": [
+      14983,
+      14983
+     ],
+     "desc_rank1": "Increases your maximum Energy by 5.",
+     "desc_max": "Increases your maximum Energy by 10.",
+     "change": "changed"
+    },
+    {
+     "name": "Blood Splatter",
+     "row": 3,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 10,
+     "icon": 132302,
+     "node_id": 105718,
+     "url_id": "c",
+     "rank_spell_ids": [
+      1329256
+     ],
+     "desc_rank1": "Increases the duration of your Rupture ability by 6 sec and your Garrote ability by 9 sec.",
+     "desc_max": "Increases the duration of your Rupture ability by 6 sec and your Garrote ability by 9 sec.",
+     "change": "new"
+    },
+    {
+     "name": "Lethality",
+     "row": 3,
+     "col": 3,
+     "max_rank": 2,
+     "required_points": 10,
+     "icon": 132109,
+     "node_id": 105716,
+     "url_id": "8",
+     "rank_spell_ids": [
+      14128,
+      14128
+     ],
+     "desc_rank1": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 10%.",
+     "desc_max": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%.",
+     "change": "changed"
+    },
+    {
+     "name": "Vile Poisons",
+     "row": 4,
+     "col": 1,
+     "max_rank": 5,
+     "required_points": 15,
+     "icon": 132293,
+     "node_id": 105714,
+     "url_id": "9",
+     "rank_spell_ids": [
+      16513,
+      16513,
+      16513,
+      16513,
+      16513
+     ],
+     "desc_rank1": "Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects.",
+     "desc_max": "Increases the damage dealt by your poisons by 20% and gives your poisons an additional 40% chance to resist dispel effects.",
+     "change": ""
+    },
+    {
+     "name": "Cold Blood",
+     "row": 4,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 15,
+     "icon": 135988,
+     "node_id": 105715,
+     "url_id": "a",
+     "rank_spell_ids": [
+      14177
+     ],
+     "desc_rank1": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%.",
+     "desc_max": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%.",
+     "change": "changed"
+    },
+    {
+     "name": "Improved Poisons",
+     "row": 4,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 15,
+     "icon": 132273,
+     "node_id": 105713,
+     "url_id": "b",
+     "rank_spell_ids": [
+      14113,
+      14113,
+      14113,
+      14113,
+      14113
+     ],
+     "desc_rank1": "Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge.",
+     "desc_max": "Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge.",
+     "change": "changed"
+    },
+    {
+     "name": "Relentless Strikes",
+     "row": 5,
+     "col": 1,
+     "max_rank": 5,
+     "required_points": 20,
+     "icon": 132340,
+     "node_id": 113633,
+     "url_id": "R",
+     "rank_spell_ids": [
+      14179,
+      14179,
+      14179,
+      14179,
+      14179
+     ],
+     "desc_rank1": "Your finishing moves have a 4% chance per Combo Point to restore 25 Energy.",
+     "desc_max": "Your finishing moves have a 20% chance per Combo Point to restore 25 Energy.",
+     "change": "changed"
+    },
+    {
+     "name": "Venom",
+     "row": 5,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 20,
+     "icon": 135341,
+     "node_id": 105712,
+     "url_id": "g",
+     "rank_spell_ids": [
+      1329328
+     ],
+     "desc_rank1": "Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 sec.",
+     "desc_max": "Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 sec.",
+     "change": "new"
+    },
+    {
+     "name": "Improved Kidney Shot",
+     "row": 5,
+     "col": 3,
+     "max_rank": 2,
+     "required_points": 20,
+     "icon": 132298,
+     "node_id": 105711,
+     "url_id": "e",
+     "rank_spell_ids": [
+      14174,
+      14174
+     ],
+     "desc_rank1": "Enemies Stunned by your Kidney Shot ability take 5% increased damage from your poisons and attacks.",
+     "desc_max": "Enemies Stunned by your Kidney Shot ability take 10% increased damage from your poisons and attacks.",
+     "change": "changed"
+    },
+    {
+     "name": "Seal Fate",
+     "row": 6,
+     "col": 3,
+     "max_rank": 3,
+     "required_points": 25,
+     "icon": 136130,
+     "node_id": 105710,
+     "url_id": "f",
+     "rank_spell_ids": [
+      14186,
+      14186,
+      14186
+     ],
+     "desc_rank1": "Your critical strikes from abilities that add Combo Points have a 33% chance to add an additional Combo Point.",
+     "desc_max": "Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point.",
+     "change": "changed"
+    },
+    {
+     "name": "Mutilate",
+     "row": 7,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 30,
+     "icon": 236270,
+     "node_id": 105709,
+     "url_id": "d",
+     "rank_spell_ids": [
+      399956
+     ],
+     "desc_rank1": "Instantly attacks with both weapons for 90% weapon damage plus an additional 40 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+     "desc_max": "Instantly attacks with both weapons for 90% weapon damage plus an additional 40 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+     "change": "new"
+    }
+   ]
+  },
+  {
+   "name": "Combat",
+   "talents": [
+    {
+     "name": "Coup de Grace",
+     "row": 1,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 0,
+     "icon": 132292,
+     "node_id": 105708,
+     "url_id": "h",
+     "rank_spell_ids": [
+      14162,
+      14162,
+      14162
+     ],
+     "desc_rank1": "Increases the damage done by your Eviscerate ability by 7%, and the damage and storage rate of your Death Mark ability by 7%.",
+     "desc_max": "Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%.",
+     "change": "new"
+    },
+    {
+     "name": "Efficient Strikes",
+     "row": 1,
+     "col": 2,
+     "max_rank": 2,
+     "required_points": 0,
+     "icon": 136189,
+     "node_id": 105741,
+     "url_id": "i",
+     "rank_spell_ids": [
+      13732,
+      13732
+     ],
+     "desc_rank1": "Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by 3.",
+     "desc_max": "Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by 5.",
+     "change": "changed"
+    },
+    {
+     "name": "Lightning Reflexes",
+     "row": 1,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 0,
+     "icon": 136047,
+     "node_id": 113398,
+     "url_id": "j",
+     "rank_spell_ids": [
+      13712,
+      13712,
+      13712,
+      13712,
+      13712
+     ],
+     "desc_rank1": "Increases your Dodge chance by 1%.",
+     "desc_max": "Increases your Dodge chance by 5%.",
+     "change": ""
+    },
+    {
+     "name": "Puncturing Wounds",
+     "row": 2,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132090,
+     "node_id": 105719,
+     "url_id": "k",
+     "rank_spell_ids": [
+      1224716,
+      1224716,
+      1224716
+     ],
+     "desc_rank1": "Increases the critical strike chance of your Backstab by 10% and your Mutilate by 5%, and gives Backstab a 15% chance to add an additional Combo Point.",
+     "desc_max": "Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point.",
+     "change": "new"
+    },
+    {
+     "name": "Deflection",
+     "row": 2,
+     "col": 2,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132269,
+     "node_id": 105738,
+     "url_id": "l",
+     "rank_spell_ids": [
+      13713,
+      13713,
+      13713
+     ],
+     "desc_rank1": "Increases your Parry chance by 2%.",
+     "desc_max": "Increases your Parry chance by 6%.",
+     "change": "changed"
+    },
+    {
+     "name": "Precision",
+     "row": 2,
+     "col": 3,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132222,
+     "node_id": 105737,
+     "url_id": "m",
+     "rank_spell_ids": [
+      13705,
+      13705,
+      13705
+     ],
+     "desc_rank1": "Improves your chance to hit by 1%.",
+     "desc_max": "Improves your chance to hit by 3%.",
+     "change": "changed"
+    },
+    {
+     "name": "Improved Sprint",
+     "row": 2,
+     "col": 4,
+     "max_rank": 2,
+     "required_points": 5,
+     "icon": 132307,
+     "node_id": 105732,
+     "url_id": "p",
+     "rank_spell_ids": [
+      13743,
+      13743
+     ],
+     "desc_rank1": "Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability.",
+     "desc_max": "Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability.",
+     "change": ""
+    },
+    {
+     "name": "Endurance",
+     "row": 3,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 10,
+     "icon": 136205,
+     "node_id": 105736,
+     "url_id": "n",
+     "rank_spell_ids": [
+      13742,
+      13742
+     ],
+     "desc_rank1": "Reduces the cooldown of your Sprint and Evasion abilities by 30%.",
+     "desc_max": "Reduces the cooldown of your Sprint and Evasion abilities by 60%.",
+     "change": "changed"
+    },
+    {
+     "name": "Riposte",
+     "row": 3,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 10,
+     "icon": 132336,
+     "node_id": 105735,
+     "url_id": "o",
+     "rank_spell_ids": [
+      14251
+     ],
+     "desc_rank1": "A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.",
+     "desc_max": "A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Composure",
+     "row": 3,
+     "col": 4,
+     "max_rank": 2,
+     "required_points": 10,
+     "icon": 132296,
+     "node_id": 105759,
+     "url_id": "6",
+     "rank_spell_ids": [
+      1329265,
+      1329265
+     ],
+     "desc_rank1": "Increases the Energy cost reduction of your Poised ability by 5.",
+     "desc_max": "Increases the Energy cost reduction of your Poised ability by 10.",
+     "change": "new"
+    },
+    {
+     "name": "Improved Kick",
+     "row": 4,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 15,
+     "icon": 132219,
+     "node_id": 105733,
+     "url_id": "q",
+     "rank_spell_ids": [
+      13754,
+      13754
+     ],
+     "desc_rank1": "Gives your Kick ability a 50% chance to Silence the target for 2 sec.",
+     "desc_max": "Gives your Kick ability a 100% chance to Silence the target for 2 sec.",
+     "change": ""
+    },
+    {
+     "name": "Flawless Execution",
+     "row": 4,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 15,
+     "icon": 135345,
+     "node_id": 108100,
+     "url_id": "r",
+     "rank_spell_ids": [
+      1310711
+     ],
+     "desc_rank1": "Reduces the Energy cost of your Eviscerate ability by 15.",
+     "desc_max": "Reduces the Energy cost of your Eviscerate ability by 15.",
+     "change": "changed"
+    },
+    {
+     "name": "Weapon Expertise",
+     "row": 4,
+     "col": 3,
+     "max_rank": 2,
+     "required_points": 15,
+     "icon": 135882,
+     "node_id": 105726,
+     "url_id": "v",
+     "rank_spell_ids": [
+      30919,
+      30919
+     ],
+     "desc_rank1": "Reduces the chance for your attacks to be Dodged or Parried by 1%.",
+     "desc_max": "Reduces the chance for your attacks to be Dodged or Parried by 2%.",
+     "change": "changed"
+    },
+    {
+     "name": "Aggression",
+     "row": 4,
+     "col": 4,
+     "max_rank": 3,
+     "required_points": 15,
+     "icon": 132275,
+     "node_id": 105730,
+     "url_id": "w",
+     "rank_spell_ids": [
+      18427,
+      18427,
+      18427
+     ],
+     "desc_rank1": "Increases the damage of your Sinister Strike and Eviscerate abilities by 5%.",
+     "desc_max": "Increases the damage of your Sinister Strike and Eviscerate abilities by 15%.",
+     "change": "changed"
+    },
+    {
+     "name": "Dual Wield Specialization",
+     "row": 5,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 20,
+     "icon": 132147,
+     "node_id": 113635,
+     "url_id": "S",
+     "rank_spell_ids": [
+      13715,
+      13715
+     ],
+     "desc_rank1": "Increases the damage done by your off-hand weapon by 25%.",
+     "desc_max": "Increases the damage done by your off-hand weapon by 50%.",
+     "change": "changed"
+    },
+    {
+     "name": "Blade Flurry",
+     "row": 5,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 20,
+     "icon": 132350,
+     "node_id": 105728,
+     "url_id": "t",
+     "rank_spell_ids": [
+      13877
+     ],
+     "desc_rank1": "Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec.",
+     "desc_max": "Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Hack and Slash",
+     "row": 5,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 20,
+     "icon": 135328,
+     "node_id": 105727,
+     "url_id": "u",
+     "rank_spell_ids": [
+      13960,
+      13960,
+      13960,
+      13960,
+      13960
+     ],
+     "desc_rank1": "Gives your melee weapon attacks a benefit depending on the weapon. Axe/Sword: Your successful melee attacks have a 1% chance to trigger an extra attack on the target. Dagger/Fist: Increases your critical strike chance by 1%. Mace: Your attacks ignore 3% of your target's armor.",
+     "desc_max": "Gives your melee weapon attacks a benefit depending on the weapon. Axe/Sword: Your successful melee attacks have a 5% chance to trigger an extra attack on the target. Dagger/Fist: Increases your critical strike chance by 5%. Mace: Your attacks ignore 15% of your target's armor.",
+     "change": "new"
+    },
+    {
+     "name": "Flash of Steel",
+     "row": 6,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 25,
+     "icon": 458731,
+     "node_id": 105740,
+     "url_id": "s",
+     "rank_spell_ids": [
+      1329284,
+      1329284,
+      1329284,
+      1329284,
+      1329284
+     ],
+     "desc_rank1": "Increases the Energy generated by your Shank ability by 3 and reduces its cooldown by 0.4 sec.",
+     "desc_max": "Increases the Energy generated by your Shank ability by 15 and reduces its cooldown by 2 sec.",
+     "change": "new"
+    },
+    {
+     "name": "Adrenaline Rush",
+     "row": 7,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 30,
+     "icon": 136206,
+     "node_id": 105724,
+     "url_id": "x",
+     "rank_spell_ids": [
+      13750
+     ],
+     "desc_rank1": "Increases your Energy regeneration rate by 100% for 15 sec.",
+     "desc_max": "Increases your Energy regeneration rate by 100% for 15 sec.",
+     "change": ""
+    }
+   ]
+  },
+  {
+   "name": "Subtlety",
+   "talents": [
+    {
+     "name": "Setup",
+     "row": 1,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 0,
+     "icon": 136056,
+     "node_id": 105751,
+     "url_id": "B",
+     "rank_spell_ids": [
+      13983,
+      13983,
+      13983
+     ],
+     "desc_rank1": "Gives you a 15% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells.",
+     "desc_max": "Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells.",
+     "change": ""
+    },
+    {
+     "name": "Master of Deception",
+     "row": 1,
+     "col": 2,
+     "max_rank": 3,
+     "required_points": 0,
+     "icon": 136129,
+     "node_id": 105761,
+     "url_id": "z",
+     "rank_spell_ids": [
+      13958,
+      13958,
+      13958
+     ],
+     "desc_rank1": "Reduces the chance enemies have to detect you while in Stealth mode as if you were 1 level higher.",
+     "desc_max": "Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher.",
+     "change": "changed"
+    },
+    {
+     "name": "Opportunity",
+     "row": 1,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 0,
+     "icon": 132366,
+     "node_id": 105760,
+     "url_id": "A",
+     "rank_spell_ids": [
+      14057,
+      14057,
+      14057,
+      14057,
+      14057
+     ],
+     "desc_rank1": "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 4%.",
+     "desc_max": "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%.",
+     "change": "changed"
+    },
+    {
+     "name": "Dirty Deeds",
+     "row": 2,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 5,
+     "icon": 136220,
+     "node_id": 105745,
+     "url_id": "L",
+     "rank_spell_ids": [
+      14082,
+      14082
+     ],
+     "desc_rank1": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target.",
+     "desc_max": "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target.",
+     "change": "changed"
+    },
+    {
+     "name": "Camouflage",
+     "row": 2,
+     "col": 2,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132320,
+     "node_id": 105756,
+     "url_id": "y",
+     "rank_spell_ids": [
+      13975,
+      13975,
+      13975
+     ],
+     "desc_rank1": "Reduces your speed penalty from your Stealth ability by 5% and reduces its cooldown by 2 sec.",
+     "desc_max": "Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 6 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Improved Ambush",
+     "row": 2,
+     "col": 3,
+     "max_rank": 3,
+     "required_points": 5,
+     "icon": 132282,
+     "node_id": 105749,
+     "url_id": "E",
+     "rank_spell_ids": [
+      14079,
+      14079,
+      14079
+     ],
+     "desc_rank1": "Increases the critical strike chance of your Ambush ability by 15%.",
+     "desc_max": "Increases the critical strike chance of your Ambush ability by 45%.",
+     "change": ""
+    },
+    {
+     "name": "Dirty Tricks",
+     "row": 2,
+     "col": 4,
+     "max_rank": 2,
+     "required_points": 5,
+     "icon": 132310,
+     "node_id": 105757,
+     "url_id": "D",
+     "rank_spell_ids": [
+      1224782,
+      1224782
+     ],
+     "desc_rank1": "Reduces the Energy cost of your Sap and Blind abilities by 25%.",
+     "desc_max": "Reduces the Energy cost of your Sap and Blind abilities by 50%.",
+     "change": "new"
+    },
+    {
+     "name": "Initiative",
+     "row": 3,
+     "col": 1,
+     "max_rank": 3,
+     "required_points": 10,
+     "icon": 136159,
+     "node_id": 105755,
+     "url_id": "F",
+     "rank_spell_ids": [
+      13976,
+      13976,
+      13976
+     ],
+     "desc_rank1": "Gives you a 33% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+     "desc_max": "Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+     "change": "changed"
+    },
+    {
+     "name": "Premeditation",
+     "row": 3,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 10,
+     "icon": 136183,
+     "node_id": 105743,
+     "url_id": "J",
+     "rank_spell_ids": [
+      14183
+     ],
+     "desc_rank1": "Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost.",
+     "desc_max": "Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost.",
+     "change": "changed"
+    },
+    {
+     "name": "Serrated Blades",
+     "row": 3,
+     "col": 3,
+     "max_rank": 3,
+     "required_points": 10,
+     "icon": 135315,
+     "node_id": 105752,
+     "url_id": "K",
+     "rank_spell_ids": [
+      14171,
+      14171,
+      14171
+     ],
+     "desc_rank1": "Causes your attacks to ignore 3% of your target's Armor and increases the damage dealt by your Rupture ability by 10%.",
+     "desc_max": "Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%.",
+     "change": "changed"
+    },
+    {
+     "name": "Elusiveness",
+     "row": 4,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 15,
+     "icon": 135994,
+     "node_id": 105753,
+     "url_id": "C",
+     "rank_spell_ids": [
+      13981,
+      13981
+     ],
+     "desc_rank1": "Reduces the cooldown of your Vanish and Blind abilities by 45 sec.",
+     "desc_max": "Reduces the cooldown of your Vanish and Blind abilities by 90 sec.",
+     "change": "changed"
+    },
+    {
+     "name": "Ghostly Strike",
+     "row": 4,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 15,
+     "icon": 136136,
+     "node_id": 105754,
+     "url_id": "G",
+     "rank_spell_ids": [
+      14278
+     ],
+     "desc_rank1": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by 15% for 7 sec, and causes your next Ambush or Garrote cast within 7 sec to not require Stealth. Awards 1 combo point.",
+     "desc_max": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by 15% for 7 sec, and causes your next Ambush or Garrote cast within 7 sec to not require Stealth. Awards 1 combo point.",
+     "change": "changed"
+    },
+    {
+     "name": "Quick Getaway",
+     "row": 4,
+     "col": 4,
+     "max_rank": 2,
+     "required_points": 15,
+     "icon": 458797,
+     "node_id": 110867,
+     "url_id": "O",
+     "rank_spell_ids": [
+      1310728,
+      1310728
+     ],
+     "desc_rank1": "Increases the maximum number of targets you may have Sapped by 1, and increases your movement speed by 15% for 3 sec after Sapping a target.",
+     "desc_max": "Increases the maximum number of targets you may have Sapped by 1, and increases your movement speed by 30% for 3 sec after Sapping a target.",
+     "change": "new"
+    },
+    {
+     "name": "Heightened Senses",
+     "row": 5,
+     "col": 1,
+     "max_rank": 2,
+     "required_points": 20,
+     "icon": 132089,
+     "node_id": 105747,
+     "url_id": "I",
+     "rank_spell_ids": [
+      30894,
+      30894
+     ],
+     "desc_rank1": "Increases your Stealth detection as if you were 1 level higher and reduces your chance to be hit by spells and ranged attacks by 2%.",
+     "desc_max": "Increases your Stealth detection as if you were 3 levels higher and reduces your chance to be hit by spells and ranged attacks by 4%.",
+     "change": "changed"
+    },
+    {
+     "name": "Preparation",
+     "row": 5,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 20,
+     "icon": 136121,
+     "node_id": 105746,
+     "url_id": "M",
+     "rank_spell_ids": [
+      14185
+     ],
+     "desc_rank1": "When activated, this ability immediately finishes the cooldown on your other Rogue abilities.",
+     "desc_max": "When activated, this ability immediately finishes the cooldown on your other Rogue abilities.",
+     "change": ""
+    },
+    {
+     "name": "Hemorrhage",
+     "row": 5,
+     "col": 3,
+     "max_rank": 1,
+     "required_points": 20,
+     "icon": 136168,
+     "node_id": 105748,
+     "url_id": "N",
+     "rank_spell_ids": [
+      16511
+     ],
+     "desc_rank1": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture and Garrote damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point.",
+     "desc_max": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture and Garrote damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point.",
+     "change": "changed"
+    },
+    {
+     "name": "Boot Knife",
+     "row": 6,
+     "col": 3,
+     "max_rank": 5,
+     "required_points": 25,
+     "icon": 135342,
+     "node_id": 105750,
+     "url_id": "P",
+     "rank_spell_ids": [
+      1329286,
+      1329286,
+      1329286,
+      1329286,
+      1329286
+     ],
+     "desc_rank1": "Grants your Shank ability a 20% chance to add 2 Combo Points to the target.",
+     "desc_max": "Grants your Shank ability a 100% chance to add 2 Combo Points to the target.",
+     "change": "new"
+    },
+    {
+     "name": "Death Mark",
+     "row": 7,
+     "col": 2,
+     "max_rank": 1,
+     "required_points": 30,
+     "icon": 132094,
+     "node_id": 110866,
+     "url_id": "Q",
+     "rank_spell_ids": [
+      1316709
+     ],
+     "desc_rank1": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance: 1 point : 12% stored, [((63 + 102 + 0.04 * ) * ( / 100 + 1)) * 1] damage cap 2 points: 24% stored, [((63 + 204 + 2 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 3 points: 36% stored, [((63 + 306 + 3 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 4 points: 48% stored, [((63 + 408 + 4 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 5 points: 60% stored, [((63 + 510 + 5 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap",
+     "desc_max": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance: 1 point : 12% stored, [((63 + 102 + 0.04 * ) * ( / 100 + 1)) * 1] damage cap 2 points: 24% stored, [((63 + 204 + 2 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 3 points: 36% stored, [((63 + 306 + 3 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 4 points: 48% stored, [((63 + 408 + 4 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 5 points: 60% stored, [((63 + 510 + 5 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap",
+     "change": "new"
+    }
+   ]
+  }
+ ],
+ "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70755-6b631983/rogue.json",
+ "page_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator",
+ "checked": "2026-11-19"
+}

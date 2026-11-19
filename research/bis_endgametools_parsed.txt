@@ -1,0 +1,327 @@
+=== combat (level 60, dungeons PvE, faction default)
+Head: Mask of the Unforgiven (13404) | +20 Hit · +14 Critical Strike · +13 Stamina | The Unforgiven — Stratholme
+Head: Scarlet Executioner's Guise (284086) | +15 Hit · +24 Strength | Scarlet Executioner — Western Plaguelands
+Head: Eye of Rend (12587) | +21 Critical Strike · +5 Hit · +15 Strength | Warchief Rend Blackhand — Blackrock Spire
+Head: Tattered Leather Hood (18698) | +10 Hit · +10 Agility · +25 Stamina | Scholomance
+Head: Ebon Mask (19984) | +36 Attack Power · +14 Critical Strike · +14 Stamina | Quest: The Azure Key
+Head: Ragefury Eyepatch (11735) | +28 Critical Strike · +6 Strength · +10 Stamina | Hurley Blackbreath — Blackrock Depths
+Neck: Beads of Ogre Might (22150) | +10 Hit · +24 Attack Power · +7 Stamina | Quest: Falrin's Vendetta
+Neck: Horn of Ve'han (275736) | +13 Hit · +10 Stamina | Quest: Work Well Done
+Neck: Star of Mystaria (12103) | +13 Hit · +7 Stamina | Balnazzar — Stratholme
+Neck: Mark of Fordring (15411) | +14 Critical Strike · +26 Attack Power | Quest: In Dreams
+Neck: Amulet of the Darkmoon (19491) | +19 Agility · +10 Strength · +10 Stamina | Quest: 1200 Tickets - Amulet of the Darkmoon · Gelvas Grimegate
+Neck: Sentimental Locket (276740) | +10 Hit · +7 Strength · +9 Shadow Resistance | Katerina the Cleaner
+Shoulder: Truestrike Shoulders (12927) | +15 Hit · +24 Attack Power · +10 Stamina | Pyroguard Emberseer — Blackrock Spire
+Shoulder: Wyrmhide Spaulders (12082) | +15 Hit · +12 Attack Power · +18 Attack Power Vs Dragonkin | Quest: A Taste of Flame
+Shoulder: Death's Clutch (14503) | +6 Hit · +10 Agility · +10 Strength | Ras Frostwhisper — Scholomance
+Shoulder: Shadowcraft Spaulders (16708) | +22 Agility · +2 Hit · +9 Stamina | Cannon Master Willey — Stratholme
+Shoulder: Wyrmtongue Shoulders (13358) | +23 Agility · +10 Stamina | Balnazzar — Stratholme
+Shoulder: Spaulders of the Unseen (13116) | +22 Agility · +7 Stamina | World drop: the auction house is quickest
+Back: Earthweave Cloak (21187) | +10 Hit · +15 Agility | Quest: Volunteer's Battlegear
+Back: Cape of the Black Baron (13340) | +15 Agility · +20 Attack Power | Baron Rivendare — Stratholme
+Back: Windserpent Scaled Cloak (284866) | +10 Agility · +5 Hit | Arash-ethis — Feralas
+Back: Cloak of Flames (3475) | +10 Hit · +7 Fire Resistance | World drop: the auction house is quickest
+Back: Shadow Prowler's Cloak (22269) | +16 Agility · +9 Stamina | General Drakkisath — Blackrock Spire
+Back: Blackveil Cape (11626) | +14 Agility · +6 Strength | High Interrogator Gerstahn — Blackrock Depths
+Chest: Shadowcraft Tunic (16721) | +26 Agility · +8 Hit · +13 Stamina | General Drakkisath — Blackrock Spire
+Chest: Robes of Dark Summons (280057) | +18 Hit · +14 Stamina | Impaan the Imprisoner
+Chest: Tombstone Breastplate (13944) | +28 Critical Strike · +12 Strength · +12 Stamina | Darkmaster Gandling — Scholomance
+Chest: Nightbrace Tunic (12603) | +50 Attack Power · +6 Agility · +10 Stamina · +10 Fire Resistance · +10 Shadow | Resistance
+Chest: Defias Enforcer's Chest (287020) | +22 Agility · +14 Strength · +11 Stamina | World drop
+Chest: Cadaverous Armor (14637) | +60 Attack Power · +10 Stamina | Scholomance · Instructor Malicia — Scholomance
+Wrist: Blackmist Armguards (12966) | +10 Hit · +5 Strength · +13 Stamina · +7 Shadow Resistance | The Beast — Blackrock Spire
+Wrist: Bracers of the Eclipse (18375) | +24 Attack Power · +10 Agility · +9 Stamina | Prince Tortheldrin — Dire Maul
+Wrist: Rockfury Bracers (21186) | +10 Hit · +7 Stamina | Quest: Stalwart's Battlegear
+Wrist: Deepfury Bracers (13120) | +15 Agility · +4 Strength · +4 Stamina | World drop: the auction house is quickest
+Wrist: Shadowcraft Bracers (16710) | +15 Agility · +7 Stamina | Blackrock Spire · Instructor Malicia — Blackrock Spire
+Wrist: Wristguards of Renown (22204) | +10 Agility · +9 Strength · +10 Stamina | Emperor Dagran Thaurissan — Blackrock Depths
+Hands: Devilsaur Gauntlets (15063) | +14 Critical Strike · +28 Attack Power · +9 Stamina | Leatherworking · Recipe to find
+Hands: Gordok's Gloves (18368) | +14 Critical Strike · +9 Agility · +10 Stamina | Dire Maul · Quest: Unfinished Gordok Business
+Hands: Cadaverous Gloves (14640) | +44 Attack Power · +9 Stamina | Scholomance · Instructor Malicia — Scholomance
+Hands: Grimm's Packing Gloves (276395) | +10 Hit · +20 Stamina | Ezra Grimm — Stratholme
+Hands: Compound Gloves (287018) | +10 Hit · +15 Stamina | World drop
+Hands: Skul's Fingerbone Claws (13395) | +42 Attack Power · +10 Stamina | Skul — Stratholme
+Waist: Highlander's Leather Girdle (20115) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Clutch of Andros (13956) | +10 Hit · +10 Stamina | Kirtonos the Herald — Scholomance
+Waist: Ban'thok Sash (11662) | +10 Hit · +10 Stamina | Ok'thor the Breaker — Blackrock Depths
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Waist: Defiler's Leather Girdle (20193) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Rutherford Twing — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Clutch of Andros (13956) | +10 Hit · +10 Stamina | Kirtonos the Herald — Scholomance
+Waist: Ban'thok Sash (11662) | +10 Hit · +10 Stamina | Ok'thor the Breaker — Blackrock Depths
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Legs: Blademaster Leggings (12963) | +10 Hit · +14 Critical Strike · +24 Attack Power | The Beast — Blackrock Spire
+Legs: Defias Enforcer's Legguards (276746) | +20 Agility · +10 Hit · +16 Fire Resistance | Blazeroar
+Legs: Devilsaur Leggings (15062) | +46 Attack Power · +14 Critical Strike · +12 Stamina | Leatherworking · Recipe to find
+Legs: Warbear Woolies (15065) | +18 Agility · +28 Strength · +12 Stamina | Leatherworking · Recipe to find
+Legs: Shadowcraft Pants (16709) | +25 Agility · +14 Stamina | Baron Rivendare — Stratholme
+Legs: Cadaverous Leggings (14638) | +52 Attack Power · +18 Stamina | Scholomance · Instructor Malicia — Scholomance
+Feet: Shadowcraft Boots (16711) | +21 Agility · +3 Hit · +9 Stamina | Rattlegore — Scholomance
+Feet: Apprentice's Protective Treads (280078) | +14 Critical Strike · +11 Agility · +12 Stamina | Gortek the Apprentice
+Feet: Dunestalker's Boots (20715) | +19 Agility · +9 Strength · +10 Stamina | Quest: Armaments of War
+Feet: Swiftwalker Boots (12553) | +21 Agility · +5 Strength · +8 Stamina | Blackrock Depths · Princess Moira Bronzebeard — Blackrock Depths
+Feet: Albino Crocscale Boots (17728) | +20 Agility · +5 Stamina · +6 Nature Resistance | Rotgrip — Maraudon
+Feet: Kayser's Boots of Precision (22231) | +10 Hit · +11 Stamina | War Master Voone — Blackrock Spire
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Ring of Demonic Guile (18314) | +10 Hit | Alzzin the Wildshaper — Dire Maul
+Finger: Magni's Will (12548) | +14 Critical Strike · +7 Strength · +8 Stamina | Quest: The Princess's Surprise · Quest: The Fate of the Kingdom
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Ring of Demonic Guile (18314) | +10 Hit | Alzzin the Wildshaper — Dire Maul
+Finger: Band of the Cultist (20721) | +12 Agility · +7 Strength · +12 Stamina | World drop
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cleansed Vilebranch Medallion (270275) | +7 Hit | Quest: Saving Sharpbeak
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Thaelemaches' Talisman (276337) | +18 Attack Power · +6 Shadow Resistance · +6 Fire Resistance | Quest: Blind Vengeance
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Thaelemaches' Talisman (276337) | +18 Attack Power · +6 Shadow Resistance · +6 Fire Resistance | Quest: Blind Vengeance
+Trinket: Winds of Tanaris (286556) | +16 Attack Power · +12 Nature Resistance | Soul of Tanaris — Tanaris
+Weapons: Teebu's Blazing Longsword (1728) | 47.2 DPS | World drop: the auction house is quickest
+Weapons: The Thunderwood Poker (22377) | 42.5 DPS · +13 Agility · +6 Stamina | Quest: The Perfect Poison
+Weapons/Main Hand: Felstriker (12590) | 45.6 DPS | Warchief Rend Blackhand — Blackrock Spire
+Weapons/Main Hand: Ravenholdt Slicer (22378) | 42.7 DPS · +26 Attack Power · +6 Stamina | Quest: The Perfect Poison
+Weapons/Main Hand: Tooth of the Matriarch (280021) | 41.5 DPS · +10 Agility · +7 Critical Strike · +7 Nature Resistance | Direhorn Matriarch
+Weapons/Off Hand: Tooth of the Matriarch (280021) | 41.5 DPS · +10 Agility · +7 Critical Strike · +7 Nature Resistance | Direhorn Matriarch
+Weapons/Off Hand: Ravenholdt Slicer (22378) | 42.7 DPS · +26 Attack Power · +6 Stamina | Quest: The Perfect Poison
+Weapons/Off Hand: Shadowblade (2163) | 38.9 DPS · +10 Hit · +5 Agility | World drop: the auction house is quickest
+Ranged: Fahrad's Reloading Repeater (22347) | 33.3 DPS · +10 Hit · +4 Agility | Quest: The Perfect Poison
+Ranged: Satyr's Bow (18323) | 29.8 DPS · +10 Hit · +4 Attack Power · +6 Attack Power Vs Elementals | Zevrim Thornhoof — Dire Maul
+Ranged: Blackcrow (12651) | 30.3 DPS · +9 Hit · +3 Agility | Shadow Hunter Vosh'gajin — Blackrock Spire
+Ranged: Deep Jungle Rifle (280020) | 32.3 DPS · +5 Hit · +14 Attack Power | Thunderhoof
+Ranged: Precisely Calibrated Boomstick (2100) | 27.8 DPS · +7 Agility · +7 Critical Strike | World drop: the auction house is quickest
+Ranged: Ancient Bone Bow (18680) | 31.3 DPS · +11 Agility | Scholomance · Instructor Malicia — Scholomance
+=== assassination (level 60, dungeons PvE, faction default)
+Head: Mask of the Unforgiven (13404) | +20 Hit · +14 Critical Strike · +13 Stamina | The Unforgiven — Stratholme
+Head: Eye of Rend (12587) | +21 Critical Strike · +5 Hit · +15 Strength | Warchief Rend Blackhand — Blackrock Spire
+Head: Scarlet Executioner's Guise (284086) | +15 Hit · +24 Strength | Scarlet Executioner — Western Plaguelands
+Head: Ragefury Eyepatch (11735) | +28 Critical Strike · +6 Strength · +10 Stamina | Hurley Blackbreath — Blackrock Depths
+Head: Ebon Mask (19984) | +14 Critical Strike · +36 Attack Power · +14 Stamina | Quest: The Azure Key
+Head: Deathmaw's Guise (282049) | +14 Critical Strike · +16 Agility · +6 Stamina | Deathmaw — Burning Steppes
+Neck: Beads of Ogre Might (22150) | +10 Hit · +24 Attack Power · +7 Stamina | Quest: Falrin's Vendetta
+Neck: Mark of Fordring (15411) | +14 Critical Strike · +26 Attack Power | Quest: In Dreams
+Neck: Amulet of the Darkmoon (19491) | +19 Agility · +10 Strength · +10 Stamina | Quest: 1200 Tickets - Amulet of the Darkmoon · Gelvas Grimegate
+Neck: Horn of Ve'han (275736) | +13 Hit · +10 Stamina | Quest: Work Well Done
+Neck: Star of Mystaria (12103) | +13 Hit · +7 Stamina | Balnazzar — Stratholme
+Neck: Sentimental Locket (276740) | +10 Hit · +7 Strength · +9 Shadow Resistance | Katerina the Cleaner
+Shoulder: Truestrike Shoulders (12927) | +15 Hit · +24 Attack Power · +10 Stamina | Pyroguard Emberseer — Blackrock Spire
+Shoulder: Wyrmhide Spaulders (12082) | +15 Hit · +12 Attack Power · +18 Attack Power Vs Dragonkin | Quest: A Taste of Flame
+Shoulder: Shadowcraft Spaulders (16708) | +22 Agility · +2 Hit · +9 Stamina | Cannon Master Willey — Stratholme
+Shoulder: Death's Clutch (14503) | +6 Hit · +10 Agility · +10 Strength | Ras Frostwhisper — Scholomance
+Shoulder: Wyrmtongue Shoulders (13358) | +23 Agility · +10 Stamina | Balnazzar — Stratholme
+Shoulder: Spaulders of the Unseen (13116) | +22 Agility · +7 Stamina | World drop: the auction house is quickest
+Back: Earthweave Cloak (21187) | +10 Hit · +15 Agility | Quest: Volunteer's Battlegear
+Back: Cape of the Black Baron (13340) | +15 Agility · +20 Attack Power | Baron Rivendare — Stratholme
+Back: Windserpent Scaled Cloak (284866) | +10 Agility · +5 Hit | Arash-ethis — Feralas
+Back: Cloak of Flames (3475) | +10 Hit · +7 Fire Resistance | World drop: the auction house is quickest
+Back: Shadow Prowler's Cloak (22269) | +16 Agility · +9 Stamina | General Drakkisath — Blackrock Spire
+Back: Blackveil Cape (11626) | +14 Agility · +6 Strength | High Interrogator Gerstahn — Blackrock Depths
+Chest: Shadowcraft Tunic (16721) | +26 Agility · +8 Hit · +13 Stamina | General Drakkisath — Blackrock Spire
+Chest: Tombstone Breastplate (13944) | +28 Critical Strike · +12 Strength · +12 Stamina | Darkmaster Gandling — Scholomance
+Chest: Robes of Dark Summons (280057) | +18 Hit · +14 Stamina | Impaan the Imprisoner
+Chest: Nightbrace Tunic (12603) | +50 Attack Power · +6 Agility · +10 Stamina · +10 Fire Resistance · +10 Shadow | Resistance
+Chest: Defias Enforcer's Chest (287020) | +22 Agility · +14 Strength · +11 Stamina | World drop
+Chest: Cadaverous Armor (14637) | +60 Attack Power · +10 Stamina | Scholomance · Instructor Malicia — Scholomance
+Wrist: Bracers of the Eclipse (18375) | +24 Attack Power · +10 Agility · +9 Stamina | Prince Tortheldrin — Dire Maul
+Wrist: Blackmist Armguards (12966) | +10 Hit · +5 Strength · +13 Stamina · +7 Shadow Resistance | The Beast — Blackrock Spire
+Wrist: Rockfury Bracers (21186) | +10 Hit · +7 Stamina | Quest: Stalwart's Battlegear
+Wrist: Deepfury Bracers (13120) | +15 Agility · +4 Strength · +4 Stamina | World drop: the auction house is quickest
+Wrist: Arena Wristguards (18709) | +14 Critical Strike | World drop
+Wrist: Shadowcraft Bracers (16710) | +15 Agility · +7 Stamina | Blackrock Spire · Instructor Malicia — Blackrock Spire
+Hands: Devilsaur Gauntlets (15063) | +14 Critical Strike · +28 Attack Power · +9 Stamina | Leatherworking · Recipe to find
+Hands: Gordok's Gloves (18368) | +14 Critical Strike · +9 Agility · +10 Stamina | Dire Maul · Quest: Unfinished Gordok Business
+Hands: Gargoyle Slashers (13957) | +14 Critical Strike · +10 Strength · +12 Stamina · +18 Attack Power Vs Undead | Kirtonos the Herald — Scholomance
+Hands: Cadaverous Gloves (14640) | +44 Attack Power · +9 Stamina | Scholomance · Instructor Malicia — Scholomance
+Hands: Skul's Fingerbone Claws (13395) | +42 Attack Power · +10 Stamina | Skul — Stratholme
+Hands: Panic Hands (260211) | +13 Agility · +13 Strength · +13 Stamina | Azshara
+Waist: Highlander's Leather Girdle (20115) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Waist: Serpentine Sash (13118) | +14 Agility · +9 Strength · +14 Stamina | World drop: the auction house is quickest
+Waist: Prowler's Leather Waistguard (252473) | +12 Agility · +14 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Defiler's Leather Girdle (20193) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Rutherford Twing — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Waist: Serpentine Sash (13118) | +14 Agility · +9 Strength · +14 Stamina | World drop: the auction house is quickest
+Waist: Prowler's Leather Waistguard (252473) | +12 Agility · +14 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Legs: Blademaster Leggings (12963) | +10 Hit · +14 Critical Strike · +24 Attack Power | The Beast — Blackrock Spire
+Legs: Devilsaur Leggings (15062) | +46 Attack Power · +14 Critical Strike · +12 Stamina | Leatherworking · Recipe to find
+Legs: Defias Enforcer's Legguards (276746) | +20 Agility · +10 Hit · +16 Fire Resistance | Blazeroar
+Legs: Warbear Woolies (15065) | +18 Agility · +28 Strength · +12 Stamina | Leatherworking · Recipe to find
+Legs: Shadowcraft Pants (16709) | +25 Agility · +14 Stamina | Baron Rivendare — Stratholme
+Legs: Cadaverous Leggings (14638) | +52 Attack Power · +18 Stamina | Scholomance · Instructor Malicia — Scholomance
+Feet: Apprentice's Protective Treads (280078) | +14 Critical Strike · +11 Agility · +12 Stamina | Gortek the Apprentice
+Feet: Shadowcraft Boots (16711) | +21 Agility · +3 Hit · +9 Stamina | Rattlegore — Scholomance
+Feet: Dunestalker's Boots (20715) | +19 Agility · +9 Strength · +10 Stamina | Quest: Armaments of War
+Feet: Swiftwalker Boots (12553) | +21 Agility · +5 Strength · +8 Stamina | Blackrock Depths · Princess Moira Bronzebeard — Blackrock Depths
+Feet: Albino Crocscale Boots (17728) | +20 Agility · +5 Stamina · +6 Nature Resistance | Rotgrip — Maraudon
+Feet: Pads of the Dread Wolf (13210) | +40 Attack Power · +14 Stamina | Halycon — Blackrock Spire
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Magni's Will (12548) | +14 Critical Strike · +7 Strength · +8 Stamina | Quest: The Princess's Surprise · Quest: The Fate of the Kingdom
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Don Mauricio's Band of Domination (22433) | +14 Critical Strike · +10 Stamina | Darkmaster Gandling — Scholomance
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Don Mauricio's Band of Domination (22433) | +14 Critical Strike · +10 Stamina | Darkmaster Gandling — Scholomance
+Finger: Ring of Demonic Guile (18314) | +10 Hit | Alzzin the Wildshaper — Dire Maul
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cleansed Vilebranch Medallion (270275) | +7 Hit | Quest: Saving Sharpbeak
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Cleansed Vilebranch Icon (270276) | +7 Critical Strike | Quest: Saving Sharpbeak
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Jewel of the Guard Captain (270225) | +7 Critical Strike | Quest: Job Opening: Guard Captain of Revantusk Village
+Trinket: Thaelemaches' Talisman (276337) | +18 Attack Power · +6 Shadow Resistance · +6 Fire Resistance | Quest: Blind Vengeance
+Weapons: Felstriker (12590) | 45.6 DPS | Warchief Rend Blackhand — Blackrock Spire
+Weapons: Tooth of the Matriarch (280021) | 41.5 DPS · +10 Agility · +7 Critical Strike · +7 Nature Resistance | Direhorn Matriarch
+Weapons/Main Hand: The Thunderwood Poker (22377) | 42.5 DPS · +13 Agility · +6 Stamina | Quest: The Perfect Poison
+Weapons/Main Hand: King Mosh's Tooth (286613) | 40.6 DPS · +11 Agility · +13 Attack Power · +15 Attack Power Vs Beasts | King Mosh — Un'Goro Crater
+Weapons/Main Hand: Scarlet Kris (5267) | 41.3 DPS · +10 Agility · +10 Stamina | World drop: the auction house is quickest
+Weapons/Off Hand: The Thunderwood Poker (22377) | 42.5 DPS · +13 Agility · +6 Stamina | Quest: The Perfect Poison
+Weapons/Off Hand: Ravenholdt Slicer (22378) | 42.7 DPS · +26 Attack Power · +6 Stamina | Quest: The Perfect Poison
+Weapons/Off Hand: Cinderedge Crescent (280029) | 41.3 DPS · +7 Critical Strike · +14 Attack Power | World drop: the auction house is quickest
+Ranged: Fahrad's Reloading Repeater (22347) | 33.3 DPS · +10 Hit · +4 Agility | Quest: The Perfect Poison
+Ranged: Satyr's Bow (18323) | 29.8 DPS · +10 Hit · +4 Attack Power · +6 Attack Power Vs Elementals | Zevrim Thornhoof — Dire Maul
+Ranged: Blackcrow (12651) | 30.3 DPS · +9 Hit · +3 Agility | Shadow Hunter Vosh'gajin — Blackrock Spire
+Ranged: Deep Jungle Rifle (280020) | 32.3 DPS · +5 Hit · +14 Attack Power | Thunderhoof
+Ranged: Precisely Calibrated Boomstick (2100) | 27.8 DPS · +7 Critical Strike · +7 Agility | World drop: the auction house is quickest
+Ranged: Truesight Rifle (280083) | 29.3 DPS · +7 Critical Strike · +8 Attack Power | Sabella No-Eyes
+=== subtlety (level 60, dungeons PvE, faction default)
+Head: Mask of the Unforgiven (13404) | +20 Hit · +14 Critical Strike · +13 Stamina | The Unforgiven — Stratholme
+Head: Eye of Rend (12587) | +21 Critical Strike · +5 Hit · +15 Strength | Warchief Rend Blackhand — Blackrock Spire
+Head: Scarlet Executioner's Guise (284086) | +15 Hit · +24 Strength | Scarlet Executioner — Western Plaguelands
+Head: Ebon Mask (19984) | +36 Attack Power · +14 Critical Strike · +14 Stamina | Quest: The Azure Key
+Head: Ragefury Eyepatch (11735) | +28 Critical Strike · +6 Strength · +10 Stamina | Hurley Blackbreath — Blackrock Depths
+Head: Deathmaw's Guise (282049) | +16 Agility · +14 Critical Strike · +6 Stamina | Deathmaw — Burning Steppes
+Neck: Beads of Ogre Might (22150) | +10 Hit · +24 Attack Power · +7 Stamina | Quest: Falrin's Vendetta
+Neck: Mark of Fordring (15411) | +14 Critical Strike · +26 Attack Power | Quest: In Dreams
+Neck: Amulet of the Darkmoon (19491) | +19 Agility · +10 Strength · +10 Stamina | Quest: 1200 Tickets - Amulet of the Darkmoon · Gelvas Grimegate
+Neck: Horn of Ve'han (275736) | +13 Hit · +10 Stamina | Quest: Work Well Done
+Neck: Star of Mystaria (12103) | +13 Hit · +7 Stamina | Balnazzar — Stratholme
+Neck: Sentimental Locket (276740) | +10 Hit · +7 Strength · +9 Shadow Resistance | Katerina the Cleaner
+Shoulder: Truestrike Shoulders (12927) | +15 Hit · +24 Attack Power · +10 Stamina | Pyroguard Emberseer — Blackrock Spire
+Shoulder: Wyrmhide Spaulders (12082) | +15 Hit · +12 Attack Power · +18 Attack Power Vs Dragonkin | Quest: A Taste of Flame
+Shoulder: Shadowcraft Spaulders (16708) | +22 Agility · +2 Hit · +9 Stamina | Cannon Master Willey — Stratholme
+Shoulder: Death's Clutch (14503) | +6 Hit · +10 Agility · +10 Strength | Ras Frostwhisper — Scholomance
+Shoulder: Wyrmtongue Shoulders (13358) | +23 Agility · +10 Stamina | Balnazzar — Stratholme
+Shoulder: Spaulders of the Unseen (13116) | +22 Agility · +7 Stamina | World drop: the auction house is quickest
+Back: Earthweave Cloak (21187) | +10 Hit · +15 Agility | Quest: Volunteer's Battlegear
+Back: Cape of the Black Baron (13340) | +15 Agility · +20 Attack Power | Baron Rivendare — Stratholme
+Back: Windserpent Scaled Cloak (284866) | +10 Agility · +5 Hit | Arash-ethis — Feralas
+Back: Cloak of Flames (3475) | +10 Hit · +7 Fire Resistance | World drop: the auction house is quickest
+Back: Shadow Prowler's Cloak (22269) | +16 Agility · +9 Stamina | General Drakkisath — Blackrock Spire
+Back: Blackveil Cape (11626) | +14 Agility · +6 Strength | High Interrogator Gerstahn — Blackrock Depths
+Chest: Shadowcraft Tunic (16721) | +26 Agility · +8 Hit · +13 Stamina | General Drakkisath — Blackrock Spire
+Chest: Tombstone Breastplate (13944) | +28 Critical Strike · +12 Strength · +12 Stamina | Darkmaster Gandling — Scholomance
+Chest: Robes of Dark Summons (280057) | +18 Hit · +14 Stamina | Impaan the Imprisoner
+Chest: Nightbrace Tunic (12603) | +50 Attack Power · +6 Agility · +10 Stamina · +10 Fire Resistance · +10 Shadow | Resistance
+Chest: Defias Enforcer's Chest (287020) | +22 Agility · +14 Strength · +11 Stamina | World drop
+Chest: Cadaverous Armor (14637) | +60 Attack Power · +10 Stamina | Scholomance · Instructor Malicia — Scholomance
+Wrist: Bracers of the Eclipse (18375) | +24 Attack Power · +10 Agility · +9 Stamina | Prince Tortheldrin — Dire Maul
+Wrist: Blackmist Armguards (12966) | +10 Hit · +5 Strength · +13 Stamina · +7 Shadow Resistance | The Beast — Blackrock Spire
+Wrist: Rockfury Bracers (21186) | +10 Hit · +7 Stamina | Quest: Stalwart's Battlegear
+Wrist: Deepfury Bracers (13120) | +15 Agility · +4 Strength · +4 Stamina | World drop: the auction house is quickest
+Wrist: Shadowcraft Bracers (16710) | +15 Agility · +7 Stamina | Blackrock Spire · Instructor Malicia — Blackrock Spire
+Wrist: Wristguards of Renown (22204) | +10 Agility · +9 Strength · +10 Stamina | Emperor Dagran Thaurissan — Blackrock Depths
+Hands: Devilsaur Gauntlets (15063) | +14 Critical Strike · +28 Attack Power · +9 Stamina | Leatherworking · Recipe to find
+Hands: Gordok's Gloves (18368) | +14 Critical Strike · +9 Agility · +10 Stamina | Dire Maul · Quest: Unfinished Gordok Business
+Hands: Cadaverous Gloves (14640) | +44 Attack Power · +9 Stamina | Scholomance · Instructor Malicia — Scholomance
+Hands: Skul's Fingerbone Claws (13395) | +42 Attack Power · +10 Stamina | Skul — Stratholme
+Hands: Panic Hands (260211) | +13 Agility · +13 Strength · +13 Stamina | Azshara
+Hands: Gargoyle Slashers (13957) | +14 Critical Strike · +10 Strength · +12 Stamina · +18 Attack Power Vs Undead | Kirtonos the Herald — Scholomance
+Waist: Highlander's Leather Girdle (20115) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Waist: Serpentine Sash (13118) | +14 Agility · +9 Strength · +14 Stamina | World drop: the auction house is quickest
+Waist: Prowler's Leather Waistguard (252473) | +12 Agility · +14 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Defiler's Leather Girdle (20193) | +14 Critical Strike · +20 Attack Power · +6 Stamina | Rutherford Twing — Arathi Highlands · Vendor · Needs reputation
+Waist: Skulker's Leather Waistguard (252474) | +14 Agility · +12 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Waist: Cloudrunner Girdle (13252) | +14 Agility · +13 Strength | Quartermaster Zigris — Blackrock Spire
+Waist: Cadaverous Belt (14636) | +40 Attack Power · +12 Stamina | Scholomance · Instructor Malicia — Scholomance
+Waist: Serpentine Sash (13118) | +14 Agility · +9 Strength · +14 Stamina | World drop: the auction house is quickest
+Waist: Prowler's Leather Waistguard (252473) | +12 Agility · +14 Strength · +10 Stamina | Leatherworking: only its crafter can wear it
+Legs: Blademaster Leggings (12963) | +10 Hit · +14 Critical Strike · +24 Attack Power | The Beast — Blackrock Spire
+Legs: Defias Enforcer's Legguards (276746) | +20 Agility · +10 Hit · +16 Fire Resistance | Blazeroar
+Legs: Devilsaur Leggings (15062) | +46 Attack Power · +14 Critical Strike · +12 Stamina | Leatherworking · Recipe to find
+Legs: Warbear Woolies (15065) | +18 Agility · +28 Strength · +12 Stamina | Leatherworking · Recipe to find
+Legs: Shadowcraft Pants (16709) | +25 Agility · +14 Stamina | Baron Rivendare — Stratholme
+Legs: Cadaverous Leggings (14638) | +52 Attack Power · +18 Stamina | Scholomance · Instructor Malicia — Scholomance
+Feet: Shadowcraft Boots (16711) | +21 Agility · +3 Hit · +9 Stamina | Rattlegore — Scholomance
+Feet: Apprentice's Protective Treads (280078) | +14 Critical Strike · +11 Agility · +12 Stamina | Gortek the Apprentice
+Feet: Dunestalker's Boots (20715) | +19 Agility · +9 Strength · +10 Stamina | Quest: Armaments of War
+Feet: Swiftwalker Boots (12553) | +21 Agility · +5 Strength · +8 Stamina | Blackrock Depths · Princess Moira Bronzebeard — Blackrock Depths
+Feet: Albino Crocscale Boots (17728) | +20 Agility · +5 Stamina · +6 Nature Resistance | Rotgrip — Maraudon
+Feet: Pads of the Dread Wolf (13210) | +40 Attack Power · +14 Stamina | Halycon — Blackrock Spire
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Magni's Will (12548) | +14 Critical Strike · +7 Strength · +8 Stamina | Quest: The Princess's Surprise · Quest: The Fate of the Kingdom
+Finger: Ring of Demonic Guile (18314) | +10 Hit | Alzzin the Wildshaper — Dire Maul
+Finger: Tarnished Elven Ring (18500) | +10 Hit · +10 Agility · +10 Arcane Resistance | Dire Maul · Gordok Tribute Chest
+Finger: Blackstone Ring (17713) | +10 Hit · +20 Attack Power · +6 Stamina | Princess Theradras — Maraudon
+Finger: Venomvessel Ring (280015) | +11 Hit · +11 Stamina | Venomridge
+Finger: Might of Cenarius (21189) | +10 Hit · +4 Physical Damage · +8 Stamina | Quest: Stalwart's Battlegear
+Finger: Painweaver Band (13098) | +14 Critical Strike · +12 Attack Power · +9 Stamina | General Drakkisath — Blackrock Spire
+Finger: Ring of Demonic Guile (18314) | +10 Hit | Alzzin the Wildshaper — Dire Maul
+Finger: Band of the Cultist (20721) | +12 Agility · +7 Strength · +12 Stamina | World drop
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cleansed Vilebranch Medallion (270275) | +7 Hit | Quest: Saving Sharpbeak
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Thaelemaches' Talisman (276337) | +18 Attack Power · +6 Shadow Resistance · +6 Fire Resistance | Quest: Blind Vengeance
+Trinket: Smolderweb's Eye (13213) | +10 Hit · +5 Nature Resistance | Mother Smolderweb — Blackrock Spire
+Trinket: Royal Seal of Eldre'Thalas (18465) | +10 Hit · +15 Nature Resistance · +45 Attack Power Vs Humanoids | Quest: Garona: A Study on Stealth and Treachery
+Trinket: Behemoth Bones (280065) | +34 Attack Power | Blackmaw Behemoth
+Trinket: Rune of the Guard Captain (19120) | +7 Hit | Quest: Job Opening: Guard Captain of Revantusk Village · Primal Torntusk — The
+Trinket: Cannonball Runner (13382) | +5 Hit | Cannon Master Willey — Stratholme
+Trinket: Thaelemaches' Talisman (276337) | +18 Attack Power · +6 Shadow Resistance · +6 Fire Resistance | Quest: Blind Vengeance
+Trinket: Winds of Tanaris (286556) | +16 Attack Power · +12 Nature Resistance | Soul of Tanaris — Tanaris
+Weapons: Felstriker (12590) | 45.6 DPS | Warchief Rend Blackhand — Blackrock Spire
+Weapons: The Thunderwood Poker (22377) | 42.5 DPS · +13 Agility · +6 Stamina | Quest: The Perfect Poison
+Weapons/Main Hand: Tooth of the Matriarch (280021) | 41.5 DPS · +10 Agility · +7 Critical Strike · +7 Nature Resistance | Direhorn Matriarch
+Weapons/Main Hand: King Mosh's Tooth (286613) | 40.6 DPS · +11 Agility · +13 Attack Power · +15 Attack Power Vs Beasts | King Mosh — Un'Goro Crater
+Weapons/Main Hand: Scarlet Kris (5267) | 41.3 DPS · +10 Agility · +10 Stamina | World drop: the auction house is quickest
+Weapons/Off Hand: Tooth of the Matriarch (280021) | 41.5 DPS · +10 Agility · +7 Critical Strike · +7 Nature Resistance | Direhorn Matriarch
+Weapons/Off Hand: Ravenholdt Slicer (22378) | 42.7 DPS · +26 Attack Power · +6 Stamina | Quest: The Perfect Poison
+Weapons/Off Hand: King Mosh's Tooth (286613) | 40.6 DPS · +11 Agility · +13 Attack Power · +15 Attack Power Vs Beasts | King Mosh — Un'Goro Crater
+Ranged: Fahrad's Reloading Repeater (22347) | 33.3 DPS · +10 Hit · +4 Agility | Quest: The Perfect Poison
+Ranged: Satyr's Bow (18323) | 29.8 DPS · +10 Hit · +4 Attack Power · +6 Attack Power Vs Elementals | Zevrim Thornhoof — Dire Maul
+Ranged: Blackcrow (12651) | 30.3 DPS · +9 Hit · +3 Agility | Shadow Hunter Vosh'gajin — Blackrock Spire
+Ranged: Deep Jungle Rifle (280020) | 32.3 DPS · +5 Hit · +14 Attack Power | Thunderhoof
+Ranged: Precisely Calibrated Boomstick (2100) | 27.8 DPS · +7 Agility · +7 Critical Strike | World drop: the auction house is quickest
+Ranged: Ancient Bone Bow (18680) | 31.3 DPS · +11 Agility | Scholomance · Instructor Malicia — Scholomance

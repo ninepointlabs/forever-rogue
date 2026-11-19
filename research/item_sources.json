@@ -1,0 +1,2077 @@
+{
+ "items": {
+  "7298": {
+   "quests": [
+    {
+     "name": "Destiny Calls",
+     "quest_id": 2242,
+     "choice": false
+    },
+    {
+     "name": "Onin's Report",
+     "quest_id": 2239,
+     "choice": false
+    },
+    {
+     "name": "Snatch and Grab",
+     "quest_id": 2206,
+     "choice": false
+    },
+    {
+     "name": "The Deathstalkers (Part 4)",
+     "quest_id": 1978,
+     "choice": false
+    },
+    {
+     "name": "The Shattered Hand (Part 2)",
+     "quest_id": 1858,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/7298",
+   "checked": "2026-11-19"
+  },
+  "271204": {
+   "min_level": 15,
+   "drops": [
+    {
+     "npc": "The Baron",
+     "npc_id": 250660,
+     "chance": "31.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/271204",
+   "checked": "2026-11-19"
+  },
+  "6220": {
+   "min_level": 23,
+   "drops": [
+    {
+     "npc": "Archmage Arugal",
+     "npc_id": 4275,
+     "chance": "29.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6220",
+   "checked": "2026-11-19"
+  },
+  "273647": {
+   "min_level": 21,
+   "drops": [
+    {
+     "npc": "Wolf Master Nandos",
+     "npc_id": 3927,
+     "chance": "30.4%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/273647",
+   "checked": "2026-11-19"
+  },
+  "6414": {
+   "quests": [
+    {
+     "name": "Arugal Must Die",
+     "quest_id": 1014,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6414",
+   "checked": "2026-11-19"
+  },
+  "280805": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280805",
+   "checked": "2026-11-19"
+  },
+  "281314": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/281314",
+   "checked": "2026-11-19"
+  },
+  "6681": {
+   "min_level": 27,
+   "drops": [
+    {
+     "npc": "Aggem Thorncurse",
+     "npc_id": 4424,
+     "chance": "31.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6681",
+   "checked": "2026-11-19"
+  },
+  "274160": {
+   "min_level": 31,
+   "drops": [
+    {
+     "npc": "Agathelos the Raging",
+     "npc_id": 4422,
+     "chance": "32.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/274160",
+   "checked": "2026-11-19"
+  },
+  "6696": {
+   "min_level": 29,
+   "drops": [
+    {
+     "npc": "Blind Hunter",
+     "npc_id": 4425,
+     "chance": "29.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6696",
+   "checked": "2026-11-19"
+  },
+  "273033": {
+   "min_level": 26,
+   "drops": [
+    {
+     "npc": "Atrexis the Grave Knight",
+     "npc_id": 247126,
+     "chance": "31.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/273033",
+   "checked": "2026-11-19"
+  },
+  "10761": {
+   "min_level": 38,
+   "drops": [
+    {
+     "npc": "Amnennar the Coldbringer",
+     "npc_id": 7358,
+     "chance": "30.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10761",
+   "checked": "2026-11-19"
+  },
+  "17752": {
+   "min_level": 45,
+   "drops": [
+    {
+     "npc": "Lord Vyletongue",
+     "npc_id": 12236,
+     "chance": "20.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17752",
+   "checked": "2026-11-19"
+  },
+  "10403": {
+   "min_level": 17,
+   "drops": [
+    {
+     "npc": "Captain Greenskin",
+     "npc_id": 647,
+     "chance": "31.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10403",
+   "checked": "2026-11-19"
+  },
+  "10400": {
+   "min_level": 14,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10400",
+   "checked": "2026-11-19"
+  },
+  "2041": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2041",
+   "checked": "2026-11-19"
+  },
+  "273047": {
+   "min_level": 28,
+   "drops": [
+    {
+     "npc": "Unstable Sentinel",
+     "npc_id": 246017,
+     "chance": "32.4%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/273047",
+   "checked": "2026-11-19"
+  },
+  "273041": {
+   "min_level": 28,
+   "drops": [
+    {
+     "npc": "Mana Devourer",
+     "npc_id": 246008,
+     "chance": "30.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/273041",
+   "checked": "2026-11-19"
+  },
+  "273054": {
+   "min_level": 28,
+   "drops": [
+    {
+     "npc": "Lyn the Ignored",
+     "npc_id": 247032,
+     "chance": "32.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/273054",
+   "checked": "2026-11-19"
+  },
+  "10774": {
+   "min_level": 37,
+   "drops": [
+    {
+     "npc": "Glutton",
+     "npc_id": 8567,
+     "chance": "34.3%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10774",
+   "checked": "2026-11-19"
+  },
+  "10760": {
+   "min_level": 37,
+   "drops": [
+    {
+     "npc": "Plaguemaw the Rotting",
+     "npc_id": 7356,
+     "chance": "34.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10760",
+   "checked": "2026-11-19"
+  },
+  "274599": {
+   "min_level": 34,
+   "drops": [
+    {
+     "npc": "Zul'Alai",
+     "npc_id": 258905,
+     "chance": "33.3%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/274599",
+   "checked": "2026-11-19"
+  },
+  "9533": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/9533",
+   "checked": "2026-11-19"
+  },
+  "9479": {
+   "min_level": 44,
+   "drops": [
+    {
+     "npc": "Ruuzlu",
+     "npc_id": 7797,
+     "chance": "32.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/9479",
+   "checked": "2026-11-19"
+  },
+  "17728": {
+   "min_level": 48,
+   "drops": [
+    {
+     "npc": "Rotgrip",
+     "npc_id": 13596,
+     "chance": "32.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17728",
+   "checked": "2026-11-19"
+  },
+  "17749": {
+   "min_level": 46,
+   "drops": [
+    {
+     "npc": "Razorlash",
+     "npc_id": 12258,
+     "chance": "29.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17749",
+   "checked": "2026-11-19"
+  },
+  "17713": {
+   "min_level": 49,
+   "drops": [
+    {
+     "npc": "Princess Theradras",
+     "npc_id": 12201,
+     "chance": "46.5%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17713",
+   "checked": "2026-11-19"
+  },
+  "19120": {
+   "sold_by": [
+    {
+     "npc": "Primal Torntusk",
+     "npc_id": 14736
+    }
+   ],
+   "quests": [
+    {
+     "name": "Job Opening: Guard Captain of Revantusk Village",
+     "quest_id": 7862,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/19120",
+   "checked": "2026-11-19"
+  },
+  "270275": {
+   "quests": [
+    {
+     "name": "Saving Sharpbeak",
+     "quest_id": 2994,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/270275",
+   "checked": "2026-11-19"
+  },
+  "5191": {
+   "min_level": 19,
+   "drops": [
+    {
+     "npc": "Edwin VanCleef",
+     "npc_id": 639,
+     "chance": "20.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/5191",
+   "checked": "2026-11-19"
+  },
+  "5192": {
+   "min_level": 17,
+   "drops": [
+    {
+     "npc": "Mr. Smite",
+     "npc_id": 646,
+     "chance": "23.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/5192",
+   "checked": "2026-11-19"
+  },
+  "6633": {
+   "min_level": 18,
+   "drops": [
+    {
+     "npc": "Razorclaw the Butcher",
+     "npc_id": 3886,
+     "chance": "31.4%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6633",
+   "checked": "2026-11-19"
+  },
+  "1292": {
+   "min_level": 20,
+   "drops": [
+    {
+     "npc": "Razorclaw the Butcher",
+     "npc_id": 3886,
+     "chance": "32.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/1292",
+   "checked": "2026-11-19"
+  },
+  "7756": {
+   "min_level": 31,
+   "drops": [
+    {
+     "npc": "Houndmaster Loksey",
+     "npc_id": 3974,
+     "chance": "31.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/7756",
+   "checked": "2026-11-19"
+  },
+  "6829": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6829",
+   "checked": "2026-11-19"
+  },
+  "6802": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6802",
+   "checked": "2026-11-19"
+  },
+  "10823": {
+   "quests": [
+    {
+     "name": "Bring the End",
+     "quest_id": 3341,
+     "choice": false
+    },
+    {
+     "name": "Bring the Light",
+     "quest_id": 3636,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10823",
+   "checked": "2026-11-19"
+  },
+  "10772": {
+   "min_level": 37,
+   "drops": [
+    {
+     "npc": "Glutton",
+     "npc_id": 8567,
+     "chance": "34.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/10772",
+   "checked": "2026-11-19"
+  },
+  "274598": {
+   "min_level": 34,
+   "drops": [
+    {
+     "npc": "Zul'Alai",
+     "npc_id": 258905,
+     "chance": "32.5%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/274598",
+   "checked": "2026-11-19"
+  },
+  "274643": {
+   "min_level": 43,
+   "drops": [
+    {
+     "npc": "Nekrum Gutchewer",
+     "npc_id": 7796,
+     "chance": "27.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/274643",
+   "checked": "2026-11-19"
+  },
+  "9478": {
+   "min_level": 45,
+   "drops": [
+    {
+     "npc": "Chief Ukorz Sandscalp",
+     "npc_id": 7267,
+     "chance": "29.5%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/9478",
+   "checked": "2026-11-19"
+  },
+  "9639": {
+   "min_level": 45,
+   "drops": [
+    {
+     "npc": "Antu'sul",
+     "npc_id": 8127,
+     "chance": "29.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/9639",
+   "checked": "2026-11-19"
+  },
+  "17705": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17705",
+   "checked": "2026-11-19"
+  },
+  "14151": {
+   "min_level": 13,
+   "drops": [
+    {
+     "npc": "Jergosh the Invoker",
+     "npc_id": 11518,
+     "chance": "32.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14151",
+   "checked": "2026-11-19"
+  },
+  "6448": {
+   "min_level": 16,
+   "drops": [
+    {
+     "npc": "Skum",
+     "npc_id": 3674,
+     "chance": "30.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6448",
+   "checked": "2026-11-19"
+  },
+  "5197": {
+   "min_level": 16,
+   "drops": [
+    {
+     "npc": "Cookie",
+     "npc_id": 645,
+     "chance": "31.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/5197",
+   "checked": "2026-11-19"
+  },
+  "5196": {
+   "min_level": 17,
+   "drops": [
+    {
+     "npc": "Mr. Smite",
+     "npc_id": 646,
+     "chance": "24%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/5196",
+   "checked": "2026-11-19"
+  },
+  "1937": {
+   "min_level": 18,
+   "drops": [
+    {
+     "npc": "Sneed's Shredder",
+     "npc_id": 642,
+     "chance": "28.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/1937",
+   "checked": "2026-11-19"
+  },
+  "16886": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16886",
+   "checked": "2026-11-19"
+  },
+  "271664": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/271664",
+   "checked": "2026-11-19"
+  },
+  "2912": {
+   "min_level": 27,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2912",
+   "checked": "2026-11-19"
+  },
+  "934": {
+   "min_level": 32,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/934",
+   "checked": "2026-11-19"
+  },
+  "279887": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/279887",
+   "checked": "2026-11-19"
+  },
+  "252504": {
+   "min_level": 20,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 100,
+    "reagents": [
+     {
+      "count": 4,
+      "name": "Shadowgem"
+     },
+     {
+      "count": 8,
+      "name": "Medium Leather"
+     },
+     {
+      "count": 2,
+      "name": "Fine Thread"
+     },
+     {
+      "count": 2,
+      "name": "Cured Medium Hide"
+     },
+     {
+      "count": 4,
+      "name": "Pristine Leather"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/252504",
+   "checked": "2026-11-19"
+  },
+  "6720": {
+   "quests": [
+    {
+     "name": "Frostmaw",
+     "quest_id": 1136,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/6720",
+   "checked": "2026-11-19"
+  },
+  "4252": {
+   "min_level": 23,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 115,
+    "reagents": [
+     {
+      "count": 12,
+      "name": "Medium Leather"
+     },
+     {
+      "count": 2,
+      "name": "Fine Thread"
+     },
+     {
+      "count": 1,
+      "name": "Elixir of Lesser Agility"
+     },
+     {
+      "count": 1,
+      "name": "Gray Dye"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/4252",
+   "checked": "2026-11-19"
+  },
+  "281634": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/281634",
+   "checked": "2026-11-19"
+  },
+  "2933": {
+   "quests": [
+    {
+     "name": "An Audience with the King",
+     "quest_id": 396,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2933",
+   "checked": "2026-11-19"
+  },
+  "275044": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/275044",
+   "checked": "2026-11-19"
+  },
+  "19159": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/19159",
+   "checked": "2026-11-19"
+  },
+  "2820": {
+   "sold_by": [
+    {
+     "npc": "Lotwil Veriatus",
+     "npc_id": 2921
+    },
+    {
+     "npc": "Rix Xizzix",
+     "npc_id": 214954
+    }
+   ],
+   "quests": [
+    {
+     "name": "This Is Going to Be Hard (Part 3)",
+     "quest_id": 778,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2820",
+   "checked": "2026-11-19"
+  },
+  "17774": {
+   "quests": [
+    {
+     "name": "The Pariah's Instructions",
+     "quest_id": 7067,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/17774",
+   "checked": "2026-11-19"
+  },
+  "11122": {
+   "sold_by": [
+    {
+     "npc": "Rix Xizzix",
+     "npc_id": 214954
+    }
+   ],
+   "quests": [
+    {
+     "name": "Gahz'rilla",
+     "quest_id": 2770,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/11122",
+   "checked": "2026-11-19"
+  },
+  "276738": {
+   "min_level": 49,
+   "drops": [
+    {
+     "npc": "Katerina the Cleaner",
+     "npc_id": 257016,
+     "chance": "33.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/276738",
+   "checked": "2026-11-19"
+  },
+  "13404": {
+   "min_level": 52,
+   "drops": [
+    {
+     "npc": "The Unforgiven",
+     "npc_id": 10516,
+     "chance": "15.3%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13404",
+   "checked": "2026-11-19"
+  },
+  "12587": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Warchief Rend Blackhand",
+     "npc_id": 10429,
+     "chance": "16.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12587",
+   "checked": "2026-11-19"
+  },
+  "284086": {
+   "min_level": 57,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/284086",
+   "checked": "2026-11-19"
+  },
+  "11735": {
+   "min_level": 52,
+   "drops": [
+    {
+     "npc": "Hurley Blackbreath",
+     "npc_id": 9537,
+     "chance": "26%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/11735",
+   "checked": "2026-11-19"
+  },
+  "19984": {
+   "quests": [
+    {
+     "name": "The Azure Key",
+     "quest_id": 8236,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/19984",
+   "checked": "2026-11-19"
+  },
+  "282049": {
+   "min_level": 50,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/282049",
+   "checked": "2026-11-19"
+  },
+  "22150": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22150",
+   "checked": "2026-11-19"
+  },
+  "15411": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/15411",
+   "checked": "2026-11-19"
+  },
+  "19491": {
+   "min_level": 60,
+   "sold_by": [
+    {
+     "npc": "Gelvas Grimegate",
+     "npc_id": 14828
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/19491",
+   "checked": "2026-11-19"
+  },
+  "275736": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/275736",
+   "checked": "2026-11-19"
+  },
+  "12103": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Grand Crusader Dathrohan",
+     "npc_id": 10812,
+     "chance": "18.3%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12103",
+   "checked": "2026-11-19"
+  },
+  "276740": {
+   "min_level": 49,
+   "drops": [
+    {
+     "npc": "Katerina the Cleaner",
+     "npc_id": 257016,
+     "chance": "35.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/276740",
+   "checked": "2026-11-19"
+  },
+  "12927": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Pyroguard Emberseer",
+     "npc_id": 9816,
+     "chance": "9.09%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12927",
+   "checked": "2026-11-19"
+  },
+  "12082": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12082",
+   "checked": "2026-11-19"
+  },
+  "16708": {
+   "min_level": 55,
+   "drops": [
+    {
+     "npc": "Cannon Master Willey",
+     "npc_id": 10997,
+     "chance": "19.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16708",
+   "checked": "2026-11-19"
+  },
+  "14503": {
+   "min_level": 57,
+   "drops": [
+    {
+     "npc": "Ras Frostwhisper",
+     "npc_id": 10508,
+     "chance": "15.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14503",
+   "checked": "2026-11-19"
+  },
+  "13358": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Grand Crusader Dathrohan",
+     "npc_id": 10812,
+     "chance": "15%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13358",
+   "checked": "2026-11-19"
+  },
+  "13116": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13116",
+   "checked": "2026-11-19"
+  },
+  "21187": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/21187",
+   "checked": "2026-11-19"
+  },
+  "13340": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Baron Rivendare",
+     "npc_id": 10440,
+     "chance": "16.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13340",
+   "checked": "2026-11-19"
+  },
+  "284866": {
+   "min_level": 46,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/284866",
+   "checked": "2026-11-19"
+  },
+  "3475": {
+   "min_level": 60,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/3475",
+   "checked": "2026-11-19"
+  },
+  "22269": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "General Drakkisath",
+     "npc_id": 10363,
+     "chance": "28.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22269",
+   "checked": "2026-11-19"
+  },
+  "11626": {
+   "min_level": 48,
+   "drops": [
+    {
+     "npc": "High Interrogator Gerstahn",
+     "npc_id": 9018,
+     "chance": "23.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/11626",
+   "checked": "2026-11-19"
+  },
+  "16721": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "General Drakkisath",
+     "npc_id": 10363,
+     "chance": "11.5%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16721",
+   "checked": "2026-11-19"
+  },
+  "13944": {
+   "min_level": 57,
+   "drops": [
+    {
+     "npc": "Darkmaster Gandling",
+     "npc_id": 1853,
+     "chance": "13.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13944",
+   "checked": "2026-11-19"
+  },
+  "280057": {
+   "min_level": 54,
+   "drops": [
+    {
+     "npc": "Impaan the Imprisoner",
+     "npc_id": 247206,
+     "chance": "34.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280057",
+   "checked": "2026-11-19"
+  },
+  "12603": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12603",
+   "checked": "2026-11-19"
+  },
+  "287020": {
+   "min_level": 49,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/287020",
+   "checked": "2026-11-19"
+  },
+  "14637": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14637",
+   "checked": "2026-11-19"
+  },
+  "18375": {
+   "min_level": 57,
+   "drops": [
+    {
+     "npc": "Prince Tortheldrin",
+     "npc_id": 11486,
+     "chance": "10.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18375",
+   "checked": "2026-11-19"
+  },
+  "12966": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "The Beast",
+     "npc_id": 10430,
+     "chance": "29.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12966",
+   "checked": "2026-11-19"
+  },
+  "21186": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/21186",
+   "checked": "2026-11-19"
+  },
+  "13120": {
+   "min_level": 50,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13120",
+   "checked": "2026-11-19"
+  },
+  "18709": {
+   "min_level": 45,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18709",
+   "checked": "2026-11-19"
+  },
+  "16710": {
+   "min_level": 52,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16710",
+   "checked": "2026-11-19"
+  },
+  "15063": {
+   "min_level": 53,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 265,
+    "reagents": [
+     {
+      "count": 30,
+      "name": "Rugged Leather"
+     },
+     {
+      "count": 1,
+      "name": "Rune Thread"
+     },
+     {
+      "count": 8,
+      "name": "Devilsaur Leather"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/15063",
+   "checked": "2026-11-19"
+  },
+  "18368": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18368",
+   "checked": "2026-11-19"
+  },
+  "13957": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Kirtonos the Herald",
+     "npc_id": 10506,
+     "chance": "17.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13957",
+   "checked": "2026-11-19"
+  },
+  "14640": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14640",
+   "checked": "2026-11-19"
+  },
+  "13395": {
+   "min_level": 55,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13395",
+   "checked": "2026-11-19"
+  },
+  "260211": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/260211",
+   "checked": "2026-11-19"
+  },
+  "20115": {
+   "min_level": 48,
+   "sold_by": [
+    {
+     "npc": "Samuel Hawke",
+     "npc_id": 15127
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/20115",
+   "checked": "2026-11-19"
+  },
+  "252474": {
+   "min_level": 50,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 250,
+    "reagents": [
+     {
+      "count": 8,
+      "name": "Spider's Silk"
+     },
+     {
+      "count": 12,
+      "name": "Rugged Leather"
+     },
+     {
+      "count": 4,
+      "name": "Cured Thick Hide"
+     },
+     {
+      "count": 2,
+      "name": "Heavy Silken Thread"
+     },
+     {
+      "count": 5,
+      "name": "Pristine Leather"
+     },
+     {
+      "count": 10,
+      "name": "Pristine Hide"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/252474",
+   "checked": "2026-11-19"
+  },
+  "13252": {
+   "min_level": 55,
+   "drops": [
+    {
+     "npc": "Quartermaster Zigris",
+     "npc_id": 9736,
+     "chance": "6.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13252",
+   "checked": "2026-11-19"
+  },
+  "14636": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14636",
+   "checked": "2026-11-19"
+  },
+  "13118": {
+   "min_level": 52,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13118",
+   "checked": "2026-11-19"
+  },
+  "252473": {
+   "min_level": 50,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 250,
+    "reagents": [
+     {
+      "count": 8,
+      "name": "Jade"
+     },
+     {
+      "count": 12,
+      "name": "Rugged Leather"
+     },
+     {
+      "count": 4,
+      "name": "Cured Thick Hide"
+     },
+     {
+      "count": 2,
+      "name": "Heavy Silken Thread"
+     },
+     {
+      "count": 5,
+      "name": "Pristine Leather"
+     },
+     {
+      "count": 10,
+      "name": "Pristine Hide"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/252473",
+   "checked": "2026-11-19"
+  },
+  "20193": {
+   "min_level": 48,
+   "sold_by": [
+    {
+     "npc": "Rutherford Twing",
+     "npc_id": 15126
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/20193",
+   "checked": "2026-11-19"
+  },
+  "12963": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "The Beast",
+     "npc_id": 10430,
+     "chance": "22.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12963",
+   "checked": "2026-11-19"
+  },
+  "15062": {
+   "min_level": 55,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 290,
+    "reagents": [
+     {
+      "count": 30,
+      "name": "Rugged Leather"
+     },
+     {
+      "count": 1,
+      "name": "Rune Thread"
+     },
+     {
+      "count": 1,
+      "name": "Cured Rugged Hide"
+     },
+     {
+      "count": 14,
+      "name": "Devilsaur Leather"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/15062",
+   "checked": "2026-11-19"
+  },
+  "276746": {
+   "min_level": 50,
+   "drops": [
+    {
+     "npc": "Blazeroar",
+     "npc_id": 255702,
+     "chance": "31.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/276746",
+   "checked": "2026-11-19"
+  },
+  "15065": {
+   "min_level": 52,
+   "crafted": {
+    "profession": "Leatherworking",
+    "skill": 260,
+    "reagents": [
+     {
+      "count": 24,
+      "name": "Rugged Leather"
+     },
+     {
+      "count": 1,
+      "name": "Rune Thread"
+     },
+     {
+      "count": 14,
+      "name": "Warbear Leather"
+     }
+    ]
+   },
+   "source_url": "https://db.icy-veins.com/wow-forever/items/15065",
+   "checked": "2026-11-19"
+  },
+  "16709": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Baron Rivendare",
+     "npc_id": 10440,
+     "chance": "13.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16709",
+   "checked": "2026-11-19"
+  },
+  "14638": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Lord Alexei Barov",
+     "npc_id": 10504,
+     "chance": "1.64%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/14638",
+   "checked": "2026-11-19"
+  },
+  "280078": {
+   "min_level": 52,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280078",
+   "checked": "2026-11-19"
+  },
+  "16711": {
+   "min_level": 54,
+   "drops": [
+    {
+     "npc": "Rattlegore",
+     "npc_id": 11622,
+     "chance": "13.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/16711",
+   "checked": "2026-11-19"
+  },
+  "20715": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/20715",
+   "checked": "2026-11-19"
+  },
+  "12553": {
+   "min_level": 54,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12553",
+   "checked": "2026-11-19"
+  },
+  "13210": {
+   "min_level": 55,
+   "drops": [
+    {
+     "npc": "Halycon",
+     "npc_id": 10220,
+     "chance": "16.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13210",
+   "checked": "2026-11-19"
+  },
+  "18500": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18500",
+   "checked": "2026-11-19"
+  },
+  "13098": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "General Drakkisath",
+     "npc_id": 10363,
+     "chance": "26.9%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13098",
+   "checked": "2026-11-19"
+  },
+  "12548": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12548",
+   "checked": "2026-11-19"
+  },
+  "280015": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Venomridge",
+     "npc_id": 261813,
+     "chance": "44%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280015",
+   "checked": "2026-11-19"
+  },
+  "21189": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/21189",
+   "checked": "2026-11-19"
+  },
+  "22433": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Darkmaster Gandling",
+     "npc_id": 1853,
+     "chance": "4.55%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22433",
+   "checked": "2026-11-19"
+  },
+  "18314": {
+   "min_level": 54,
+   "drops": [
+    {
+     "npc": "Alzzin the Wildshaper",
+     "npc_id": 11492,
+     "chance": "19.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18314",
+   "checked": "2026-11-19"
+  },
+  "13213": {
+   "min_level": 55,
+   "drops": [
+    {
+     "npc": "Mother Smolderweb",
+     "npc_id": 10596,
+     "chance": "31.1%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13213",
+   "checked": "2026-11-19"
+  },
+  "18465": {
+   "quests": [
+    {
+     "name": "Garona: A Study on Stealth and Treachery",
+     "quest_id": 7498,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18465",
+   "checked": "2026-11-19"
+  },
+  "280065": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280065",
+   "checked": "2026-11-19"
+  },
+  "13382": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Cannon Master Willey",
+     "npc_id": 10997,
+     "chance": "21.3%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13382",
+   "checked": "2026-11-19"
+  },
+  "270276": {
+   "quests": [
+    {
+     "name": "Saving Sharpbeak",
+     "quest_id": 2994,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/270276",
+   "checked": "2026-11-19"
+  },
+  "270225": {
+   "quests": [
+    {
+     "name": "Job Opening: Guard Captain of Revantusk Village",
+     "quest_id": 7862,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/270225",
+   "checked": "2026-11-19"
+  },
+  "276337": {
+   "quests": [
+    {
+     "name": "Blind Vengeance",
+     "quest_id": 97010,
+     "choice": false
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/276337",
+   "checked": "2026-11-19"
+  },
+  "12590": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Warchief Rend Blackhand",
+     "npc_id": 10429,
+     "chance": "2.38%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12590",
+   "checked": "2026-11-19"
+  },
+  "280021": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Direhorn Matriarch",
+     "npc_id": 262127,
+     "chance": "20.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280021",
+   "checked": "2026-11-19"
+  },
+  "22377": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22377",
+   "checked": "2026-11-19"
+  },
+  "286613": {
+   "min_level": 57,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/286613",
+   "checked": "2026-11-19"
+  },
+  "5267": {
+   "min_level": 58,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/5267",
+   "checked": "2026-11-19"
+  },
+  "22378": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22378",
+   "checked": "2026-11-19"
+  },
+  "280029": {
+   "min_level": 58,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280029",
+   "checked": "2026-11-19"
+  },
+  "22347": {
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22347",
+   "checked": "2026-11-19"
+  },
+  "18323": {
+   "min_level": 53,
+   "drops": [
+    {
+     "npc": "Zevrim Thornhoof",
+     "npc_id": 11490,
+     "chance": "23.2%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18323",
+   "checked": "2026-11-19"
+  },
+  "12651": {
+   "min_level": 54,
+   "drops": [
+    {
+     "npc": "Shadow Hunter Vosh'gajin",
+     "npc_id": 9236,
+     "chance": "12.7%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/12651",
+   "checked": "2026-11-19"
+  },
+  "280020": {
+   "min_level": 58,
+   "drops": [
+    {
+     "npc": "Thunderhoof",
+     "npc_id": 261812,
+     "chance": "44%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280020",
+   "checked": "2026-11-19"
+  },
+  "2100": {
+   "min_level": 43,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2100",
+   "checked": "2026-11-19"
+  },
+  "280083": {
+   "min_level": 52,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/280083",
+   "checked": "2026-11-19"
+  },
+  "18698": {
+   "min_level": 51,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18698",
+   "checked": "2026-11-19"
+  },
+  "22204": {
+   "min_level": 55,
+   "drops": [
+    {
+     "npc": "Emperor Dagran Thaurissan",
+     "npc_id": 9019,
+     "chance": "17.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22204",
+   "checked": "2026-11-19"
+  },
+  "276395": {
+   "min_level": 54,
+   "drops": [
+    {
+     "npc": "Ezra Grimm",
+     "npc_id": 11058,
+     "chance": "23.8%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/276395",
+   "checked": "2026-11-19"
+  },
+  "287018": {
+   "min_level": 47,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/287018",
+   "checked": "2026-11-19"
+  },
+  "13956": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "Kirtonos the Herald",
+     "npc_id": 10506,
+     "chance": "19.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/13956",
+   "checked": "2026-11-19"
+  },
+  "11662": {
+   "min_level": 49,
+   "drops": [
+    {
+     "npc": "Ok'thor the Breaker",
+     "npc_id": 9030,
+     "chance": "17.4%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/11662",
+   "checked": "2026-11-19"
+  },
+  "22231": {
+   "min_level": 56,
+   "drops": [
+    {
+     "npc": "War Master Voone",
+     "npc_id": 9237,
+     "chance": "17.6%"
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/items/22231",
+   "checked": "2026-11-19"
+  },
+  "20721": {
+   "min_level": 60,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/20721",
+   "checked": "2026-11-19"
+  },
+  "286556": {
+   "min_level": 48,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/286556",
+   "checked": "2026-11-19"
+  },
+  "1728": {
+   "min_level": 60,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/1728",
+   "checked": "2026-11-19"
+  },
+  "2163": {
+   "min_level": 48,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/2163",
+   "checked": "2026-11-19"
+  },
+  "18680": {
+   "min_level": 56,
+   "source_url": "https://db.icy-veins.com/wow-forever/items/18680",
+   "checked": "2026-11-19"
+  }
+ },
+ "quests": {
+  "2242": {
+   "level": 10,
+   "min_level": 10,
+   "faction": "Alliance",
+   "pins": [
+    {
+     "zone": "Darnassus",
+     "label": "Start and End: Syurna",
+     "x": 36.8,
+     "y": 21.8
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/2242",
+   "checked": "2026-11-19"
+  },
+  "2239": {
+   "level": 10,
+   "min_level": 10,
+   "faction": "Alliance",
+   "end_npc": "Hulfdan Blackbeard",
+   "start_npc": "Onin MacHammar",
+   "pins": [
+    {
+     "zone": "Dun Morogh",
+     "label": "End: Hulfdan Blackbeard",
+     "x": 51.7,
+     "y": 14.8
+    },
+    {
+     "zone": "Dun Morogh",
+     "label": "Start: Onin MacHammar",
+     "x": 25.2,
+     "y": 44.4
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/2239",
+   "checked": "2026-11-19"
+  },
+  "2206": {
+   "level": 10,
+   "min_level": 10,
+   "faction": "Alliance",
+   "pins": [
+    {
+     "zone": "Stormwind City",
+     "label": "Start and End: Master Mathias Shaw",
+     "x": 78.5,
+     "y": 70.7
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/2206",
+   "checked": "2026-11-19"
+  },
+  "1978": {
+   "level": 13,
+   "min_level": 10,
+   "end_npc": "Varimathras",
+   "start_npc": "Mennet Carkad",
+   "pins": [
+    {
+     "zone": "Undercity",
+     "label": "End: Varimathras",
+     "x": 55.4,
+     "y": 91.6
+    },
+    {
+     "zone": "Undercity",
+     "label": "End: Varimathras",
+     "x": 56.8,
+     "y": 90.1
+    },
+    {
+     "zone": "Undercity",
+     "label": "End: Varimathras",
+     "x": 57.0,
+     "y": 93.0
+    },
+    {
+     "zone": "Undercity",
+     "label": "Start: Mennet Carkad",
+     "x": 83.5,
+     "y": 68.4
+    },
+    {
+     "zone": "Undercity",
+     "label": "Start: Mennet Carkad",
+     "x": 83.3,
+     "y": 69.0
+    },
+    {
+     "zone": "Undercity",
+     "label": "End: Varimathras",
+     "x": 56.4,
+     "y": 91.8
+    },
+    {
+     "zone": "Undercity",
+     "label": "End: Varimathras",
+     "x": 56.4,
+     "y": 92.5
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/1978",
+   "checked": "2026-11-19"
+  },
+  "1858": {
+   "level": 13,
+   "min_level": 10,
+   "pins": [
+    {
+     "zone": "Orgrimmar",
+     "label": "Start and End: Therzok",
+     "x": 42.9,
+     "y": 53.4
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/1858",
+   "checked": "2026-11-19"
+  },
+  "1014": {
+   "level": 27,
+   "min_level": 18,
+   "faction": "Both",
+   "zone": "Shadowfang Keep",
+   "pins": [
+    {
+     "zone": "Silverpine Forest",
+     "label": "Start and End: Dalar Dawnweaver",
+     "x": 44.3,
+     "y": 40.7
+    },
+    {
+     "zone": "Silverpine Forest",
+     "label": "Start and End: Dalar Dawnweaver",
+     "x": 44.2,
+     "y": 39.9
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/1014",
+   "checked": "2026-11-19"
+  },
+  "7862": {
+   "level": 51,
+   "min_level": 46,
+   "faction": "Both",
+   "zone": "The Hinterlands",
+   "start_npc": "Call to Arms!",
+   "end_npc": "Primal Torntusk",
+   "pins": [
+    {
+     "zone": "The Hinterlands",
+     "label": "Start: Call to Arms!",
+     "x": 79.0,
+     "y": 79.1
+    },
+    {
+     "zone": "The Hinterlands",
+     "label": "End: Primal Torntusk",
+     "x": 78.2,
+     "y": 81.3
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/7862",
+   "checked": "2026-11-19"
+  },
+  "2994": {
+   "level": 51,
+   "min_level": 40,
+   "faction": "Both",
+   "zone": "The Hinterlands",
+   "pins": [
+    {
+     "zone": "The Hinterlands",
+     "label": "Start and End: Gryphon Master Talonaxe",
+     "x": 9.8,
+     "y": 44.5
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/2994",
+   "checked": "2026-11-19"
+  },
+  "3341": {
+   "level": 42,
+   "min_level": 37,
+   "faction": "Both",
+   "zone": "Razorfen Downs",
+   "pins": [
+    {
+     "zone": "Undercity",
+     "label": "Start and End: Andrew Brownell",
+     "x": 73.9,
+     "y": 33.5
+    },
+    {
+     "zone": "Undercity",
+     "label": "Start and End: Andrew Brownell",
+     "x": 74.0,
+     "y": 32.9
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/3341",
+   "checked": "2026-11-19"
+  },
+  "3636": {
+   "level": 42,
+   "min_level": 39,
+   "faction": "Both",
+   "zone": "Razorfen Downs",
+   "pins": [
+    {
+     "zone": "Stormwind City",
+     "label": "Start and End: Archbishop Benedictus",
+     "x": 50.3,
+     "y": 45.6
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/3636",
+   "checked": "2026-11-19"
+  },
+  "1136": {
+   "level": 37,
+   "min_level": 26,
+   "faction": "Both",
+   "zone": "Thunder Bluff",
+   "pins": [
+    {
+     "zone": "Thunder Bluff",
+     "label": "Start and End: Melor Stonehoof",
+     "x": 62.0,
+     "y": 76.7
+    },
+    {
+     "zone": "Thunder Bluff",
+     "label": "Start and End: Melor Stonehoof",
+     "x": 61.4,
+     "y": 79.9
+    },
+    {
+     "zone": "Thunder Bluff",
+     "label": "Start and End: Melor Stonehoof",
+     "x": 61.4,
+     "y": 80.5
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/1136",
+   "checked": "2026-11-19"
+  },
+  "396": {
+   "level": 31,
+   "min_level": 16,
+   "faction": "Both",
+   "zone": "Stormwind City",
+   "end_npc": "Lady Katrana Prestor",
+   "start_npc": "Baros Alexston",
+   "pins": [
+    {
+     "zone": "Stormwind City",
+     "label": "End: Lady Katrana Prestor",
+     "x": 80.0,
+     "y": 38.3
+    },
+    {
+     "zone": "Stormwind City",
+     "label": "Start: Baros Alexston",
+     "x": 57.6,
+     "y": 47.9
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/396",
+   "checked": "2026-11-19"
+  },
+  "778": {
+   "level": 45,
+   "min_level": 35,
+   "faction": "Both",
+   "zone": "Badlands",
+   "pins": [
+    {
+     "zone": "Badlands",
+     "label": "Start and End: Lotwil Veriatus",
+     "x": 26.3,
+     "y": 44.5
+    },
+    {
+     "zone": "Badlands",
+     "label": "Start and End: Lotwil Veriatus",
+     "x": 25.9,
+     "y": 46.1
+    },
+    {
+     "zone": "Badlands",
+     "label": "Start and End: Lotwil Veriatus",
+     "x": 25.9,
+     "y": 45.0
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/778",
+   "checked": "2026-11-19"
+  },
+  "7067": {
+   "level": 48,
+   "min_level": 39,
+   "faction": "Both",
+   "zone": "Maraudon",
+   "pins": [
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 44.3,
+     "y": 85.6
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 47.7,
+     "y": 87.2
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 47.2,
+     "y": 86.9
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 46.4,
+     "y": 86.7
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 43.7,
+     "y": 85.0
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 48.7,
+     "y": 87.1
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 45.2,
+     "y": 86.3
+    },
+    {
+     "zone": "Desolace",
+     "label": "Start and End: Centaur Pariah",
+     "x": 50.2,
+     "y": 86.8
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/7067",
+   "checked": "2026-11-19"
+  },
+  "2770": {
+   "level": 50,
+   "min_level": 40,
+   "faction": "Both",
+   "zone": "Zul'Farrak",
+   "pins": [
+    {
+     "zone": "Thousand Needles",
+     "label": "Start and End: Wizzle Brassbolts",
+     "x": 78.1,
+     "y": 77.1
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/2770",
+   "checked": "2026-11-19"
+  },
+  "8236": {
+   "level": 52,
+   "min_level": 50,
+   "faction": "Both",
+   "end_npc": "Lord Jorach Ravenholdt",
+   "start_npc": "Archmage Xylem",
+   "pins": [
+    {
+     "zone": "Azshara",
+     "label": "End: Lord Jorach Ravenholdt",
+     "x": 86.1,
+     "y": 79.0
+    },
+    {
+     "zone": "Azshara",
+     "label": "Start: Archmage Xylem",
+     "x": 29.5,
+     "y": 40.4
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/8236",
+   "checked": "2026-11-19"
+  },
+  "7498": {
+   "level": 60,
+   "min_level": 54,
+   "faction": "Both",
+   "zone": "Dire Maul",
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/7498",
+   "checked": "2026-11-19"
+  },
+  "97010": {
+   "level": 59,
+   "min_level": 56,
+   "faction": "Both",
+   "zone": "Mount Hyjal",
+   "pins": [
+    {
+     "zone": "Mount Hyjal",
+     "label": "Start and End: Maerion Thaelemaches",
+     "x": 63.3,
+     "y": 25.9
+    }
+   ],
+   "source_url": "https://db.icy-veins.com/wow-forever/quests/97010",
+   "checked": "2026-11-19"
+  }
+ },
+ "source": "https://db.icy-veins.com/wow-forever/ (early access)",
+ "checked": "2026-11-19",
+ "errors": []
+}

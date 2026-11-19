@@ -1,0 +1,8 @@
+# Archived third-party pages (HTML/MD) used during research. Kept locally on TUF,
+# not committed: large, and the copyright belongs to the sites. data.json cites them.
+research/raw/
+__pycache__/
+*.pyc
+.release/
+# Tim's research brief stays local (it names account/WTF paths).
+BRIEF.md

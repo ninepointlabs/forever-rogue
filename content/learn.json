@@ -1,0 +1,3793 @@
+{
+ "version": 1,
+ "checked": "2026-11-19",
+ "spells": {
+  "Sinister Strike": {
+   "what": "Your basic builder: a weapon strike plus a little bonus damage, 1 combo point, 45 Energy. Works from any side.",
+   "when": "Your filler whenever you cannot get behind the target or are not holding a dagger.",
+   "rank_tip": "Ranks at 1, 6, 14, 22, 30, 38, 46, 54. Train each one.",
+   "per_spec": {
+    "Assassination": "Builder until Mutilate; use it when you cannot get behind for Backstab.",
+    "Combat": "Your main builder. A slow, hard-hitting main hand makes it hit harder; Efficient Strikes makes it cheaper.",
+    "Subtlety": "Builder until Hemorrhage. Swap to a slow main hand for it if you open with a dagger."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Eviscerate": {
+   "what": "Damage finisher: more damage per combo point, scales with Attack Power. 35 Energy.",
+   "when": "Spend 5 combo points on it once Slice and Dice (and Rupture, in groups) are up, or when the target is about to die.",
+   "rank_tip": "Ranks at 1, 8, 16, 24, 32, 40, 48, 56, 60. wowfdb: only the level-40 rank is weaker than Classic.",
+   "per_spec": {
+    "Assassination": "At 5 CP when Slice and Dice and Rupture are up and Shank is on cooldown (Icy Veins).",
+    "Combat": "Your main finisher at 5 CP. Pair it with Cold Blood. Flawless Execution makes it cheaper.",
+    "Subtlety": "Burst finisher when a target will not live through Rupture or Death Mark."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Redirect": {
+   "what": "New in Forever, learned at 1. Takes all combo points off your target and stores them for up to 15 s; your next melee or ranged hit on a non-player enemy gets them. 10 s cooldown.",
+   "when": "When a target dies or you must switch before you spend your points.",
+   "rank_tip": "One rank.",
+   "per_spec": {
+    "Assassination": "Carry points to the next mob in a quest chain.",
+    "Combat": "Carry points to the next mob instead of wasting them.",
+    "Subtlety": "Carry points into your next opener target."
+   },
+   "unconfirmed": true,
+   "flag": "Details from endgametools client data only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ]
+  },
+  "Stealth": {
+   "what": "Sneak around unseen, at reduced speed, until you cancel it or act. Opens up Pick Pocket, Sap, Garrote, Cheap Shot and Ambush.",
+   "when": "Before every pull you want to control, and to slip past fights you do not need.",
+   "rank_tip": "Ranks at 1, 20, 40, 60 (wowfdb and endgametools agree). Higher ranks move faster in Stealth.",
+   "per_spec": {
+    "Assassination": "Open with Garrote or Cheap Shot.",
+    "Combat": "Open with Cheap Shot or Garrote.",
+    "Subtlety": "Most of your openers and Premeditation setups start here."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Backstab": {
+   "what": "Big dagger strike from behind: 150% weapon damage plus a bonus, 1 combo point, 60 Energy. Needs a dagger in the main hand and you behind the target.",
+   "when": "When you hold a dagger and stand behind the target (a tank has it, or after Gouge).",
+   "rank_tip": "Ranks at 4, 12, 20, 28, 36, 44, 52, 60. Classic base damage was cut by a third or more (wowfdb).",
+   "per_spec": {
+    "Assassination": "Main builder from behind until Mutilate (Icy Veins leveling).",
+    "Combat": "Builder of the dagger Combat build instead of Sinister Strike.",
+    "Subtlety": "Builder before Hemorrhage; Gouge, then step behind for it."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Pick Pocket": {
+   "what": "Steal from a humanoid's pocket while in Stealth: coin, and from level 20-30 mobs up, junkboxes.",
+   "when": "On every humanoid you sneak up to, before you attack it. Several class quests need it.",
+   "rank_tip": "One rank, learned at 4.",
+   "per_spec": {
+    "Assassination": "Pick before your Garrote or Cheap Shot.",
+    "Combat": "Pick before your Cheap Shot.",
+    "Subtlety": "Pick, Sap, pick the next one: Subtlety is the stealth-farming spec."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ]
+  },
+  "Gouge": {
+   "what": "Hits for a little, stops your attack and incapacitates the target for 4 s. It must face you; any damage breaks it. 1 combo point.",
+   "when": "To stop a cast, buy time for a bandage, or walk behind for Backstab.",
+   "rank_tip": "Ranks at 6, 18, 32, 46, 60 (wowfdb and endgametools agree). Improved Gouge lengthens it.",
+   "per_spec": {
+    "Assassination": "Interrupt backup when Kick is down.",
+    "Combat": "Interrupt backup when Kick is down.",
+    "Subtlety": "Gouge, step behind, Backstab. Bring Energy for both."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Evasion": {
+   "what": "+50% dodge chance for 15 s. 5 min cooldown (shorter with Endurance).",
+   "when": "Solo: early and often, to cut downtime. Group: when you pull aggro or the tank dies.",
+   "rank_tip": "One rank, learned at 8.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Pair it with Blade Flurry when two mobs hit you.",
+    "Subtlety": "Preparation resets it for a second use."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Sap": {
+   "what": "Incapacitates an out-of-combat humanoid for a long time; damage breaks it. Needs Stealth, 65 Energy. In Forever it no longer breaks Stealth, so you can Sap one and still open on another.",
+   "when": "Before a pull to take one mob out, or to walk past a guard. Sapping a PvP-flagged player flags you.",
+   "rank_tip": "Ranks at 10, 28, 48; each lasts longer (wowfdb and endgametools agree).",
+   "per_spec": {
+    "Assassination": "Sap the extra mob, Garrote the other.",
+    "Combat": "Sap the extra mob; never let Blade Flurry hit the Sapped one.",
+    "Subtlety": "Quick Getaway lets you Sap two, Dirty Tricks halves the cost."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ]
+  },
+  "Slice and Dice": {
+   "what": "Finisher that raises your melee attack speed; lasts longer per combo point (9-21 s).",
+   "when": "Keep it up in long fights. While leveling, use it when more mobs are coming; otherwise Eviscerate.",
+   "rank_tip": "Ranks at 10 and 42; wowfdb says rank 1 gives +20% and rank 2 +30%.",
+   "per_spec": {
+    "Assassination": "Always up; one of your two buffs with Venom.",
+    "Combat": "Always up in dungeons and raids.",
+    "Subtlety": "Early go-to finisher; later keep it up with 5 CP alongside Rupture."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Sprint": {
+   "what": "Run much faster for 15 s without breaking Stealth. 5 min cooldown.",
+   "when": "To escape, to close a gap, or to rush past a patrol in Stealth.",
+   "rank_tip": "Ranks at 10, 34, 58 (wowfdb and endgametools). Improved Sprint makes it break snares.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Kick": {
+   "what": "Your interrupt: stops a cast and locks that spell school for 5 s. 10 s cooldown, 25 Energy, on the global cooldown.",
+   "when": "On dangerous casts. Do not skip it for one more damage button.",
+   "rank_tip": "Ranks at 12, 26, 42, 58 (wowfdb and endgametools). Improved Kick adds a 2 s silence.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Expose Armor": {
+   "what": "Finisher that lowers the target's armor for 30 s. Forever made it as strong as 5 Sunder Armors at your level, and Sunder can still be used on top for threat.",
+   "when": "In groups, when no Warrior keeps a stronger armor debuff up. Rarely worth it solo.",
+   "rank_tip": "Ranks at 14, 26, 36, 46, 56. Top rank: 2,250 armor at 5 CP (wowfdb). Improved Expose Armor cuts its cost and refunds combo points.",
+   "per_spec": {
+    "Assassination": "First item on the maintenance list in raids (Icy Veins).",
+    "Combat": "Same, if nobody has a stronger armor debuff up.",
+    "Subtlety": "Usually left to others; Subtlety's list is Rupture, Death Mark, Garrote, Slice and Dice."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Garrote": {
+   "what": "Bleed opener from Stealth and behind the target: damage over 18 s, 1 combo point (2 with Initiative).",
+   "when": "Open with it when the fight will last; bleeds do nothing to immune mobs (elementals, constructs, skeletons, ghosts).",
+   "rank_tip": "Ranks at 14, 22, 30, 38, 46, 54. Dirty Deeds lets you use it from any side; Ghostly Strike lets you use it out of Stealth.",
+   "per_spec": {
+    "Assassination": "Your raid opener (Icy Veins); Vanish can refresh it.",
+    "Combat": "Raid opener; Cheap Shot is the safer solo opener.",
+    "Subtlety": "Your main opener and part of the rotation after every Ghostly Strike."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Feint": {
+   "what": "Lowers your threat on the target. Forever increased the threat drop.",
+   "when": "In groups when you near the tank's threat.",
+   "rank_tip": "Ranks at 16, 28, 40, 52, 60 (wowfdb and endgametools). Train each rank.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": true,
+   "flag": "Blizzard says threat drop doubled; client data shows about 5x.",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ]
+  },
+  "Ambush": {
+   "what": "Huge opener from Stealth and behind: 250% weapon damage plus a bonus, 1 combo point. Needs a dagger in the main hand.",
+   "when": "To open with burst when you hold a dagger and can get behind.",
+   "rank_tip": "Ranks at 18, 26, 34, 42, 50, 58.",
+   "per_spec": {
+    "Assassination": "Rarely used; Garrote is the raid opener.",
+    "Combat": "Rarely used.",
+    "Subtlety": "Your main builder from Stealth in groups. Ghostly Strike makes the next one work out of Stealth. Icy Veins' leveling advice: Garrote instead early on."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Poised": {
+   "what": "New passive at 18: at full Energy and out of combat, your next ability costs 10 less.",
+   "when": "Works by itself: start pulls at full Energy.",
+   "rank_tip": "One rank. Composure (Combat) adds 10 more.",
+   "per_spec": {
+    "Assassination": "Passive.",
+    "Combat": "Passive; Composure doubles it.",
+    "Subtlety": "Passive."
+   },
+   "unconfirmed": true,
+   "flag": "Client data via endgametools/wowfdb only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/"
+   ]
+  },
+  "Rupture": {
+   "what": "Bleed finisher: damage over time, longer per combo point (8-16 s). Armor does not reduce it.",
+   "when": "On targets that will live through it. Forever cut its base damage about 40% (wowfdb).",
+   "rank_tip": "Ranks at 20, 28, 36, 44, 52, 60. Blood Splatter adds 6 s; Serrated Blades and Hemorrhage raise it for Subtlety.",
+   "per_spec": {
+    "Assassination": "Keep it up if the target lives (Icy Veins).",
+    "Combat": "Keep it up if the target lives (Icy Veins).",
+    "Subtlety": "Core: keep it up at 5 CP at all times in groups."
+   },
+   "unconfirmed": true,
+   "flag": "Rank levels from the endgametools client list only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Distract": {
+   "what": "Makes nearby enemies look at a spot for a moment. In Forever it also lowers their Stealth detection for 10 s, but players then know a Rogue is near. 30 Energy, 30 s cooldown.",
+   "when": "To sneak behind a mob that faces you, or to stop a patrol walking into your group's fight.",
+   "rank_tip": "One rank, learned at 22.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Vanish": {
+   "what": "Drops you into an improved Stealth for 10 s and breaks snares and roots. 5 min cooldown. Costs one Flash Powder.",
+   "when": "To escape a lost fight, to drop all threat, or to reopen from Stealth.",
+   "rank_tip": "Ranks at 22 and 42. Keep Flash Powder in your bags (class vendor).",
+   "per_spec": {
+    "Assassination": "Threat drop or Garrote refresh; or save it for a wipe to save repairs (Icy Veins).",
+    "Combat": "Same.",
+    "Subtlety": "Hold it with Preparation for dangerous moments."
+   },
+   "unconfirmed": true,
+   "flag": "Flash Powder cost from client data; the Reagent Economy legacy perk removes it.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Detect Traps": {
+   "what": "Passive: you see traps much more easily.",
+   "when": "Always on. Needed for the level-30 quest The Manor, Ravenholdt.",
+   "rank_tip": "One rank, learned at 24.",
+   "per_spec": {
+    "Assassination": "Passive.",
+    "Combat": "Passive.",
+    "Subtlety": "Passive."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ]
+  },
+  "Shank": {
+   "what": "New in Forever, learned at 24: an off-hand strike for 50% weapon damage that costs 5 Energy, gives Energy back (15, 25 at rank 2) and cannot miss. 10 s cooldown.",
+   "when": "On cooldown, unless it would push you over the Energy cap.",
+   "rank_tip": "Ranks at 24 and 44. Venom (Assassination), Flash of Steel (Combat) and Boot Knife (Subtlety) all build on it.",
+   "per_spec": {
+    "Assassination": "On cooldown to keep Venom up.",
+    "Combat": "On cooldown unless it caps your Energy.",
+    "Subtlety": "On cooldown with 0-3 combo points: Boot Knife adds 2."
+   },
+   "unconfirmed": true,
+   "flag": "Numbers from client data (endgametools/wowfdb).",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ]
+  },
+  "Cheap Shot": {
+   "what": "Opener from Stealth: stuns the target for 4 s, 2 combo points (3 with Initiative). 60 Energy, 40 with Dirty Deeds.",
+   "when": "Solo opener on anything that can be stunned: it stops a lot of damage.",
+   "rank_tip": "One rank, learned at 26.",
+   "per_spec": {
+    "Assassination": "Solo opener (Icy Veins leveling).",
+    "Combat": "Solo opener (Icy Veins leveling).",
+    "Subtlety": "Premeditation then Cheap Shot gives enough points for a long Kidney Shot."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/subtlety/"
+   ]
+  },
+  "Disarm Trap": {
+   "what": "Disarms a trap you can see. 2 s cast; needs Thieves' Tools.",
+   "when": "In dungeons, before a trap calls more enemies.",
+   "rank_tip": "One rank, learned at 30.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Kidney Shot": {
+   "what": "Stun finisher: lasts longer per combo point. 20 s cooldown. Icy Veins notes it has its own diminishing returns.",
+   "when": "When you need a target to stop: a dangerous cast, a runner, or to survive.",
+   "rank_tip": "Ranks at 30 and 50; rank 2 lasts a second longer.",
+   "per_spec": {
+    "Assassination": "Improved Kidney Shot adds damage from your own attacks and poisons during the stun.",
+    "Combat": "Defensive or interrupt tool.",
+    "Subtlety": "Premeditation plus Cheap Shot sets up a 4-5 point Kidney Shot."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Blind": {
+   "what": "Disorients a target for up to 10 s from range; damage breaks it. 5 min cooldown. Needs Blinding Powder.",
+   "when": "To stop a caster or archer, to escape, or to bandage mid-fight.",
+   "rank_tip": "One rank, learned at 34. Blinding Powder is made with the Poisons skill (wowfdb).",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Elusiveness shortens the cooldown and Dirty Tricks halves the cost."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Safe Fall": {
+   "what": "Passive: less falling damage.",
+   "when": "Always on.",
+   "rank_tip": "One rank, learned at 40.",
+   "per_spec": {
+    "Assassination": "Passive.",
+    "Combat": "Passive.",
+    "Subtlety": "Passive."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ]
+  },
+  "Pick Lock": {
+   "what": "Opens locked boxes, footlockers and some doors. 5 s cast at 5 yd; damage interrupts it. Needs Thieves' Tools in your bags.",
+   "when": "On every lockbox you find and every footlocker you pass; your skill cap is level x 5.",
+   "rank_tip": "One rank. Learn level is disputed: client lists 1, Icy Veins' milestone table says the lockpicking quest is at 15, two fan guides say 16.",
+   "per_spec": {
+    "Assassination": "Same.",
+    "Combat": "Same.",
+    "Subtlety": "Same."
+   },
+   "unconfirmed": true,
+   "flag": "Learn level conflicts (1 / 15 / 16).",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Riposte": {
+   "what": "Combat talent (row 3, from 20): after you parry, strike for 150% weapon damage and disarm the target for 6 s.",
+   "when": "Whenever it lights up.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Use it whenever it procs; a slow main hand makes it hit hard (Icy Veins).",
+    "Subtlety": "Not in the build."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Blade Flurry": {
+   "what": "Combat talent (row 5, from 30): +20% attack speed and your melee attacks hit one more nearby enemy, for 15 s.",
+   "when": "Whenever a second enemy stands next to your target. Single target, use it early for the speed.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Your only cleave. Cancel it next to a Sapped or Polymorphed mob.",
+    "Subtlety": "Not in the build."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/combat/"
+   ]
+  },
+  "Adrenaline Rush": {
+   "what": "Combat capstone (row 7, from 40): Energy regeneration +100% for 15 s.",
+   "when": "After you spend your opening Energy, once the tank has threat, and on cooldown after that.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Main damage cooldown.",
+    "Subtlety": "Not in the build."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Cold Blood": {
+   "what": "Assassination talent (row 4, from 25): your next Sinister Strike, Backstab, Ambush, Eviscerate or Mutilate is a guaranteed crit.",
+   "when": "Right before a 5-combo-point Eviscerate, once threat is safe.",
+   "rank_tip": "Talent, one rank. Forever moved it up to the 16-point slot.",
+   "per_spec": {
+    "Assassination": "Use it on a 5 CP Eviscerate (Icy Veins).",
+    "Combat": "Use it on Eviscerate, not on Sinister Strike (Icy Veins).",
+    "Subtlety": "PvP burst: crit Eviscerate inside a stun."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ]
+  },
+  "Mutilate": {
+   "what": "Assassination capstone (row 7): attack with both weapons for 90% weapon damage plus a bonus each, +20% against poisoned targets, 2 combo points. 60 Energy. Needs a dagger in each hand.",
+   "when": "Your builder for the rest of the game once learned, with poisons on both daggers.",
+   "rank_tip": "Talent rank 1, then ranks at 50 and 60 (endgametools).",
+   "per_spec": {
+    "Assassination": "Main builder.",
+    "Combat": "Cannot share a build with Adrenaline Rush (wowfdb).",
+    "Subtlety": "Not in the build."
+   },
+   "unconfirmed": true,
+   "flag": "Learn level conflicts: 40 (Icy Veins, tree row 7), 48 (wowfdb), ranks at 50/60 (endgametools).",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ]
+  },
+  "Hemorrhage": {
+   "what": "Subtlety talent (row 5, from 30): instant strike for 100% weapon damage (145% with a dagger), 1 combo point; the target takes 15% more from your Rupture and Garrote for 15 s.",
+   "when": "Your only builder once learned, with any weapon and from any side.",
+   "rank_tip": "Talent, one rank. Icy Veins puts its cost at 30 Energy; Efficient Strikes lowers it.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Not in the build.",
+    "Subtlety": "Main builder from 30. Keep the 15 s debuff up."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ]
+  },
+  "Ghostly Strike": {
+   "what": "Subtlety talent (row 4, from 25): a strike for 125% weapon damage (180% with a main-hand dagger), +15% dodge for 7 s, and your next Ambush or Garrote within 7 s works without Stealth. 1 combo point.",
+   "when": "On cooldown, followed by Garrote. Solo you can hold it to Garrote a second mob.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Not in the build.",
+    "Subtlety": "Ghostly Strike, then Garrote (2 CP with Initiative: do not overcap)."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ]
+  },
+  "Premeditation": {
+   "what": "Subtlety talent (row 3, from 20): adds 2 combo points to your target; use or add to them within 20 s or they are lost. No longer needs Stealth.",
+   "when": "Before your opener, or for 2 points on demand. Do not overcap combo points.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Not in the build.",
+    "Subtlety": "On cooldown in groups (Icy Veins); macro it with Ambush or Garrote if you like."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/utility/"
+   ]
+  },
+  "Preparation": {
+   "what": "Subtlety talent (row 5, from 30): instantly finishes the cooldown of your other Rogue abilities, including Evasion, Vanish and Sprint.",
+   "when": "Save it for an emergency or a burst moment: one cast per fight is likely.",
+   "rank_tip": "Talent, one rank.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Not in the build.",
+    "Subtlety": "Second Evasion or Vanish when a pull goes wrong."
+   },
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Death Mark": {
+   "what": "Subtlety capstone (row 7, from 40), replaced Thousand Cuts: a finisher that marks the target for 6 s, stores part of the damage you deal (Garrote and Rupture at double rate), then deals it, up to a cap set by Attack Power and crit. 25 Energy, 20 yd, 10 s cooldown.",
+   "when": "Your main finisher at 5 combo points once learned.",
+   "rank_tip": "Talent rank 1, then ranks at 48, 56, 60 (endgametools). Coup de Grace raises it.",
+   "per_spec": {
+    "Assassination": "Not in the build.",
+    "Combat": "Not in the build.",
+    "Subtlety": "Use it at 5 CP as often as possible and pool damage into its 6 s window."
+   },
+   "unconfirmed": true,
+   "flag": "New talent; numbers untested in play (wowfdb).",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ]
+  }
+ },
+ "talents": {
+  "Improved Gouge": {
+   "tree": "Assassination",
+   "what": "3 points: Increases the duration of your Gouge ability by 1.5 sec.",
+   "why": "Longer Gouge: more time to bandage or step behind for Backstab. Not a damage talent.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Remorseless Attacks": {
+   "tree": "Assassination",
+   "what": "2 points: After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec.",
+   "why": "Crit chance on your next builder after a kill. Icy Veins rates it a key Assassination leveling talent.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Malice": {
+   "tree": "Assassination",
+   "what": "5 points: Increases your critical strike chance with all attacks and Poisons by 5%.",
+   "why": "More crit for attacks and poisons; a damage staple of Assassination builds.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Ruthlessness": {
+   "tree": "Assassination",
+   "what": "3 points: Gives your finishing moves a 60% chance to add a Combo Point to your target.",
+   "why": "Finishers may leave a combo point behind, so the next finisher comes sooner. A leveling pick for every spec.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Improved Expose Armor": {
+   "tree": "Assassination",
+   "what": "2 points: Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points.",
+   "why": "Makes Expose Armor cheap to keep up in groups (Icy Veins).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/rogue-class-overview"
+   ]
+  },
+  "Improved Slice and Dice": {
+   "tree": "Assassination",
+   "what": "3 points: Increases the duration of your Slice and Dice ability by 45%.",
+   "why": "Longer Slice and Dice; Subtlety's raid build takes it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Vigor": {
+   "tree": "Assassination",
+   "what": "2 points: Increases your maximum Energy by 10.",
+   "why": "10 more max Energy: a bigger pool for openers and burst.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Blood Splatter": {
+   "tree": "Assassination",
+   "what": "1 point: Increases the duration of your Rupture ability by 6 sec and your Garrote ability by 9 sec.",
+   "why": "Longer Rupture and Garrote: more value from your opener and finishers. Icy Veins picks it for Combat leveling and Subtlety.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Lethality": {
+   "tree": "Assassination",
+   "what": "2 points: Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%.",
+   "why": "Bigger crits on your builders; pairs with Malice and Remorseless Attacks.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Vile Poisons": {
+   "tree": "Assassination",
+   "what": "5 points: Increases the damage dealt by your poisons by 20% and gives your poisons an additional 40% chance to resist dispel effects.",
+   "why": "Poisons hit harder and resist dispels: core for poison-heavy Assassination.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Cold Blood": {
+   "tree": "Assassination",
+   "what": "1 point: When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%.",
+   "why": "On-demand crit; Icy Veins pairs it with a 5-point Eviscerate. Mutilate crits consume it (wowfdb).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ]
+  },
+  "Improved Poisons": {
+   "tree": "Assassination",
+   "what": "5 points: Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge.",
+   "why": "More poison procs and fewer used charges, so poisons last longer.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Relentless Strikes": {
+   "tree": "Assassination",
+   "what": "5 points: Your finishing moves have a 20% chance per Combo Point to restore 25 Energy.",
+   "why": "Finishers refund Energy: Energy is the Rogue's bottleneck. A leveling pick for every spec.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Venom": {
+   "tree": "Assassination",
+   "what": "1 point: Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 sec.",
+   "why": "Turns Shank into a poison buff: keep Shank on cooldown (Icy Veins). Icy Veins lists it at 30.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Improved Kidney Shot": {
+   "tree": "Assassination",
+   "what": "2 points: Enemies Stunned by your Kidney Shot ability take 10% increased damage from your poisons and attacks.",
+   "why": "More damage from your own attacks and poisons during Kidney Shot. Personal only now; it does not help the group.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/assassination/"
+   ]
+  },
+  "Seal Fate": {
+   "tree": "Assassination",
+   "what": "3 points: Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point.",
+   "why": "Builder crits add an extra combo point. Mutilate triggers it once even if both hands crit.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Mutilate": {
+   "tree": "Assassination",
+   "what": "1 point: Instantly attacks with both weapons for 90% weapon damage plus an additional 40 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+   "why": "The Assassination capstone and builder; needs two daggers.",
+   "unconfirmed": true,
+   "flag": "Learn level conflicts: 40 (row 7) vs 48 (wowfdb) vs 50 (endgametools).",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Coup de Grace": {
+   "tree": "Combat",
+   "what": "3 points: Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%.",
+   "why": "Stronger Eviscerate and Death Mark; Subtlety's raid build takes it for Death Mark.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Efficient Strikes": {
+   "tree": "Combat",
+   "what": "2 points: Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by 5.",
+   "why": "Cheaper Sinister Strike and Hemorrhage (Icy Veins still calls it Improved Sinister Strike).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Lightning Reflexes": {
+   "tree": "Combat",
+   "what": "5 points: Increases your Dodge chance by 5%.",
+   "why": "More dodge for survival; the Backstab Combat build drops it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Puncturing Wounds": {
+   "tree": "Combat",
+   "what": "3 points: Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point.",
+   "why": "More Backstab and Mutilate crit, and Backstab can add a combo point. Assassination and dagger Combat take it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Deflection": {
+   "tree": "Combat",
+   "what": "3 points: Increases your Parry chance by 6%.",
+   "why": "More parries, so more Riposte procs and less damage taken.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Precision": {
+   "tree": "Combat",
+   "what": "3 points: Improves your chance to hit by 3%.",
+   "why": "+3% hit, now for poisons and spells too. Misses deal nothing, so every build wants it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ]
+  },
+  "Improved Sprint": {
+   "tree": "Combat",
+   "what": "2 points: Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability.",
+   "why": "Sprint clears snares and roots. Melee hate slows.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide"
+   ]
+  },
+  "Endurance": {
+   "tree": "Combat",
+   "what": "2 points: Reduces the cooldown of your Sprint and Evasion abilities by 60%.",
+   "why": "Much shorter Sprint and Evasion cooldowns: more Evasion while leveling.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Riposte": {
+   "tree": "Combat",
+   "what": "1 point: A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.",
+   "why": "A strong hit after every parry; Icy Veins calls level 20 Riposte a big power spike for Combat.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Composure": {
+   "tree": "Combat",
+   "what": "2 points: Increases the Energy cost reduction of your Poised ability by 10.",
+   "why": "Doubles Poised: the first ability of each pull is cheaper.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://wowfdb.com/classes/rogue/"
+   ]
+  },
+  "Improved Kick": {
+   "tree": "Combat",
+   "what": "2 points: Gives your Kick ability a 100% chance to Silence the target for 2 sec.",
+   "why": "Kick also silences for 2 s, so non-school spells stop too.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Flawless Execution": {
+   "tree": "Combat",
+   "what": "1 point: Reduces the Energy cost of your Eviscerate ability by 15.",
+   "why": "Cheaper Eviscerate; Energy is your main limit while leveling.",
+   "unconfirmed": true,
+   "flag": "Client says -15 Energy; Blizzard's deep dive said -10.",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Weapon Expertise": {
+   "tree": "Combat",
+   "what": "2 points: Reduces the chance for your attacks to be Dodged or Parried by 2%.",
+   "why": "Fewer dodged and parried attacks, which matters most when you cannot stand behind.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority"
+   ]
+  },
+  "Aggression": {
+   "tree": "Combat",
+   "what": "3 points: Increases the damage of your Sinister Strike and Eviscerate abilities by 15%.",
+   "why": "More Sinister Strike and Eviscerate damage: the core of Combat.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents"
+   ]
+  },
+  "Dual Wield Specialization": {
+   "tree": "Combat",
+   "what": "2 points: Increases the damage done by your off-hand weapon by 50%.",
+   "why": "Stronger off-hand hits, including Shank.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Blade Flurry": {
+   "tree": "Combat",
+   "what": "1 point: Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec.",
+   "why": "Your only cleave, plus attack speed (Icy Veins).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Hack and Slash": {
+   "tree": "Combat",
+   "what": "5 points: Gives your melee weapon attacks a benefit depending on the weapon. Axe/Sword: Your successful melee attacks have a 5% chance to trigger an extra attack on the target. Dagger/Fist: Increases your critical strike chance by 5%. Mace: Your attacks ignore 15% of your target's armor.",
+   "why": "Replaces the four weapon specializations: every weapon gets a bonus, so no respec when a mace or axe drops.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/rogue-class-overview",
+    "https://wowfdb.com/classes/rogue/combat/"
+   ]
+  },
+  "Flash of Steel": {
+   "tree": "Combat",
+   "what": "5 points: Increases the Energy generated by your Shank ability by 15 and reduces its cooldown by 2 sec.",
+   "why": "More Energy from Shank and a shorter cooldown.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://wowfdb.com/classes/rogue/"
+   ]
+  },
+  "Adrenaline Rush": {
+   "tree": "Combat",
+   "what": "1 point: Increases your Energy regeneration rate by 100% for 15 sec.",
+   "why": "Doubles Energy regen for 15 s: Combat's big cooldown.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  "Setup": {
+   "tree": "Subtlety",
+   "what": "3 points: Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells.",
+   "why": "A combo point when you dodge; only counts on your current target (wowfdb).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ]
+  },
+  "Master of Deception": {
+   "tree": "Subtlety",
+   "what": "3 points: Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher.",
+   "why": "You count as 3 levels higher for Stealth. Icy Veins: nearly required for the level-20 quests if you do them at 20.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Opportunity": {
+   "tree": "Subtlety",
+   "what": "5 points: Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%.",
+   "why": "More Backstab, Garrote, Ambush and Mutilate damage; Assassination dips into it for Mutilate.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ]
+  },
+  "Dirty Deeds": {
+   "tree": "Subtlety",
+   "what": "2 points: Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target.",
+   "why": "Cheaper Cheap Shot and Garrote, and Garrote from any side. Makes Garrote the easy opener.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Camouflage": {
+   "tree": "Subtlety",
+   "what": "3 points: Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 6 sec.",
+   "why": "Faster in Stealth and a shorter Stealth cooldown; Icy Veins' Subtlety leveling pick (or Master of Deception).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Improved Ambush": {
+   "tree": "Subtlety",
+   "what": "3 points: Increases the critical strike chance of your Ambush ability by 45%.",
+   "why": "Ambush crits more. Icy Veins' Subtlety leveling guide skips it: Garrote is easier.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Dirty Tricks": {
+   "tree": "Subtlety",
+   "what": "2 points: Reduces the Energy cost of your Sap and Blind abilities by 50%.",
+   "why": "Half-price Sap and Blind. Sap no longer breaks Stealth baseline.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ]
+  },
+  "Initiative": {
+   "tree": "Subtlety",
+   "what": "3 points: Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.",
+   "why": "Ambush, Garrote and Cheap Shot add an extra combo point.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Premeditation": {
+   "tree": "Subtlety",
+   "what": "1 point: Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost.",
+   "why": "2 combo points on demand, now without Stealth.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Serrated Blades": {
+   "tree": "Subtlety",
+   "what": "3 points: Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%.",
+   "why": "Armor penetration and +30% Rupture: core for the bleed build.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents",
+    "https://wowfdb.com/classes/rogue/subtlety/"
+   ]
+  },
+  "Elusiveness": {
+   "tree": "Subtlety",
+   "what": "2 points: Reduces the cooldown of your Vanish and Blind abilities by 90 sec.",
+   "why": "Shorter Vanish and Blind cooldowns: more escapes.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Ghostly Strike": {
+   "tree": "Subtlety",
+   "what": "1 point: A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by 15% for 7 sec, and causes your next Ambush or Garrote cast within 7 sec to not require Stealth. Awards 1 combo point.",
+   "why": "Builder plus dodge, and it lets Garrote or Ambush work out of Stealth.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Quick Getaway": {
+   "tree": "Subtlety",
+   "what": "2 points: Increases the maximum number of targets you may have Sapped by 1, and increases your movement speed by 30% for 3 sec after Sapping a target.",
+   "why": "Sap two targets and run faster after a Sap. Strong in PvP (Icy Veins).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ]
+  },
+  "Heightened Senses": {
+   "tree": "Subtlety",
+   "what": "2 points: Increases your Stealth detection as if you were 3 levels higher and reduces your chance to be hit by spells and ranged attacks by 4%.",
+   "why": "See stealthed enemies better and take fewer spell and ranged hits: mostly PvP.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  "Preparation": {
+   "tree": "Subtlety",
+   "what": "1 point: When activated, this ability immediately finishes the cooldown on your other Rogue abilities.",
+   "why": "Resets Evasion, Vanish and more: a second chance on a bad pull.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  "Hemorrhage": {
+   "tree": "Subtlety",
+   "what": "1 point: An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture and Garrote damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point.",
+   "why": "Cheap builder that works with any weapon from any side; the reason to level Subtlety (Icy Veins).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Boot Knife": {
+   "tree": "Subtlety",
+   "what": "5 points: Grants your Shank ability a 100% chance to add 2 Combo Points to the target.",
+   "why": "Shank adds 2 combo points: a big part of Subtlety's point flow.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  "Death Mark": {
+   "tree": "Subtlety",
+   "what": "1 point: Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:",
+   "why": "The Subtlety capstone finisher; Icy Veins makes it your main finisher from 40.",
+   "unconfirmed": true,
+   "flag": "Damage cap formula unreadable in client text; untested in play.",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  }
+ },
+ "mechanics": [
+  {
+   "title": "Energy refills all the time",
+   "body": "Every ability costs Energy, and Energy comes back on its own: in Forever it refills smoothly instead of in 2-second ticks, about 10 per second (Icy Veins). Energy you would gain while full is lost, so never sit at full Energy in a fight. Switching specs no longer refills it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "energy-regen",
+   "topic": "energy"
+  },
+  {
+   "title": "Pooling Energy",
+   "body": "Pooling means auto-attacking for a moment while Energy builds, so you can spend it at the right time: when a cooldown comes back, right before an add spawns, or inside a damage window such as Death Mark. It is not a gain by itself, and pooling to the cap wastes Energy.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "id": "energy-pooling",
+   "topic": "energy"
+  },
+  {
+   "title": "Poised: start at full Energy",
+   "body": "New passive at 18. When you are at full Energy and out of combat, your next ability costs 10 less. Combat's Composure talent adds 10 more. Let Energy fill before each pull.",
+   "unconfirmed": true,
+   "flag": "Client data (endgametools/wowfdb) only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ],
+   "id": "poised",
+   "topic": "energy"
+  },
+  {
+   "title": "Shank gives Energy back",
+   "body": "Shank (24) costs 5 Energy, gives 15 back (25 at rank 2, level 44), cannot miss and has a 10 s cooldown. Use it on cooldown, but not when you are close to full Energy, or the refund is wasted. Flash of Steel (Combat) adds Energy and cuts the cooldown.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ],
+   "id": "shank-energy",
+   "topic": "energy"
+  },
+  {
+   "title": "More Energy from talents",
+   "body": "Relentless Strikes refunds 25 Energy on finishers (20% per combo point at 5/5). Adrenaline Rush doubles regen for 15 s. Vigor adds 10 max Energy, and Gnomes get 5% more max Energy. Icy Veins calls Energy your single biggest limit while leveling, so these are early picks.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "id": "energy-talents",
+   "topic": "energy"
+  },
+  {
+   "title": "What things cost",
+   "body": "Some costs from client data: Sinister Strike 45, Backstab 60, Eviscerate 35, Slice and Dice 25, Rupture 25, Kick 25, Garrote 50, Cheap Shot 60, Sap 65, Mutilate 60, Death Mark 25. Talents cut many of these. Kick sharing Energy and the global cooldown with your damage is why interrupts feel expensive.",
+   "unconfirmed": true,
+   "flag": "Costs from endgametools client list; Kick also Icy Veins.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "id": "energy-costs",
+   "topic": "energy"
+  },
+  {
+   "title": "Combo points",
+   "body": "Builders put combo points on your target (up to 5); finishers spend them, and more points means a bigger effect. In Forever the points stay on a target when you switch to another; you lose them only when you start building on a new enemy or the target dies. So you can Kick or Gouge another mob and come back to finish.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "id": "combo-points"
+  },
+  {
+   "title": "Redirect saves your points",
+   "body": "Redirect (level 1) moves all combo points off your target and keeps them for up to 15 s; your next hit on a non-player enemy gets them. 10 s cooldown. Use it when a mob dies with points on it, before you hit the next one.",
+   "unconfirmed": true,
+   "flag": "Client data via endgametools only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "id": "redirect"
+  },
+  {
+   "title": "How Stealth detection works",
+   "body": "Stealth shrinks how far enemies can see you, based on the level gap: higher-level mobs see you from farther. Mobs see less behind them. When you get close, a mob usually turns to you first and attacks a second later; it checks only every few seconds, so step back and come in from another side. Mobs with an eye over their head detect Stealth from far away. Master of Deception makes you count as 3 levels higher.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ],
+   "id": "stealth-detection"
+  },
+  {
+   "title": "Sap no longer breaks Stealth",
+   "body": "Sap still needs Stealth and an out-of-combat humanoid, costs 65 Energy and breaks on damage, but you stay stealthed afterwards. Sap one guard and still open on the other, or Sap and walk past. Only one target at a time (two with Quick Getaway). Sap cannot trigger weapon procs, Warriors' Berserker Rage now removes it, and Sapping a PvP-flagged player flags you.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "sap-forever"
+  },
+  {
+   "title": "Distract lowers detection",
+   "body": "Distract turns enemies toward a spot, and in Forever it also lowers their Stealth detection for 10 s (as if a level lower). Use it to get behind a mob, or to stop a patrol walking into your group. Players hit by it are told a Rogue is near. It can be resisted.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "id": "distract-forever"
+  },
+  {
+   "title": "Hit, dodge and parry",
+   "body": "Misses, dodges and parries deal nothing. Icy Veins: melee abilities need 8% hit against a raid boss, and dual-wield auto attacks miss 27% of the time without hit. From behind, attacks cannot be parried or blocked, so stand behind the target whenever you can. Hit and Expertise are rare while leveling: take them when you see them.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "id": "hit-table"
+  },
+  {
+   "title": "Known issue: parries from behind",
+   "body": "Enemies can currently parry and block from behind at close range. Until it is fixed, stand at the edge of melee range. It hurts Backstab and Ambush most.",
+   "unconfirmed": true,
+   "flag": "wowfdb only; listed as a known issue.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://wowfdb.com/classes/rogue/combat/",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "parry-behind"
+  },
+  {
+   "title": "Two weapons",
+   "body": "Rogues dual wield from level 10 (Icy Veins milestone). Poisons go on each weapon. Shank and Mutilate use the off hand. Dual Wield Specialization raises off-hand damage.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "id": "dual-wield"
+  },
+  {
+   "title": "Which weapon where",
+   "body": "Sinister Strike, Riposte and Hemorrhage hit harder with a slow main hand: Icy Veins prefers a 14 DPS 2.8-speed weapon over a 15 DPS 1.9-speed one. Backstab, Ambush need a main-hand dagger; Mutilate needs daggers in both hands. Hack and Slash gives every weapon type a bonus (swords/axes extra attacks, daggers/fist crit, maces armor penetration).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ],
+   "id": "weapon-choice"
+  },
+  {
+   "title": "Can you use one-handed axes?",
+   "body": "Blizzard's deep dive says Rogues can now learn one-handed axes, and Icy Veins recommends the Bloodslash Axe. A Wowhead weapon-skill table lists them as unusable. Check at a weapon trainer that teaches axes before you buy one.",
+   "unconfirmed": true,
+   "flag": "Conflict: Blizzard says yes; a Wowhead weapon table (URL not archived) says no.",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "id": "axes-conflict"
+  },
+  {
+   "title": "Weapon-swap macros",
+   "body": "Subtlety swaps a dagger in for Ambush or Backstab and a slow weapon for Sinister Strike. A swap costs a global cooldown and resets your swing timer. Since build 70291 several swaps fit in one global cooldown (wowfdb). Poisons stay on each weapon, so swapping can keep more than two poisons in use.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "weapon-swap"
+  },
+  {
+   "title": "Bleed and poison immunity",
+   "body": "Elementals, constructs, skeletons and ghosts ignore most bleeds (Icy Veins), so Garrote, Rupture and Death Mark do little to them. Some mobs are immune to poisons too, which hurts Assassination most. Use Eviscerate and plain strikes there.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/assassination/"
+   ],
+   "id": "immunities"
+  },
+  {
+   "title": "You have no heal",
+   "body": "Rogues cannot heal themselves. Level First Aid: bandages are faster than eating, and Blind or Gouge buys time to bandage mid-fight. First Aid can now also make basic healing potions (Icy Veins). Keep food and potions on you.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "id": "no-self-heal"
+  },
+  {
+   "title": "Talents, respec and dual spec",
+   "body": "Talents start at 10. Each tree has one-point milestone talents at 11, 16, 21 and 31 points (16 is new). Respec, including Legacy talents, at a class trainer in a major city. Dual specialization opens at 40.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "id": "talent-milestones"
+  },
+  {
+   "title": "Expose Armor and Sunder Armor",
+   "body": "Expose Armor now matches 5 Sunder Armors at about the same level (2,250 at 5 points, top rank). It no longer stops Warriors from using Sunder for threat, but Sunder will not overwrite a stronger Expose Armor. Whether the two add together is untested.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "expose-sunder"
+  },
+  {
+   "title": "Vanish needs Flash Powder",
+   "body": "Vanish still uses one Flash Powder per cast (client data), bought from class vendors. The Legacy perk Reagent Economy removes the cost. Blind needs Blinding Powder, made with the Poisons skill. Never leave town without both.",
+   "unconfirmed": true,
+   "flag": "Reagent cost from client data; not confirmed in game by Blizzard.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://wowfdb.com/classes/rogue/changes/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "id": "vanish-powder"
+  }
+ ],
+ "rogue": [
+  {
+   "title": "Poisons are their own skill",
+   "body": "Poisons are a separate skill line with a spellbook tab, unlocked by the level-20 class quest. Each rank is an item you craft with reagents from a poison vendor near your class trainer. The client lists Poisons at 20, but quest data teaches it at 24-26, so it may not be trainable without the quest.",
+   "unconfirmed": true,
+   "flag": "Unlock level: client 20 vs quest data 24-26.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "poisons-skill",
+   "topic": "poisons"
+  },
+  {
+   "title": "Which poison on which weapon",
+   "body": "Groups and raids: Instant Poison on the main hand, Deadly Poison on the off hand, to keep 5 Deadly stacks up while Instant procs (Icy Veins, all specs). Leveling: Instant on both; Crippling if mobs keep running. Mind-numbing slows casters' casts; Wound cuts healing and is mostly for PvP.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "id": "which-poison",
+   "topic": "poisons"
+  },
+  {
+   "title": "Poison ranks by level",
+   "body": "Crippling 20 / II 50. Instant 20 / II 28 / III 36 / IV 44 / V 52 / VI 60. Mind-numbing 24 / II 38 / III 52. Deadly 30 / II 38 / III 46 / IV 54 / V 60. Wound 32 / II 40 / III 48 / IV 56. Instant Poison IV's tooltip shows 1,800 charges: a tooltip bug. Since Nov 16 poison ranks cannot go above the max rank.",
+   "unconfirmed": true,
+   "flag": "Ranks from wowfdb client data.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "id": "poison-ranks",
+   "topic": "poisons"
+  },
+  {
+   "title": "How long poisons last",
+   "body": "Poisons have a duration and charges, both shown on your buff. Forever gave every poison more charges. wowfdb's client data says 30 minutes; Icy Veins' Subtlety guide says 1 hour. You may lose them when you change instances, so carry spares and reapply when charges run low.",
+   "unconfirmed": true,
+   "flag": "Duration conflict: 30 min (client) vs 1 h (Icy Veins).",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide"
+   ],
+   "id": "poison-duration",
+   "topic": "poisons"
+  },
+  {
+   "title": "Poisons plus sharpening stones",
+   "body": "Blizzard: poisons can now sit on a weapon together with a Sharpening Stone or Weightstone, so use both. The client data did not show it yet when wowfdb checked, and whether it also works with Windfury Totem is unconfirmed. Poisons no longer trigger against attackers.",
+   "unconfirmed": true,
+   "flag": "Stacking announced; not yet seen in client data.",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "poison-stones",
+   "topic": "poisons"
+  },
+  {
+   "title": "Do poisons scale?",
+   "body": "Poison base damage is about a third lower than Classic, with Attack Power coefficients (Instant 0.01, Deadly 0.009) and they can crit with Malice and the merged hit and crit. A player test found no Attack Power scaling. Treat poison damage as an open question.",
+   "unconfirmed": true,
+   "flag": "Open question (wowfdb).",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "id": "poison-scaling",
+   "topic": "poisons"
+  },
+  {
+   "title": "Pick Pocket basics",
+   "body": "From level 4, in Stealth, pick any humanoid before you fight it: coin early, junkboxes from level 20-30 mobs up. A failed pick turns the mob on you, so keep Sap ready for the next one. Pockets refill after a while (one guide says about 10 minutes). Since Nov 17 Paletusks can no longer be pickpocketed.",
+   "unconfirmed": true,
+   "flag": "Refill time (~10 min) from one fan guide.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://warcraftmaps.com/gold/farms/rogue-blackrock-depths-pickpocket",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "id": "pick-pocket-basics",
+   "topic": "pockets"
+  },
+  {
+   "title": "Junkboxes by mob level",
+   "body": "Battered Junkbox from level 20-30 humanoids (opens at Lockpicking 1), Worn 30-40 (70), Sturdy 40-50 (175), Heavy 50-60 (250). Open them yourself: skill points plus coin, potions, powders, herbs and the odd green. Values are Classic numbers; Forever's database shows placeholders. It is unclear whether junkboxes need skill at all.",
+   "unconfirmed": true,
+   "flag": "Classic lock values; skill requirement unclear.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://wowcamp.fun/en/guides/gold-farming-spots/"
+   ],
+   "id": "junkboxes",
+   "topic": "pockets"
+  },
+  {
+   "title": "Best pickpocket targets so far",
+   "body": "GoldScout player data: Battered Junkbox from Dragonmaw Raider (26-27, Wetlands) 15% of 33 picks, Burning Blade Augur (30-31, Desolace) 11% of 36. Worn from Twilight Shadowmancer (39-40, Riverglades) 12% of 66 and Syndicate Highwayman (30-31, Arathi) 12% of 24. Sturdy from Twilight Raider (39-40, Riverglades) 6.7% of 119. Small samples: check again later.",
+   "unconfirmed": true,
+   "flag": "Crowdsourced, small samples.",
+   "sources": [
+    "https://wowgoldscout.com/item/16882",
+    "https://wowgoldscout.com/item/16883",
+    "https://wowgoldscout.com/item/16884"
+   ],
+   "id": "best-pockets",
+   "topic": "pockets"
+  },
+  {
+   "title": "Blackrock Depths pickpocket lap",
+   "body": "At 48-60 the Dark Iron dwarves in Blackrock Depths carry Heavy Junkboxes, pipes, potions and gems. Stay in Stealth the whole lap, pick from behind, Sap the next mob if a pick fails. Avoid the Bloodhounds: they see through Stealth. It is a steady supplement, not big money.",
+   "unconfirmed": true,
+   "flag": "Fan guides; Classic spawn data.",
+   "sources": [
+    "https://warcraftmaps.com/gold/farms/rogue-blackrock-depths-pickpocket",
+    "https://wowcamp.fun/en/guides/gold-farming-spots/"
+   ],
+   "id": "brd-lap",
+   "topic": "pockets"
+  },
+  {
+   "title": "Lockpicking basics",
+   "body": "Lockpicking is its own skill line. Your cap is level x 5 (80 at 16, 150 at 30, 300 at 60). Pick Lock has a 5 s cast at 5 yd and damage interrupts it. You need Thieves' Tools in your bags (not used up; free from the lockpicking quest or about 15 s from a vendor). Points come only from locks: orange always, yellow usually, green rarely, grey never.",
+   "unconfirmed": true,
+   "flag": "Fan guides; learn level disputed (1/15/16).",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "id": "lockpicking-basics",
+   "topic": "locks"
+  },
+  {
+   "title": "The lockpicking quest",
+   "body": "Alliance: Redridge Rendezvous (Renzik \"The Shiv\", Stormwind), then Alther's Mill (Lucius, Lakeshire), with Practice Lockboxes at the mill. Forever added level 19-20 Greater Tarantulas there: bring a friend or come at 20. Horde: Wrenix of Ratchet, then Plundering the Plunderers: Buccaneer's Strongboxes on the pirate ship south of Ratchet; use the E.C.A.C. on Polly the parrot first. Both spots work for both factions.",
+   "unconfirmed": true,
+   "flag": "Quest names from one fan guide; level 15 (Icy Veins) vs 16.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "id": "lockpicking-quest",
+   "topic": "locks"
+  },
+  {
+   "title": "Lockpicking route",
+   "body": "1-80 Practice Lockboxes (Alther's Mill) or Buccaneer's Strongbox (Ratchet). 70-150 footlockers at Durnholde Keep (Hillsbrad), Wetlands murloc camps, Windshear Crag, Zoram Strand, Lake Everstill. 150-225 Angor Fortress (Badlands), Desolace coast, Pool of Tears. 200-250 Slag Pit (Searing Gorge), Lost Rigger Cove, Bay of Storms. 250-300 Tyr's Hand and Heavy Junkboxes; 280+ the Blackrock Depths entrance doors.",
+   "unconfirmed": true,
+   "flag": "Fan guides using Classic lock values.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+    "https://www.warcrafttavern.com/forever/guides/lockpicking/"
+   ],
+   "id": "lockpicking-route",
+   "topic": "locks"
+  },
+  {
+   "title": "Get 75 before the poison quest",
+   "body": "Both level-20 poison quests end at a box that needs Lockpicking 75 (Icy Veins). Players report opening it at 66 and failing at 55. Reach 80 first and you are safe.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/"
+   ],
+   "id": "poison-quest-lock",
+   "topic": "locks"
+  },
+  {
+   "title": "Open boxes for other players",
+   "body": "Anyone can loot lockboxes; only you can open them. In a city, offer it in trade chat. The other player puts the box in the bottom \"will not be traded\" slot, you pick it there, and they keep the box: no trust needed. You still get the skill point. Sell boxes you cannot open yet on the Auction House.",
+   "unconfirmed": true,
+   "flag": "Fan guides.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ],
+   "id": "boxes-for-tips",
+   "topic": "locks"
+  },
+  {
+   "title": "Locked doors and chests",
+   "body": "Classic values (Forever's database does not list them): Gnomeregan workshop door 150, Scarlet Monastery Armory and Cathedral 175, Blackrock Depths cells 250 and Shadowforge gates 280, Scholomance 280, Dire Maul 300. At the BRD gates use Pick Lock, not the Shadowforge Key: the key gives no skill.",
+   "unconfirmed": true,
+   "flag": "Classic values from one fan guide.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/"
+   ],
+   "id": "dungeon-doors",
+   "topic": "locks"
+  },
+  {
+   "title": "Moving in Stealth",
+   "body": "Stealth slows you, so walk normally until you are close, then stealth. Approach from behind. If a mob turns toward you, step back and try another angle. Sprint does not break Stealth. Stealth before you go AFK.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://warcraftmaps.com/gold/farms/rogue-blackrock-depths-pickpocket"
+   ],
+   "id": "stealth-approach",
+   "topic": "stealth"
+  },
+  {
+   "title": "Sap, Distract, walk on",
+   "body": "Forever's Sap keeps you hidden, and Distract lowers detection: Sap the guard, Distract the next one, pick both pockets, open on the third. Subtlety's Quick Getaway lets you keep two Sapped. Good for quest items, herbs and pickpocket laps.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/subtlety/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "id": "sap-distract-play",
+   "topic": "stealth"
+  },
+  {
+   "title": "Which finisher?",
+   "body": "Short fight: Eviscerate. Long fight: Slice and Dice and Rupture first, then Eviscerate with the rest (Assassination and Combat), or Rupture, Death Mark and Slice and Dice (Subtlety). Build to 5 points, and do not use a 2-point ability (Garrote with Initiative, Premeditation, Shank with Boot Knife) at 4 points.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "id": "combo-spend",
+   "topic": "combo"
+  },
+  {
+   "title": "Points survive a switch",
+   "body": "Your points stay on the old target until you build on a new one. Kick or Gouge the caster, then finish your target. If it dies with points on it, Redirect carries them over within 15 s.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "id": "combo-redirect",
+   "topic": "combo"
+  }
+ ],
+ "roles": [
+  {
+   "title": "Your job in a group",
+   "body": "You are single-target damage and control. Stand behind the target, keep your buffs and debuffs up, and kill the most dangerous or healthiest mob while others AoE. Rogues bring no group buff, dispel or heal, so your crowd control is what earns the invite.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "id": "group-damage"
+  },
+  {
+   "title": "Do not pull threat",
+   "body": "Your burst can pull mobs off the tank. Wait a moment before Cold Blood or Adrenaline Rush, use Feint when close to the tank's threat, and Vanish to drop threat completely. Evasion lets you tank a mob briefly if you do pull.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "id": "threat"
+  },
+  {
+   "title": "Crowd control for the party",
+   "body": "Sap a humanoid before the pull (it stays Sapped while you stay hidden). Kick dangerous casts; Gouge or Blind casts that Kick cannot stop. Kidney Shot for an emergency stun. Distract stops a patrol from walking in. Combat: do not Blade Flurry next to a Sapped or Polymorphed mob.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://wowfdb.com/classes/rogue/combat/",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ],
+   "id": "crowd-control"
+  },
+  {
+   "title": "Raid duties",
+   "body": "Apply Expose Armor if no Warrior keeps a stronger armor debuff up. Reach 8% hit for abilities (Icy Veins), then Agility. Use Vanish for a mechanic you can ignore by it, as a threat drop, or to save repairs on a wipe.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority"
+   ],
+   "id": "raid-debuffs"
+  },
+  {
+   "title": "Locks and traps",
+   "body": "Pick locked dungeon chests and doors so the group skips keys, and disarm traps that would call more enemies. If you open a chest, ask before taking what is inside.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "id": "locks-traps"
+  },
+  {
+   "title": "Which spec for groups",
+   "body": "Combat is the safest spec for dungeons and the only one with a cleave (Blade Flurry). Assassination needs two daggers and poisons. Subtlety does very high single-target damage with lots of upkeep and no AoE. Every spec is welcome for Stealth and control.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/combat/"
+   ],
+   "id": "which-spec-group"
+  }
+ ],
+ "leveling": {
+  "Assassination": [
+   {
+    "title": "Build to Mutilate",
+    "body": "Icy Veins: Remorseless Attacks, Ruthlessness, Relentless Strikes, Lethality, Cold Blood, then Seal Fate and Venom (from 30) and Mutilate (40). Off-tree: Precision, Puncturing Wounds, Opportunity. Levels before Mutilate feel slow.",
+    "unconfirmed": true,
+    "flag": "Mutilate level: 40 (Icy Veins) vs 48/50 (wowfdb/endgametools).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+     "https://wowfdb.com/classes/rogue/changes/",
+     "https://endgametools.com/en/wow-forever/spells/rogue"
+    ]
+   },
+   {
+    "title": "Leveling rotation",
+    "body": "Poison on both weapons (Instant; Crippling for runners). Open from Stealth with Cheap Shot, or Garrote for damage. Build with Backstab from behind, Sinister Strike from the front, Mutilate once learned. Slice and Dice if more mobs are coming, otherwise Eviscerate at 5 points.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Two daggers",
+    "body": "Weapon damage first: a high-damage dagger in each hand, even at the cost of stats. Mutilate will not work without two daggers. Then Hit, Agility, crit.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+     "https://wowfdb.com/classes/rogue/assassination/"
+    ]
+   },
+   {
+    "title": "Poison-immune mobs",
+    "body": "Some mobs ignore your poisons, which hurts Assassination more than other specs. Fight those with plain strikes and Eviscerate.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+     "https://wowfdb.com/classes/rogue/assassination/"
+    ]
+   }
+  ],
+  "Combat": [
+   {
+    "title": "Talent path",
+    "body": "Icy Veins: Improved Sinister Strike (Efficient Strikes), Precision, Riposte at 20, Flawless Execution, Blade Flurry at 30, Hack and Slash, Adrenaline Rush at 40. Utility: Ruthlessness, Relentless Strikes, Blood Splatter, Cold Blood.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Leveling rotation",
+    "body": "Instant Poison on both weapons (Crippling for runners). Open from Stealth: Cheap Shot if it can be stunned, or Garrote. Riposte whenever it procs. Sinister Strike for points. At 5 points: Slice and Dice if more mobs are coming, otherwise Eviscerate. From 30, Blade Flurry with two mobs, with Evasion.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Slow main hand",
+    "body": "Look for a slow, high-damage main hand for Sinister Strike and Riposte, then Hit, Agility, crit. Blade of Cunning (level-10 class quest) is your first big upgrade; Deadmines, Shadowfang Keep and Excavation Site: Wetlands have more.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+     "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+    ]
+   },
+   {
+    "title": "Where to level",
+    "body": "Icy Veins zones: 10 Loch Modan/Darkshore or the Barrens; then Westfall/Darkshore or Silverpine; Westfall/Redridge or Barrens/Stonetalon; Redridge/Duskwood or Hillsbrad/Stonetalon; Ashenvale/Duskwood; Wetlands; Arathi/Hillsbrad; Desolace/Dustwallow; Badlands/Stranglethorn; Riverglades; Tanaris/Feralas; Hinterlands.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Professions",
+    "body": "Icy Veins: Skinning and Leatherworking (crafted gear that lasts, likely end-game pieces), plus First Aid and Cooking for downtime and XP food.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+    ]
+   }
+  ],
+  "Subtlety": [
+   {
+    "title": "Straight to Hemorrhage",
+    "body": "Icy Veins: all points in Subtlety until Hemorrhage at 30, then cheaper Hemorrhage, then Death Mark at 40, then Combat for Death Mark damage and Assassination for crit and longer Garrote and Rupture. Levels 20-30 add little damage: you may play another spec and respec at 30.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Leveling rotation",
+    "body": "Open with Garrote from Stealth once learned (Backstab before that). Shank on cooldown, Ghostly Strike then Garrote. Before 30: Backstab from behind or Sinister Strike, Slice and Dice as the main finisher. From 30: Hemorrhage only, Rupture as finisher. From 40: Death Mark at 5 points; Eviscerate if the mob is nearly dead.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Sample opener at 40+",
+    "body": "Garrote from Stealth, one Hemorrhage (3 points), Shank (5 points with Boot Knife), Death Mark, then Hemorrhage and Eviscerate if needed. Against tougher mobs: Rupture first, then Death Mark.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Stealth talents for the level-20 quests",
+    "body": "Take Master of Deception instead of Camouflage if mobs keep spotting you, especially for the level-20 class quests. Icy Veins suggests doing the poison quest at 22-23 instead; poisons are weak early.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+     "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+    ]
+   },
+   {
+    "title": "Legacy picks",
+    "body": "Icy Veins: Thrill of Adventure (health after kills), Well Rested (more rested XP), then Talented (needs 5 in Well Rested) for earlier power spikes.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+    ]
+   },
+   {
+    "title": "Herbalism with Sap",
+    "body": "Herbalism and Alchemy suit Subtlety: Sap the guards and pick the herb, or herb inside a dungeon, Vanish out and reset. Engineering is the PvP pick. Leatherworking's Camp Tent gives 5% rested XP every hour.",
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+    ]
+   }
+  ]
+ },
+ "mistakes": [
+  {
+   "title": "Sitting at full Energy",
+   "body": "Energy you gain while full is lost. Spend it, or pool only for a reason.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://wowfdb.com/classes/rogue/combat/"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Wasting combo points",
+   "body": "Garrote with Initiative, Premeditation and Shank with Boot Knife give 2 points. Do not use them at 4 points.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "spec": "Subtlety"
+  },
+  {
+   "title": "Building on a new target by accident",
+   "body": "Your points stay on the old target until you build on another one. Finish first, or Redirect.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Standing in front",
+   "body": "From the front, mobs dodge, parry and block much more. Stay behind the target.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Forgetting poisons",
+   "body": "Check both weapons before pulls; poisons can drop when you change instances.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "No Flash Powder",
+   "body": "Vanish needs Flash Powder. Restock at the class vendor every trip to town.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Doing the poison quest under 75 Lockpicking",
+   "body": "Both poison quests end at a box that needs 75. Pick boxes to 80 first.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Skipping First Aid",
+   "body": "You have no heal. Bandages beat eating, and Blind or Gouge buys time to bandage.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Killing what you could pickpocket",
+   "body": "Pick every humanoid before you attack it: coin and junkboxes for free.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ],
+   "spec": "any"
+  },
+  {
+   "title": "Blade Flurry next to crowd control",
+   "body": "Blade Flurry hits a second nearby mob and breaks Sap or Polymorph on it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/combat/"
+   ],
+   "spec": "Combat"
+  },
+  {
+   "title": "Cold Blood on Sinister Strike",
+   "body": "Use it on a 5-point Eviscerate.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "spec": "Combat"
+  },
+  {
+   "title": "Mutilate without two daggers",
+   "body": "It will not work. Keep a dagger in each hand.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ],
+   "spec": "Assassination"
+  },
+  {
+   "title": "Letting Venom and Slice and Dice drop",
+   "body": "Keep Shank on cooldown for Venom and Slice and Dice up; both matter more than a late Eviscerate.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://wowfdb.com/classes/rogue/assassination/"
+   ],
+   "spec": "Assassination"
+  },
+  {
+   "title": "Bleeds on immune mobs",
+   "body": "Elementals, constructs, skeletons and ghosts ignore most bleeds. Eviscerate them instead.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "spec": "Subtlety"
+  },
+  {
+   "title": "Delaying Shank and Ghostly Strike",
+   "body": "Short cooldowns add up: a second late each costs whole casts over a fight.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "spec": "Subtlety"
+  },
+  {
+   "title": "Bursting before the tank has threat",
+   "body": "Wait a moment before Cold Blood, Adrenaline Rush or a big opener in groups.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "spec": "any"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "welcome",
+   "level": 1,
+   "spec": "any",
+   "title": "Welcome, Rogue",
+   "body": "You start with Sinister Strike, Eviscerate, Stealth and Redirect. Hit with Sinister Strike to build combo points (up to 5 on the target), then spend them on Eviscerate. Energy refills on its own; do not sit at full. You cannot heal yourself, so eat between fights.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/"
+   ]
+  },
+  {
+   "id": "pick-spec",
+   "level": 1,
+   "spec": "any",
+   "title": "Which spec to level",
+   "body": "Talents start at 10. Combat is the safest and simplest leveling spec (Riposte 20, Blade Flurry 30, Adrenaline Rush 40). Subtlety comes alive with Hemorrhage at 30. Assassination needs two daggers and peaks with Mutilate.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/combat/"
+   ]
+  },
+  {
+   "id": "racials-alliance",
+   "level": 1,
+   "spec": "any",
+   "title": "Alliance racials for Rogues",
+   "body": "Human: Ruthless, +1% crit with any weapon. Dwarf: +1% hit and Stoneform. Night Elf: better Stealth and Shadowmeld. Gnome: +5% max Energy, Eureka! and Escape Artist (Icy Veins' best Alliance pick). Skyborne (High Order): +2% haste.",
+   "unconfirmed": true,
+   "flag": "Racial numbers from wowfdb.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide"
+   ],
+   "faction": "Alliance"
+  },
+  {
+   "id": "racials-horde",
+   "level": 1,
+   "spec": "any",
+   "title": "Horde racials for Rogues",
+   "body": "Undead: Touch of the Grave, Icy Veins' best Horde pick, plus Will of the Forsaken. Orc: Blood Fury (+10% Attack Power). Troll: Berserking and Beast Slaying. Skyborne (Windshaper): +2% haste.",
+   "unconfirmed": true,
+   "flag": "Racial numbers from wowfdb.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "faction": "Horde"
+  },
+  {
+   "id": "stealth-1",
+   "level": 1,
+   "spec": "any",
+   "title": "Stealth from day one",
+   "body": "Stealth lets you walk past fights you do not need. Higher-level mobs spot you sooner, and mobs see less behind them. Early on, Stealth is mostly for sneaking and, from 4, for Pick Pocket.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ]
+  },
+  {
+   "id": "redirect-1",
+   "level": 1,
+   "spec": "any",
+   "title": "Redirect",
+   "body": "If a mob dies with combo points on it, Redirect stores them for 15 s and puts them on the next enemy you hit.",
+   "unconfirmed": true,
+   "flag": "endgametools client data only.",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ]
+  },
+  {
+   "id": "pick-pocket",
+   "level": 4,
+   "spec": "any",
+   "title": "Pick Pocket: free money",
+   "body": "Stealth, walk up behind a humanoid and Pick Pocket before you attack it. Early mobs give coin; from about level 20 they carry junkboxes. A failed pick turns the mob on you. Several class quests need it, starting at 10.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ]
+  },
+  {
+   "id": "backstab",
+   "level": 4,
+   "spec": "any",
+   "title": "Backstab from behind",
+   "body": "Backstab hits much harder than Sinister Strike but needs a dagger in your main hand and you behind the target. Open from Stealth with it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "gouge",
+   "level": 6,
+   "spec": "any",
+   "title": "Gouge",
+   "body": "Gouge stops the mob for 4 s if it faces you; damage breaks it. Use it to stop a cast, step behind for Backstab, or start a bandage.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "trainer",
+   "level": 6,
+   "spec": "any",
+   "title": "Train every rank",
+   "body": "New ranks come every couple of levels. Visit your class trainer and buy Flash Powder there later for Vanish.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "evasion",
+   "level": 8,
+   "spec": "any",
+   "title": "Evasion",
+   "body": "+50% dodge for 15 s on a 5 min cooldown. Solo, use it early and often to save health and downtime.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "class-quest-alliance",
+   "level": 10,
+   "spec": "any",
+   "title": "Level 10 class quest: Blade of Cunning",
+   "body": "Every class quest at 10 rewards the Blade of Cunning. Human: Seek out SI:7 (Keryn Sylvius, Goldshire; pickpocket the Defias Dockmaster on Elwynn's south coast; avoid the campfire). Dwarf/Gnome: Road to Salvation (Hogral Bakkan, Kharanos). Night Elf: The Apple Falls (Jannok Breezesong, Dolanaar; pickpocket Sethir). Skyborne have no level-10 quest. You need Stealth and Pick Pocket.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ],
+   "faction": "Alliance"
+  },
+  {
+   "id": "class-quest-horde",
+   "level": 10,
+   "spec": "any",
+   "title": "Level 10 class quest: Blade of Cunning",
+   "body": "Every class quest at 10 rewards the Blade of Cunning. Orc/Troll: Therzok (Kaplak, Razor Hill; kill Tazan south of Ratchet, pickpocket Gamon in Orgrimmar's inn for the key). Undead: Mennet Carkad chain (Marion Call, Brill). Skyborne have no level-10 quest. Wait to 11-12 if the area is too crowded.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ],
+   "faction": "Horde"
+  },
+  {
+   "id": "dual-wield",
+   "level": 10,
+   "spec": "any",
+   "title": "Dual wield and weapon skills",
+   "body": "You can dual wield from 10 (Icy Veins milestone). Put your best weapon in the main hand: Sinister Strike and Backstab use it. Shank, and later Mutilate, use the off hand.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "talents-10",
+   "level": 10,
+   "spec": "any",
+   "title": "Your first talent point",
+   "body": "Talents open at 10. Leveling picks: Combat (Efficient Strikes, Precision, Riposte at 20), Subtlety (straight to Hemorrhage at 30), Assassination (Remorseless Attacks, Ruthlessness, Relentless Strikes). Respec at a city trainer.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+   ]
+  },
+  {
+   "id": "snd-sap-sprint",
+   "level": 10,
+   "spec": "any",
+   "title": "Slice and Dice, Sap, Sprint",
+   "body": "Slice and Dice speeds up your attacks: use it when more mobs are coming, Eviscerate otherwise. Sap takes a humanoid out before the fight and no longer breaks Stealth. Sprint does not break Stealth either.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ]
+  },
+  {
+   "id": "kick",
+   "level": 12,
+   "spec": "any",
+   "title": "Kick",
+   "body": "Your interrupt: 25 Energy, 10 s cooldown, locks the spell school for 5 s. Save Energy for it when a caster is up.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  {
+   "id": "garrote",
+   "level": 14,
+   "spec": "any",
+   "title": "Garrote and Expose Armor",
+   "body": "Garrote is a bleed opener from Stealth and behind; Subtlety opens with it from now on. Expose Armor is a group finisher; skip it solo.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  {
+   "id": "lockpicking-a",
+   "level": 15,
+   "spec": "any",
+   "title": "Lockpicking quest",
+   "body": "Your trainer starts the lockpicking chain: Redridge Rendezvous (Renzik \"The Shiv\", Stormwind), then Alther's Mill in Redridge with Thieves' Tools and Practice Lockboxes. New level 19-20 spiders guard the mill. Get to 80 before the level-20 poison quest.",
+   "unconfirmed": true,
+   "flag": "Level 15 (Icy Veins) vs 16 (fan guides).",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ],
+   "faction": "Alliance"
+  },
+  {
+   "id": "lockpicking-h",
+   "level": 15,
+   "spec": "any",
+   "title": "Lockpicking quest",
+   "body": "Your trainer starts the lockpicking chain: Wrenix of Ratchet, then Plundering the Plunderers: Buccaneer's Strongboxes on the pirate ship south of Ratchet. Use the E.C.A.C. on Polly the parrot before opening the quest chest. Get to 80 before the level-20 poison quest.",
+   "unconfirmed": true,
+   "flag": "Level 15 (Icy Veins) vs 16 (fan guides).",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ],
+   "faction": "Horde"
+  },
+  {
+   "id": "feint",
+   "level": 16,
+   "spec": "any",
+   "title": "Feint",
+   "body": "Feint lowers your threat. Forever made the drop bigger. Use it in groups before you pull aggro.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ]
+  },
+  {
+   "id": "ambush-poised",
+   "level": 18,
+   "spec": "any",
+   "title": "Ambush and Poised",
+   "body": "Ambush is a huge opener from Stealth and behind, with a dagger. Poised (new) makes your first ability 10 Energy cheaper when you start at full Energy out of combat.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "poison-quest-a",
+   "level": 20,
+   "spec": "any",
+   "title": "Poison quest: Klaven's Tower",
+   "body": "Master Mathias Shaw (SI:7, Stormwind) sends you to Agent Kearnen (big tree, south-east Westfall). Pickpocket the Defias Tower Key from a Malformed Defias Drone, climb the tower, Sap Klaven Mortwake (23) and open the box (Lockpicking 75). It unlocks Poisons and Thistle Tea. The Touch of Zanzil curse: do Doc Mixilpixil's cure quest or have it dispelled.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ],
+   "faction": "Alliance"
+  },
+  {
+   "id": "poison-quest-h",
+   "level": 20,
+   "spec": "any",
+   "title": "Poison quest: The Shattered Salute",
+   "body": "Shenthul (Cleft of Shadows, Orgrimmar): /salute him. Then Taskmaster Fizzule in the Barrens (flare gun twice, then /salute), Mission: Possible But Not Probable: pickpocket Silixiz's Tower Key, kill Grand Foreman Puzik Gallywix (23 elite), open the lockbox (Lockpicking 75). Serge Hinott in Tarren Mill cures you and teaches Poisons.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "faction": "Horde"
+  },
+  {
+   "id": "xelthos",
+   "level": 20,
+   "spec": "any",
+   "title": "Horn of Xelthos",
+   "body": "Solo quest from the dead drop in the house right of Pyrewood Village's entrance (Silverpine): into Shadowfang Keep, pickpocket Gemela and Gefell for key halves, open the stables chest. Reward: Pyrewood Signet Ring. Master of Deception 3/3 is nearly required at 20. It also unlocks The Eye of Bhossca at 30.",
+   "unconfirmed": true,
+   "flag": "In quest data; wowfdb: not yet confirmed in game.",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ]
+  },
+  {
+   "id": "rupture",
+   "level": 20,
+   "spec": "any",
+   "title": "Rupture",
+   "body": "Rupture is a bleed finisher. Use it on mobs that live through it; Eviscerate quick kills.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  {
+   "id": "poisons-on",
+   "level": 20,
+   "spec": "any",
+   "title": "Poisons on both weapons",
+   "body": "Once you have Poisons: Instant on both weapons while leveling, Crippling for runners. Check charges before every pull.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "riposte",
+   "level": 20,
+   "spec": "Combat",
+   "title": "Riposte",
+   "body": "Riposte lights up after you parry: 150% weapon damage and a 6 s disarm. Press it every time.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  {
+   "id": "premeditation",
+   "level": 20,
+   "spec": "Subtlety",
+   "title": "Premeditation",
+   "body": "2 combo points on demand, no Stealth needed. Spend them within 20 s. Premeditation then Cheap Shot sets up a long Kidney Shot.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://wowfdb.com/classes/rogue/subtlety/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "vanish",
+   "level": 22,
+   "spec": "any",
+   "title": "Vanish",
+   "body": "Vanish drops you into Stealth, breaks roots and snares and wipes threat. 5 min cooldown, one Flash Powder. Step away from mobs first so a hit does not break it.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "distract",
+   "level": 22,
+   "spec": "any",
+   "title": "Distract",
+   "body": "Distract turns mobs toward a spot and lowers their Stealth detection for 10 s. Get behind them, or stop a patrol.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "shank",
+   "level": 24,
+   "spec": "any",
+   "title": "Shank",
+   "body": "New off-hand strike: costs 5 Energy, gives 15 back, cannot miss, 10 s cooldown. Use it on cooldown unless you are almost full.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  {
+   "id": "cold-blood",
+   "level": 25,
+   "spec": "any",
+   "title": "Cold Blood",
+   "body": "Assassination's 16-point talent: a guaranteed crit. Use it on a 5-point Eviscerate.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "ghostly",
+   "level": 25,
+   "spec": "Subtlety",
+   "title": "Ghostly Strike",
+   "body": "Ghostly Strike lets your next Garrote or Ambush work out of Stealth. Use it, then Garrote.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "cheap-shot",
+   "level": 26,
+   "spec": "any",
+   "title": "Cheap Shot",
+   "body": "4 s stun from Stealth, 2 combo points. Your safest solo opener.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "kidney",
+   "level": 30,
+   "spec": "any",
+   "title": "Kidney Shot and Disarm Trap",
+   "body": "Kidney Shot stuns longer per combo point (20 s cooldown). Disarm Trap clears dungeon traps (needs Thieves' Tools).",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ]
+  },
+  {
+   "id": "ravenholdt",
+   "level": 30,
+   "spec": "any",
+   "title": "The Manor, Ravenholdt",
+   "body": "Ask a major-city Rogue trainer about Ravenholdt; you need Detect Traps. Take the Elegant Letter to Fahrad in Alterac Mountains and ignore the trapped chest in the cave. Since Nov 17 Mathias Shaw gives the letter in Stormwind.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ]
+  },
+  {
+   "id": "bhossca",
+   "level": 30,
+   "spec": "any",
+   "title": "The Eye of Bhossca",
+   "body": "Needs Horn of Xelthos done and Lockpicking 75. Starts at the Pyrewood dead drop and runs through Scarlet Monastery (Scarlet Initiate's Uniform, pickpocket a Scarlet Scryer). Reward: Ruby-Adorned Blade, very strong if done early.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ]
+  },
+  {
+   "id": "blade-flurry",
+   "level": 30,
+   "spec": "Combat",
+   "title": "Blade Flurry",
+   "body": "Your only cleave: +20% attack speed and every swing hits a second mob for 15 s. Pair it with Evasion on double pulls.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "hemorrhage",
+   "level": 30,
+   "spec": "Subtlety",
+   "title": "Hemorrhage",
+   "body": "From now on Hemorrhage is your only builder, with any weapon from any side, and Rupture is your finisher.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  {
+   "id": "venom",
+   "level": 30,
+   "spec": "Assassination",
+   "title": "Venom",
+   "body": "Venom makes Shank boost your poison damage and proc chance for 6 s. Keep Shank on cooldown.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ]
+  },
+  {
+   "id": "blind",
+   "level": 34,
+   "spec": "any",
+   "title": "Blind",
+   "body": "Blind disorients a target for 10 s from range; damage breaks it. Needs Blinding Powder (made with Poisons). Blind, then bandage.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "riverglades",
+   "level": 36,
+   "spec": "any",
+   "title": "Riverglades pockets",
+   "body": "The new Riverglades zone (36-44) is the best junkbox area found so far: Twilight Shadowmancers carry Worn Junkboxes and Twilight Raiders Sturdy ones (GoldScout player data).",
+   "unconfirmed": true,
+   "flag": "Crowdsourced, small samples.",
+   "sources": [
+    "https://wowgoldscout.com/item/16883",
+    "https://wowgoldscout.com/item/16884",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/"
+   ]
+  },
+  {
+   "id": "dual-spec",
+   "level": 40,
+   "spec": "any",
+   "title": "Dual spec and mount",
+   "body": "Dual specialization opens at 40: keep a leveling or solo spec and a group spec. You also get your mount.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ]
+  },
+  {
+   "id": "adrenaline",
+   "level": 40,
+   "spec": "Combat",
+   "title": "Adrenaline Rush",
+   "body": "Doubles Energy regen for 15 s. Use it after your opening Energy is spent.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ]
+  },
+  {
+   "id": "mutilate",
+   "level": 40,
+   "spec": "Assassination",
+   "title": "Mutilate",
+   "body": "Mutilate replaces Backstab and Sinister Strike: both daggers, 2 combo points, +20% on poisoned targets.",
+   "unconfirmed": true,
+   "flag": "Learn level 40 (Icy Veins) vs 48/50 (wowfdb/endgametools).",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  {
+   "id": "death-mark",
+   "level": 40,
+   "spec": "Subtlety",
+   "title": "Death Mark",
+   "body": "Your new main finisher at 5 points: it stores damage for 6 s, then deals it. Garrote and Rupture feed it twice as fast.",
+   "unconfirmed": true,
+   "flag": "Untested in play (wowfdb).",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+   ]
+  },
+  {
+   "id": "snd-r2",
+   "level": 42,
+   "spec": "any",
+   "title": "Stronger Slice and Dice",
+   "body": "Slice and Dice rank 2 raises the attack-speed bonus; Vanish and Kick get new ranks too.",
+   "unconfirmed": true,
+   "flag": "endgametools/wowfdb client data.",
+   "sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ]
+  },
+  {
+   "id": "shank-r2",
+   "level": 44,
+   "spec": "any",
+   "title": "Shank rank 2",
+   "body": "Shank now gives 25 Energy back.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://wowfdb.com/classes/rogue/"
+   ]
+  },
+  {
+   "id": "brd",
+   "level": 48,
+   "spec": "any",
+   "title": "Blackrock Depths pockets",
+   "body": "From the late 40s, Blackrock Depths' dwarves carry Heavy Junkboxes. Stay in Stealth, avoid the Bloodhounds, Sap if a pick fails.",
+   "unconfirmed": true,
+   "flag": "Fan guides.",
+   "sources": [
+    "https://wowcamp.fun/en/guides/gold-farming-spots/",
+    "https://warcraftmaps.com/gold/farms/rogue-blackrock-depths-pickpocket"
+   ]
+  },
+  {
+   "id": "simple-request",
+   "level": 50,
+   "spec": "any",
+   "title": "A Simple Request",
+   "body": "From a city Rogue trainer to Lord Jorach Ravenholdt: pickpocket Timbermaw Shaman (Azshara) for the Sealed Azure Bag, collect 10 Encoded Fragments from Forest Oozes (pickpocket them before you kill them), then a key from Morphaz in Sunken Temple (group). In Forever you get all three rewards.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ]
+  },
+  {
+   "id": "stats-50",
+   "level": 50,
+   "spec": "any",
+   "title": "Stats for 60",
+   "body": "Icy Veins for Assassination and Combat: Expertise to 6.5%, Hit to 8%, then Agility, weapon damage, crit. Stand behind the boss.",
+   "unconfirmed": false,
+   "flag": "",
+   "sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-stat-priority"
+   ]
+  },
+  {
+   "id": "max-level",
+   "level": 60,
+   "spec": "any",
+   "title": "Level 60",
+   "body": "Lockpicking cap is now 300: Tyr's Hand footlockers, Heavy Junkboxes and the Blackrock Depths doors finish it. Pre-raid gear comes from dungeons; keep Flash Powder, Blinding Powder and poisons stocked.",
+   "unconfirmed": true,
+   "flag": "Lockpicking route from fan guides.",
+   "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ]
+  }
+ ],
+ "first_learn_hints": {
+  "Sinister Strike": "Your builder: press it to put combo points on the target.",
+  "Eviscerate": "Spend combo points on it, ideally at 5.",
+  "Redirect": "Moves your combo points to the next target if a mob dies first.",
+  "Stealth": "Sneak past fights, and open from it.",
+  "Backstab": "Hit from behind with a dagger for big damage.",
+  "Pick Pocket": "Pick every humanoid's pocket from Stealth before you fight.",
+  "Gouge": "Stops a mob that faces you for 4 s; damage breaks it.",
+  "Evasion": "Big dodge boost for 15 s: use it when you take a beating.",
+  "Sap": "Takes a humanoid out before the fight; you stay in Stealth.",
+  "Slice and Dice": "Faster attacks: keep it up in longer fights.",
+  "Sprint": "Run fast for 15 s without leaving Stealth.",
+  "Kick": "Interrupt a cast; costs 25 Energy.",
+  "Expose Armor": "Group finisher that cuts the target's armor.",
+  "Garrote": "Bleed opener from Stealth, from behind.",
+  "Feint": "Lowers your threat in groups.",
+  "Ambush": "Huge dagger opener from Stealth, from behind.",
+  "Poised": "Passive: start pulls at full Energy for a cheaper first ability.",
+  "Rupture": "Bleed finisher for mobs that live a while.",
+  "Distract": "Turn mobs away and lower their detection for 10 s.",
+  "Vanish": "Escape button: back into Stealth. Needs Flash Powder.",
+  "Detect Traps": "Passive: see traps.",
+  "Shank": "Cheap off-hand hit that gives Energy back. Use it on cooldown.",
+  "Cheap Shot": "Stun opener from Stealth, 2 combo points.",
+  "Disarm Trap": "Disarm a trap you can see.",
+  "Kidney Shot": "Stun finisher: longer with more points.",
+  "Blind": "Ranged disorient for 10 s; needs Blinding Powder.",
+  "Safe Fall": "Passive: less falling damage.",
+  "Pick Lock": "Open lockboxes and footlockers; needs Thieves' Tools.",
+  "Riposte": "Press it after you parry.",
+  "Blade Flurry": "Hit two mobs at once for 15 s.",
+  "Adrenaline Rush": "Double Energy regen for 15 s.",
+  "Cold Blood": "Guaranteed crit: use it on a 5-point Eviscerate.",
+  "Mutilate": "Your new builder: needs a dagger in each hand.",
+  "Hemorrhage": "Your new builder, any weapon, any side.",
+  "Ghostly Strike": "Use it, then Garrote out of Stealth.",
+  "Premeditation": "2 combo points now; spend them within 20 s.",
+  "Preparation": "Resets your cooldowns: save it for emergencies.",
+  "Death Mark": "Your main finisher at 5 points from now on."
+ },
+ "rotation": {
+  "Assassination": {
+   "solo": {
+    "summary": "Poison on both weapons. Open from Stealth with Cheap Shot or Garrote. Build with Backstab from behind or Sinister Strike, Mutilate once learned. Shank on cooldown for Venom. Slice and Dice when more mobs come, otherwise Eviscerate at 5 points with Cold Blood.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Cheap Shot",
+      "when": "stealthed",
+      "note": "Opener if the mob can be stunned (Icy Veins leveling)."
+     },
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener for damage; before 26 your only bleed opener."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown; from 30 it triggers Venom. Skip it near full Energy."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "Right before the 5-point Eviscerate."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "Spend 5 points when the mob will not outlast Slice and Dice."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "When more mobs are coming; spend points on it, not 1."
+     },
+     {
+      "spell": "Mutilate",
+      "when": "always",
+      "note": "Builder once learned; needs two daggers."
+     },
+     {
+      "spell": "Backstab",
+      "when": "usable",
+      "note": "From behind with a dagger, before Mutilate."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Builder when you cannot get behind."
+     },
+     {
+      "spell": "Evasion",
+      "when": "manual",
+      "note": "When you take a beating; solo, use it often."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupt casters."
+     },
+     {
+      "spell": "Gouge",
+      "when": "manual",
+      "note": "Stop a cast or step behind."
+     },
+     {
+      "spell": "Kidney Shot",
+      "when": "manual",
+      "note": "Emergency stun."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Escape a lost fight."
+     }
+    ],
+    "tips": [
+     "Pick Pocket before every humanoid fight.",
+     "Instant Poison on both weapons; Crippling for runners.",
+     "Bandage after Blind or Gouge."
+    ],
+    "unconfirmed": true,
+    "flag": "Mutilate learn level conflicts (40 / 48 / 50).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "dungeon": {
+    "summary": "Same priority as raids: poisons up, Expose Armor if nobody has a stronger armor debuff, Slice and Dice always, Rupture on targets that live, Garrote opener, Shank on cooldown for Venom, Mutilate to build, Eviscerate at 5 points. Kick and Sap for the party.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Open from Stealth (Icy Veins)."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Keep it up at all times."
+     },
+     {
+      "spell": "Expose Armor",
+      "when": "debuff_missing",
+      "note": "Only if no Warrior keeps a stronger armor debuff."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "If the target will live through it."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown for Venom, unless you are nearly full on Energy."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "Once threat is safe, with a 5-point Eviscerate."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "When Slice and Dice and Rupture are up and Shank is on cooldown."
+     },
+     {
+      "spell": "Mutilate",
+      "when": "always",
+      "note": "Main builder; two daggers."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Builder before Mutilate."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "25 Energy; save it for dangerous casts."
+     },
+     {
+      "spell": "Sap",
+      "when": "manual",
+      "note": "Before the pull on a humanoid."
+     },
+     {
+      "spell": "Feint",
+      "when": "manual",
+      "note": "When close to the tank's threat."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Threat drop or Garrote refresh."
+     }
+    ],
+    "tips": [
+     "Instant Poison main hand, Deadly off hand.",
+     "No AoE: kill the highest-health mob while others AoE."
+    ],
+    "unconfirmed": true,
+    "flag": "Mutilate learn level conflicts (40 / 48 / 50).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "raid": {
+    "summary": "Icy Veins: poisons, Expose Armor (if no stronger armor debuff), Slice and Dice always, Rupture if the target lives, Garrote opener, Shank on cooldown for Venom, Mutilate to build, Eviscerate at 5 points with both buffs up and Shank on cooldown. Cold Blood with Eviscerate, Vanish for mechanics or threat.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener."
+     },
+     {
+      "spell": "Expose Armor",
+      "when": "debuff_missing",
+      "note": "If the target has no stronger armor reduction."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Keep it up at all times."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "Keep it up if the boss lives through it."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown for Venom uptime; avoid it near full Energy."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "Pair with a 5-point Eviscerate once threat is established."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "Only with Slice and Dice and Rupture up and Shank on cooldown."
+     },
+     {
+      "spell": "Mutilate",
+      "when": "always",
+      "note": "Build to 5 points."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupts cost 25 Energy."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Ignore a mechanic, drop threat or reapply Garrote."
+     },
+     {
+      "spell": "Feint",
+      "when": "manual",
+      "note": "Threat."
+     }
+    ],
+    "tips": [
+     "Expertise to 6.5%, Hit to 8%, then Agility (Icy Veins).",
+     "Instant main hand, Deadly off hand: keep 5 Deadly stacks.",
+     "Stand behind the boss."
+    ],
+    "unconfirmed": true,
+    "flag": "Mutilate learn level conflicts (40 / 48 / 50).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-stat-priority"
+    ]
+   }
+  },
+  "Combat": {
+   "solo": {
+    "summary": "Icy Veins leveling: Instant Poison on both weapons, open from Stealth (Cheap Shot or Garrote), Riposte when it procs, Sinister Strike for points, then Slice and Dice if more mobs are coming or Eviscerate at 5 points. Blade Flurry on two mobs from 30, Adrenaline Rush from 40.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Cheap Shot",
+      "when": "stealthed",
+      "note": "Opener if the mob can be stunned."
+     },
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener for damage."
+     },
+     {
+      "spell": "Riposte",
+      "when": "usable",
+      "note": "Whenever it procs after a parry."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown unless it would overcap Energy."
+     },
+     {
+      "spell": "Blade Flurry",
+      "when": "manual",
+      "note": "When a second mob is next to your target."
+     },
+     {
+      "spell": "Adrenaline Rush",
+      "when": "manual",
+      "note": "Hard fights and double pulls."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "Use it on Eviscerate, not Sinister Strike."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "Default 5-point finisher solo."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "manual",
+      "note": "Instead of Eviscerate when more mobs keep coming."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Your builder."
+     },
+     {
+      "spell": "Evasion",
+      "when": "manual",
+      "note": "Use it early and often solo; pair with Blade Flurry."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupt casters."
+     },
+     {
+      "spell": "Gouge",
+      "when": "manual",
+      "note": "Stop a cast or buy time."
+     },
+     {
+      "spell": "Kidney Shot",
+      "when": "manual",
+      "note": "Emergency stun."
+     },
+     {
+      "spell": "Sprint",
+      "when": "manual",
+      "note": "Escape or close a gap."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Escape a lost fight."
+     }
+    ],
+    "tips": [
+     "A slow, hard-hitting main hand.",
+     "Level First Aid: Blind, then bandage.",
+     "Pick Pocket before you open."
+    ],
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "dungeon": {
+    "summary": "Poisons up, Expose Armor if needed, Slice and Dice always, Rupture if the target lives, Garrote opener, Shank on cooldown unless it caps Energy, Sinister Strike to build, Eviscerate at 5 points. Blade Flurry whenever two mobs stand together.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Open from Stealth."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Keep it up at all times."
+     },
+     {
+      "spell": "Expose Armor",
+      "when": "debuff_missing",
+      "note": "If no Warrior keeps a stronger armor debuff."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "If the target will live through it."
+     },
+     {
+      "spell": "Blade Flurry",
+      "when": "ready",
+      "note": "Any time a second target is close; not next to crowd control."
+     },
+     {
+      "spell": "Adrenaline Rush",
+      "when": "ready",
+      "note": "After your opening Energy is spent and the tank has threat."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown unless it would overcap Energy."
+     },
+     {
+      "spell": "Riposte",
+      "when": "usable",
+      "note": "After a parry."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "With a 5-point Eviscerate."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "With Slice and Dice and Rupture up and Shank on cooldown."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Builder (Backstab in the dagger build)."
+     },
+     {
+      "spell": "Backstab",
+      "when": "manual",
+      "note": "Dagger Combat build only."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupts cost 25 Energy."
+     },
+     {
+      "spell": "Feint",
+      "when": "manual",
+      "note": "Threat."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Threat drop or to save repairs on a wipe."
+     }
+    ],
+    "tips": [
+     "Instant Poison main hand, Deadly off hand.",
+     "Cancel Blade Flurry next to Sapped or Polymorphed mobs."
+    ],
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://wowfdb.com/classes/rogue/combat/",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "raid": {
+    "summary": "Icy Veins: poisons, Expose Armor (if no stronger armor debuff), Slice and Dice always, Rupture if the target lives, Garrote opener, Shank on cooldown unless it caps Energy, Sinister Strike (or Backstab with a dagger), Eviscerate at 5 points. Blade Flurry on cooldown for attack speed even on one target; Adrenaline Rush after the opening; Cold Blood with Eviscerate.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener."
+     },
+     {
+      "spell": "Expose Armor",
+      "when": "debuff_missing",
+      "note": "If the target has no stronger armor reduction."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Keep it up at all times."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "If the boss lives through it."
+     },
+     {
+      "spell": "Blade Flurry",
+      "when": "ready",
+      "note": "On cooldown for the attack speed; with a second target if one is coming."
+     },
+     {
+      "spell": "Adrenaline Rush",
+      "when": "ready",
+      "note": "Once your initial Energy is spent and threat is safe."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown if it will not overcap Energy."
+     },
+     {
+      "spell": "Cold Blood",
+      "when": "cp_at_least:5",
+      "note": "With a 5-point Eviscerate."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "Slice and Dice and Rupture up, Shank on cooldown."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Builder."
+     },
+     {
+      "spell": "Backstab",
+      "when": "manual",
+      "note": "Builder instead of Sinister Strike in the dagger build."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupts."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Mechanics, threat, or a wipe."
+     },
+     {
+      "spell": "Feint",
+      "when": "manual",
+      "note": "Threat."
+     }
+    ],
+    "tips": [
+     "Expertise to 6.5%, Hit to 8%, then Agility (Icy Veins).",
+     "Stand behind the boss: no parries or blocks from there."
+    ],
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents",
+     "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority"
+    ]
+   }
+  },
+  "Subtlety": {
+   "solo": {
+    "summary": "Icy Veins leveling: open with Garrote (Backstab before 14). Shank and Ghostly Strike on cooldown, Garrote after Ghostly Strike. Before 30 build with Backstab or Sinister Strike and finish with Slice and Dice; from 30 Hemorrhage only and Rupture; from 40 Death Mark at 5 points, Eviscerate if the mob is nearly dead.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Premeditation",
+      "when": "ready",
+      "note": "Before your opener, or for 2 points on demand."
+     },
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener once learned (14)."
+     },
+     {
+      "spell": "Backstab",
+      "when": "stealthed",
+      "note": "Opener before you learn Garrote."
+     },
+     {
+      "spell": "Shank",
+      "when": "ready",
+      "note": "On cooldown; with Boot Knife it adds 2 points."
+     },
+     {
+      "spell": "Ghostly Strike",
+      "when": "ready",
+      "note": "On cooldown, then Garrote; or hold it for a second mob."
+     },
+     {
+      "spell": "Death Mark",
+      "when": "cp_at_least:5",
+      "note": "Main finisher from 40."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "At 5 points on mobs that live; main finisher 30-40."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Main finisher before 30."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "When the mob is nearly dead."
+     },
+     {
+      "spell": "Hemorrhage",
+      "when": "always",
+      "note": "Your only builder from 30."
+     },
+     {
+      "spell": "Backstab",
+      "when": "usable",
+      "note": "From behind, before Hemorrhage."
+     },
+     {
+      "spell": "Sinister Strike",
+      "when": "always",
+      "note": "Builder from the front before Hemorrhage."
+     },
+     {
+      "spell": "Gouge",
+      "when": "manual",
+      "note": "Then step behind for Backstab."
+     },
+     {
+      "spell": "Evasion",
+      "when": "manual",
+      "note": "Tough mobs."
+     },
+     {
+      "spell": "Kidney Shot",
+      "when": "manual",
+      "note": "Survival stun."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Reset a fight you may lose."
+     },
+     {
+      "spell": "Preparation",
+      "when": "manual",
+      "note": "Second Evasion or Vanish."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupts."
+     }
+    ],
+    "tips": [
+     "Instant Poison on both weapons.",
+     "Sap the extra mob; Garrote the other.",
+     "Bleeds do little to elementals, constructs, skeletons and ghosts."
+    ],
+    "unconfirmed": false,
+    "flag": "",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "dungeon": {
+    "summary": "Same as raids: Instant main hand, Deadly off hand; keep Rupture, Death Mark, Garrote and Slice and Dice up with 5-point finishers. Shank at 0-3 points, Ghostly Strike then Garrote, Premeditation on cooldown, Ambush from Stealth, Hemorrhage to build. Sap, Distract, Kick and Gouge for the party.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Ambush",
+      "when": "stealthed",
+      "note": "Opener from Stealth (dagger main hand)."
+     },
+     {
+      "spell": "Garrote",
+      "when": "stealthed",
+      "note": "Opener without a dagger."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "Keep it up, at 5 points."
+     },
+     {
+      "spell": "Death Mark",
+      "when": "cp_at_least:5",
+      "note": "As often as possible, at 5 points."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Keep it up, at 5 points."
+     },
+     {
+      "spell": "Shank",
+      "when": "cp_below:4",
+      "note": "On cooldown with 0-3 points (Boot Knife adds 2)."
+     },
+     {
+      "spell": "Ghostly Strike",
+      "when": "ready",
+      "note": "On cooldown, then Garrote (2 points with Initiative)."
+     },
+     {
+      "spell": "Premeditation",
+      "when": "cp_below:4",
+      "note": "On cooldown; adds 2 points."
+     },
+     {
+      "spell": "Eviscerate",
+      "when": "cp_at_least:5",
+      "note": "Spare points when everything is up."
+     },
+     {
+      "spell": "Hemorrhage",
+      "when": "always",
+      "note": "Main builder."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "25 Energy, on the global cooldown."
+     },
+     {
+      "spell": "Sap",
+      "when": "manual",
+      "note": "Before the pull."
+     },
+     {
+      "spell": "Distract",
+      "when": "manual",
+      "note": "Stop a patrol."
+     },
+     {
+      "spell": "Gouge",
+      "when": "manual",
+      "note": "Stop a cast."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Threat or burst."
+     },
+     {
+      "spell": "Preparation",
+      "when": "manual",
+      "note": "Dangerous moments."
+     }
+    ],
+    "tips": [
+     "Your control costs Energy and points: balance it against damage.",
+     "Multi-dot a second target with Ghostly Strike, Garrote and Rupture if it lives long."
+    ],
+    "unconfirmed": true,
+    "flag": "Death Mark untested in play (wowfdb).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+     "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+    ]
+   },
+   "raid": {
+    "summary": "Icy Veins: Instant main hand, Deadly off hand. Maintain Rupture, Death Mark and Slice and Dice with 5 points and keep Garrote up. Shank on cooldown with 0-3 points, Ghostly Strike then Garrote, Premeditation on cooldown without overcapping. Ambush from Stealth, Hemorrhage to build. Pool Energy for Death Mark windows; hold Vanish and Preparation for dangerous moments.",
+    "kind": "damage",
+    "priority": [
+     {
+      "spell": "Ambush",
+      "when": "stealthed",
+      "note": "Opener."
+     },
+     {
+      "spell": "Rupture",
+      "when": "debuff_missing",
+      "note": "Maintain at all times, at 5 points."
+     },
+     {
+      "spell": "Death Mark",
+      "when": "cp_at_least:5",
+      "note": "Maintain as much as possible, at 5 points."
+     },
+     {
+      "spell": "Slice and Dice",
+      "when": "buff_missing",
+      "note": "Maintain as much as possible, at 5 points."
+     },
+     {
+      "spell": "Shank",
+      "when": "cp_below:4",
+      "note": "On cooldown with 0-3 points; not at 4."
+     },
+     {
+      "spell": "Ghostly Strike",
+      "when": "ready",
+      "note": "On cooldown, followed by Garrote."
+     },
+     {
+      "spell": "Premeditation",
+      "when": "cp_below:4",
+      "note": "On cooldown; do not overcap."
+     },
+     {
+      "spell": "Hemorrhage",
+      "when": "always",
+      "note": "Main builder."
+     },
+     {
+      "spell": "Vanish",
+      "when": "manual",
+      "note": "Add spawns or burst phases."
+     },
+     {
+      "spell": "Preparation",
+      "when": "manual",
+      "note": "Refresh Vanish and other cooldowns for a burst phase."
+     },
+     {
+      "spell": "Kick",
+      "when": "manual",
+      "note": "Interrupts."
+     },
+     {
+      "spell": "Feint",
+      "when": "manual",
+      "note": "Threat."
+     }
+    ],
+    "tips": [
+     "Near 100% Rupture and Garrote uptime.",
+     "Never stand in front of the boss.",
+     "Do not overcap Energy or combo points."
+    ],
+    "unconfirmed": true,
+    "flag": "Death Mark untested in play (wowfdb).",
+    "sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents",
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-stat-priority"
+    ]
+   }
+  }
+ }
+}

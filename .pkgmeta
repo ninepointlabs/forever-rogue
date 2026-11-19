@@ -1,0 +1,11 @@
+package-as: ForeverRogue
+
+ignore:
+  - README.md
+  - STATUS.md
+  - BRIEF.md
+  - research
+  - docs
+  - content
+  - tools
+  - tests

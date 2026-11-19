@@ -1,0 +1,30 @@
+Level 1 4 spells :: Eviscerate ; Redirect ; Sinister Strike ; Stealth
+Level 4 2 spells :: Backstab ; Pick Pocket
+Level 6 2 spells :: Gouge ; Sinister Strike
+Level 8 2 spells :: Evasion ; Eviscerate
+Level 10 3 spells :: Sap ; Slice and Dice ; Sprint
+Level 12 2 spells :: Backstab ; Kick
+Level 14 3 spells :: Expose Armor ; Garrote ; Sinister Strike
+Level 16 2 spells :: Eviscerate ; Feint
+Level 18 3 spells :: Ambush ; Gouge ; Poised
+Level 20 3 spells :: Backstab ; Rupture ; Stealth
+Level 22 4 spells :: Distract ; Garrote ; Sinister Strike ; Vanish
+Level 24 3 spells :: Detect Traps ; Eviscerate ; Shank
+Level 26 4 spells :: Ambush ; Cheap Shot ; Expose Armor ; Kick
+Level 28 4 spells :: Backstab ; Feint ; Rupture ; Sap
+Level 30 4 spells :: Disarm Trap ; Garrote ; Kidney Shot ; Sinister Strike
+Level 32 2 spells :: Eviscerate ; Gouge
+Level 34 3 spells :: Ambush ; Blind ; Sprint
+Level 36 3 spells :: Backstab ; Expose Armor ; Rupture
+Level 38 2 spells :: Garrote ; Sinister Strike
+Level 40 4 spells :: Eviscerate ; Feint ; Safe Fall ; Stealth
+Level 42 4 spells :: Ambush ; Kick ; Slice and Dice ; Vanish
+Level 44 3 spells :: Backstab ; Rupture ; Shank
+Level 46 4 spells :: Expose Armor ; Garrote ; Gouge ; Sinister Strike
+Level 48 3 spells :: Death Mark ; Eviscerate ; Sap
+Level 50 3 spells :: Ambush ; Kidney Shot ; Mutilate
+Level 52 3 spells :: Backstab ; Feint ; Rupture
+Level 54 2 spells :: Garrote ; Sinister Strike
+Level 56 3 spells :: Death Mark ; Eviscerate ; Expose Armor
+Level 58 3 spells :: Ambush ; Kick ; Sprint
+Level 60 9 spells :: Backstab ; Death Mark ; Eviscerate ; Feint ; Gouge ; Mutilate ; Rupture ; Stealth

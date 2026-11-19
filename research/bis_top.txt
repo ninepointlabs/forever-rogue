@@ -1,0 +1,57 @@
+=== combat
+- Head: Mask of the Unforgiven (13404) — The Unforgiven — Stratholme
+- Neck: Beads of Ogre Might (22150) — Quest: Falrin's Vendetta
+- Shoulder: Truestrike Shoulders (12927) — Pyroguard Emberseer — Blackrock Spire
+- Back: Earthweave Cloak (21187) — Quest: Volunteer's Battlegear
+- Chest: Shadowcraft Tunic (16721) — General Drakkisath — Blackrock Spire
+- Wrist: Blackmist Armguards (12966) — The Beast — Blackrock Spire
+- Hands: Devilsaur Gauntlets (15063) — Leatherworking · Recipe to find
+- Waist: Highlander's Leather Girdle (20115) — Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+- Legs: Blademaster Leggings (12963) — The Beast — Blackrock Spire
+- Feet: Shadowcraft Boots (16711) — Rattlegore — Scholomance
+- Finger: Tarnished Elven Ring (18500) — Dire Maul · Gordok Tribute Chest
+- Finger: Blackstone Ring (17713) — Princess Theradras — Maraudon
+- Trinket: Smolderweb's Eye (13213) — Mother Smolderweb — Blackrock Spire
+- Trinket: Royal Seal of Eldre'Thalas (18465) — Quest: Garona: A Study on Stealth and Treachery
+- Weapons: Teebu's Blazing Longsword (1728) — World drop: the auction house is quickest
+- Weapons/Main Hand: Felstriker (12590) — Warchief Rend Blackhand — Blackrock Spire
+- Weapons/Off Hand: Tooth of the Matriarch (280021) — Direhorn Matriarch
+- Ranged: Fahrad's Reloading Repeater (22347) — Quest: The Perfect Poison
+=== assassination
+- Head: Mask of the Unforgiven (13404) — The Unforgiven — Stratholme
+- Neck: Beads of Ogre Might (22150) — Quest: Falrin's Vendetta
+- Shoulder: Truestrike Shoulders (12927) — Pyroguard Emberseer — Blackrock Spire
+- Back: Earthweave Cloak (21187) — Quest: Volunteer's Battlegear
+- Chest: Shadowcraft Tunic (16721) — General Drakkisath — Blackrock Spire
+- Wrist: Bracers of the Eclipse (18375) — Prince Tortheldrin — Dire Maul
+- Hands: Devilsaur Gauntlets (15063) — Leatherworking · Recipe to find
+- Waist: Highlander's Leather Girdle (20115) — Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+- Legs: Blademaster Leggings (12963) — The Beast — Blackrock Spire
+- Feet: Apprentice's Protective Treads (280078) — Gortek the Apprentice
+- Finger: Tarnished Elven Ring (18500) — Dire Maul · Gordok Tribute Chest
+- Finger: Blackstone Ring (17713) — Princess Theradras — Maraudon
+- Trinket: Smolderweb's Eye (13213) — Mother Smolderweb — Blackrock Spire
+- Trinket: Royal Seal of Eldre'Thalas (18465) — Quest: Garona: A Study on Stealth and Treachery
+- Weapons: Felstriker (12590) — Warchief Rend Blackhand — Blackrock Spire
+- Weapons/Main Hand: The Thunderwood Poker (22377) — Quest: The Perfect Poison
+- Weapons/Off Hand: The Thunderwood Poker (22377) — Quest: The Perfect Poison
+- Ranged: Fahrad's Reloading Repeater (22347) — Quest: The Perfect Poison
+=== subtlety
+- Head: Mask of the Unforgiven (13404) — The Unforgiven — Stratholme
+- Neck: Beads of Ogre Might (22150) — Quest: Falrin's Vendetta
+- Shoulder: Truestrike Shoulders (12927) — Pyroguard Emberseer — Blackrock Spire
+- Back: Earthweave Cloak (21187) — Quest: Volunteer's Battlegear
+- Chest: Shadowcraft Tunic (16721) — General Drakkisath — Blackrock Spire
+- Wrist: Bracers of the Eclipse (18375) — Prince Tortheldrin — Dire Maul
+- Hands: Devilsaur Gauntlets (15063) — Leatherworking · Recipe to find
+- Waist: Highlander's Leather Girdle (20115) — Samuel Hawke — Arathi Highlands · Vendor · Needs reputation
+- Legs: Blademaster Leggings (12963) — The Beast — Blackrock Spire
+- Feet: Shadowcraft Boots (16711) — Rattlegore — Scholomance
+- Finger: Tarnished Elven Ring (18500) — Dire Maul · Gordok Tribute Chest
+- Finger: Blackstone Ring (17713) — Princess Theradras — Maraudon
+- Trinket: Smolderweb's Eye (13213) — Mother Smolderweb — Blackrock Spire
+- Trinket: Royal Seal of Eldre'Thalas (18465) — Quest: Garona: A Study on Stealth and Treachery
+- Weapons: Felstriker (12590) — Warchief Rend Blackhand — Blackrock Spire
+- Weapons/Main Hand: Tooth of the Matriarch (280021) — Direhorn Matriarch
+- Weapons/Off Hand: Tooth of the Matriarch (280021) — Direhorn Matriarch
+- Ranged: Fahrad's Reloading Repeater (22347) — Quest: The Perfect Poison

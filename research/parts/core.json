@@ -1,0 +1,3657 @@
+{
+ "meta": {
+  "game": "World of Warcraft: Forever",
+  "launch": "2026-11-04 15:00 PST",
+  "client_version": "1.60.1",
+  "latest_build_seen": "1.60.1.70959 (omaforge clients on TUF, 2026-11-19)",
+  "launch_build": "1.60.1.70790",
+  "toc_interface": 16001,
+  "wow_project_id": "18 (WOW_PROJECT_CAMELOT)",
+  "toc_suffixes": [
+   "_Forever.toc",
+   "_Camelot.toc"
+  ],
+  "toc_game_type": [
+   "forever",
+   "camelot"
+  ],
+  "toc_family": "mainline",
+  "api_note": "Mainline (modern) UI architecture; Midnight addon restrictions (secret values) apply per Tautellini doc - verify in client",
+  "max_level": 60,
+  "notes": "Interface/suffix/game-type values from Tautellini doc (community) cross-checked with Questie_Forever.toc, Details_Camelot.toc, BigWigs and DBM TOCs listing 16001.",
+  "class": "Rogue",
+  "talent_calc_version": "70959-a8fe1dab",
+  "talent_calc_note": "Icy Veins calculator data 70959-a8fe1dab (current) is in research/talents_rogue.json. The 7 Icy Veins Rogue build links use 70755-6b631983 (Assassination and Combat pages, research/talents_rogue_70755-6b631983.json) and 70755-c04a9251 (Subtlety pages, research/talents_rogue_70755-c04a9251.json); tools/ivcalc.py maps them onto the current trees by talent name and all 7 decode to 51 valid points.",
+  "source_url": "https://github.com/Gethe/wow-ui-source/tree/forever",
+  "checked": "2026-11-19"
+ },
+ "sources": {
+  "bz_deep": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+  "bz_hotfix": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+  "iv_overview": "https://www.icy-veins.com/wow-forever/rogue-class-overview",
+  "iv_quests": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+  "iv_calc": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator",
+  "iv_calc_data": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+  "iv_ass_lvl": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+  "iv_com_lvl": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+  "iv_sub_lvl": "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+  "iv_ass_guide": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+  "iv_com_guide": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+  "iv_sub_guide": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+  "iv_ass_rot": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+  "iv_com_rot": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+  "iv_sub_rot": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+  "iv_ass_stats": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-stat-priority",
+  "iv_com_stats": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority",
+  "iv_sub_stats": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-stat-priority",
+  "iv_ass_builds": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+  "iv_com_builds": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents",
+  "iv_sub_builds": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents",
+  "wowfdb_overview": "https://wowfdb.com/classes/rogue/",
+  "wowfdb_abilities": "https://wowfdb.com/classes/rogue/abilities/",
+  "wowfdb_utility": "https://wowfdb.com/classes/rogue/utility/",
+  "wowfdb_changes": "https://wowfdb.com/classes/rogue/changes/",
+  "wowfdb_ass": "https://wowfdb.com/classes/rogue/assassination/",
+  "wowfdb_com": "https://wowfdb.com/classes/rogue/combat/",
+  "wowfdb_sub": "https://wowfdb.com/classes/rogue/subtlety/",
+  "eg_spells": "https://endgametools.com/en/wow-forever/spells/rogue",
+  "eg_bis_combat": "https://endgametools.com/en/wow-forever/bis/rogue-combat",
+  "cc_lockpicking": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+  "wt_lockpicking": "https://www.warcrafttavern.com/forever/guides/lockpicking/",
+  "kickegg_lockpicking": "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide",
+  "wowguide_changes": "https://wowguide.net/en/guides/wow-forever-rogue-changes",
+  "foreverguide": "https://foreverguide.net/classes/rogue/",
+  "iv_race_guide": "https://www.icy-veins.com/wow-forever/race-guide",
+  "iv_skyborne": "https://www.icy-veins.com/wow-forever/skyborne",
+  "bz_dev_oct15": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696"
+ },
+ "spells_by_level": [
+  {
+   "name": "Sinister Strike",
+   "rank_learn_levels": [
+    1,
+    6,
+    14,
+    22,
+    30,
+    38,
+    46,
+    54
+   ],
+   "spell_id": 11294,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "energy": 45,
+   "notes": "8 ranks. Awards 1 combo point. Combat's builder (slow main hand). Efficient Strikes (Combat talent; Icy Veins still calls it Improved Sinister Strike) cuts its cost.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "All rank levels and the 45 Energy cost come only from the endgametools client spell list (secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Eviscerate",
+   "rank_learn_levels": [
+    1,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    60
+   ],
+   "spell_id": 31016,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "finisher",
+   "school": "Physical",
+   "energy": 35,
+   "notes": "9 ranks. Damage per combo point, scales with Attack Power. Flawless Execution cuts its Energy cost (amount is a recorded conflict). wowfdb: only rank 6 is lower than Classic.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Levels after rank 1 come only from the endgametools client spell list (secondary); first rank cross-checked with wowfdb where noted. Rank 1 at level 1 also on wowfdb (utility page).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Stealth",
+   "rank_learn_levels": [
+    1,
+    20,
+    40,
+    60
+   ],
+   "spell_id": 1787,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "stealth",
+   "school": null,
+   "notes": "4 ranks (wowfdb and endgametools agree). 10 s cooldown. Speed penalty 50/40/35/30% by rank (endgametools tooltips). Master of Deception, Camouflage and Night Elf Quickness improve it.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Redirect",
+   "rank_learn_levels": [
+    1
+   ],
+   "category": "utility",
+   "school": null,
+   "notes": "New in Forever. 10 s cooldown, melee range. Removes your combo points from the target and stores them for up to 15 s; they go to the next non-player enemy you hit with a melee or ranged ability.",
+   "unconfirmed": true,
+   "flag": "Only the endgametools client spell list shows Redirect (secondary); no other archived page mentions it.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Pick Lock",
+   "rank_learn_levels": [],
+   "spell_id": 1804,
+   "id_source": "Icy Veins db link and conquestcapped Wowhead link (1804); warcrafttavern links the Lockpicking skill as 1809",
+   "category": "utility",
+   "school": null,
+   "notes": "Learn level is a recorded conflict (client lists 1; Icy Veins milestone puts the Lockpicking class quest at 15; conquestcapped/warcrafttavern/kickegg say the trainer teaches it at 16). Lockpicking is its own secondary skill line (wowfdb); cap = level x 5; 5 s cast, 5 yd, needs Thieves' Tools (item 5060) in the bags (conquestcapped).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://www.warcrafttavern.com/forever/guides/lockpicking/",
+    "https://wowforever.kickegg.net/articles/forever-rogue-lockpicking-guide"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Backstab",
+   "rank_learn_levels": [
+    4,
+    12,
+    20,
+    28,
+    36,
+    44,
+    52,
+    60
+   ],
+   "spell_id": 25300,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "energy": 60,
+   "notes": "9 ranks (endgametools lists ranks 8 and 9 both at 60). 150% weapon damage plus a bonus; must be behind the target; dagger in the main hand. Puncturing Wounds adds crit and a chance for an extra combo point.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "unconfirmed": true,
+   "flag": "All rank levels and the 60 Energy cost come only from the endgametools client spell list (secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Pick Pocket",
+   "rank_learn_levels": [
+    4
+   ],
+   "spell_id": 921,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "utility",
+   "school": null,
+   "notes": "Needed (with Stealth) for every level-10 class quest that steals an item. wowfdb and endgametools agree on level 4.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Gouge",
+   "rank_learn_levels": [
+    6,
+    18,
+    32,
+    46,
+    60
+   ],
+   "spell_id": 11286,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cc",
+   "school": "Physical",
+   "energy": 45,
+   "notes": "5 ranks (wowfdb and endgametools agree). 10 s cooldown; 4 s incapacitate, target must face you, damage breaks it; awards 1 combo point. Improved Gouge (Assassination row 1) lengthens it.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Evasion",
+   "rank_learn_levels": [
+    8
+   ],
+   "spell_id": 5277,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "defense",
+   "school": null,
+   "notes": "+50% dodge for 15 s, 5 min cooldown. Endurance shortens the cooldown. Icy Veins: use it early and often while leveling.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Sap",
+   "rank_learn_levels": [
+    10,
+    28,
+    48
+   ],
+   "spell_id": 11297,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cc",
+   "school": null,
+   "energy": 65,
+   "notes": "Forever change: Sap no longer breaks Stealth (still needs Stealth; out-of-combat Humanoids; can't trigger weapon procs; sapping a PvP-flagged player flags you). Up to 25/35/45 s by rank. Dirty Tricks halves its cost; Quick Getaway allows 1 extra sapped target. Berserker Rage removes Sap (hotfix Nov 13).",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Slice and Dice",
+   "rank_learn_levels": [
+    10,
+    42
+   ],
+   "spell_id": 6774,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "finisher",
+   "school": null,
+   "energy": 25,
+   "notes": "2 ranks: +20% then +30% melee attack speed, 9-21 s by combo points. Improved Slice and Dice extends it.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank 2 level (42) comes only from endgametools; rank 1 at 10 also on wowfdb.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Sprint",
+   "rank_learn_levels": [
+    10,
+    34,
+    58
+   ],
+   "spell_id": 11305,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "movement",
+   "school": null,
+   "notes": "3 ranks (wowfdb and endgametools agree): +50/60/70% speed for 15 s, 5 min cooldown, does not break stealth.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Kick",
+   "rank_learn_levels": [
+    12,
+    26,
+    42,
+    58
+   ],
+   "spell_id": 1769,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "interrupt",
+   "school": "Physical",
+   "energy": 25,
+   "notes": "4 ranks (wowfdb and endgametools agree). 10 s cooldown, locks the school for 5 s; 25 Energy (Icy Veins). Improved Kick adds a 2 s silence.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Expose Armor",
+   "rank_learn_levels": [
+    14,
+    26,
+    36,
+    46,
+    56
+   ],
+   "spell_id": 11198,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "finisher",
+   "school": null,
+   "energy": 25,
+   "notes": "Forever change: armor reduction matches 5 Sunder Armor applications at about the same level (2,250 at 5 combo points at max rank) and it no longer prevents Sunder Armor; Sunder does not overwrite it unless weaker. Improved Expose Armor now cuts the cost and refunds combo points at 5 points.",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels after 14 come only from endgametools; rank 1 at 14 also on wowfdb.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Garrote",
+   "rank_learn_levels": [
+    14,
+    22,
+    30,
+    38,
+    46,
+    54
+   ],
+   "spell_id": 11290,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "opener",
+   "school": "Physical",
+   "energy": 50,
+   "notes": "6 ranks. Bleed from Stealth, behind the target (Dirty Deeds removes the facing requirement and cuts the cost). Icy Veins: the Subtlety opener once learned at 14; Ghostly Strike lets it work out of Stealth briefly.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/utility/",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels after 14 come only from endgametools; rank 1 at 14 also on wowfdb and Icy Veins Subtlety leveling.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Feint",
+   "rank_learn_levels": [
+    16,
+    28,
+    40,
+    52,
+    60
+   ],
+   "category": "defense",
+   "school": null,
+   "energy": 20,
+   "notes": "5 ranks (wowfdb and endgametools agree). 10 s cooldown. Threat reduction: Blizzard says doubled, wowfdb client data shows about five times (recorded conflict).",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ambush",
+   "rank_learn_levels": [
+    18,
+    26,
+    34,
+    42,
+    50,
+    58
+   ],
+   "spell_id": 11269,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "opener",
+   "school": "Physical",
+   "energy": 60,
+   "notes": "6 ranks. 250% weapon damage plus a bonus; Stealth, behind the target, dagger in the main hand. Icy Veins Subtlety leveling milestone: Ambush unlock at 18. Ghostly Strike lets the next Ambush work out of Stealth.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels after 18 come only from endgametools; rank 1 at 18 on wowfdb and Icy Veins.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Poised",
+   "rank_learn_levels": [
+    18
+   ],
+   "category": "passive",
+   "school": null,
+   "notes": "New in Forever. While at maximum Energy and out of combat, your next ability costs 10 less Energy. Composure (Combat) adds to the discount.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://foreverguide.net/classes/rogue/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Rupture",
+   "rank_learn_levels": [
+    20,
+    28,
+    36,
+    44,
+    52,
+    60
+   ],
+   "spell_id": 11275,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "finisher",
+   "school": "Physical",
+   "energy": 25,
+   "notes": "6 ranks. Bleed finisher, 8-16 s by combo points. wowfdb: base damage cut by about 40% from Classic. Blood Splatter (+6 s), Serrated Blades (+30%) and Hemorrhage (+15% from the rogue) improve it.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels after 20 come only from endgametools; rank 1 at 20 also on wowfdb.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Distract",
+   "rank_learn_levels": [
+    22
+   ],
+   "spell_id": 1725,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "utility",
+   "school": null,
+   "energy": 30,
+   "notes": "Forever change: affected enemies also have reduced Stealth detection for 10 s (as if 1 level lower), and enemy players are told a rogue is near. 30 s cooldown, 30 yd. Improved Distract was removed in the Nov 2 rework.",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Vanish",
+   "rank_learn_levels": [
+    22,
+    42
+   ],
+   "spell_id": 1857,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "stealth",
+   "school": null,
+   "reagent": "Flash Powder",
+   "notes": "2 ranks (wowfdb and endgametools agree). 5 min cooldown; improved stealth for 10 s, breaks movement impairing effects. Costs 1 Flash Powder (item 5140, endgametools) unless the Legacy perk Reagent Economy is taken (wowfdb). Icy Veins milestone: Vanish unlock at 22.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Shank",
+   "rank_learn_levels": [
+    24,
+    44
+   ],
+   "spell_id": 1329549,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "energy": 5,
+   "notes": "New in Forever. Off-hand strike for 50% weapon damage, generates 15 Energy (25 at rank 2), 10 s cooldown, cannot miss. Triggers Venom (Assassination); Boot Knife makes it add 2 combo points; Flash of Steel adds Energy and cuts the cooldown. Hotfix Nov 16: no longer removes combo points on other targets without Boot Knife. Icy Veins Subtlety leveling: learned at 24, use on cooldown.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank 2 level (44) and the rank-2 Energy gain come only from endgametools; level 24 is on wowfdb and Icy Veins.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Detect Traps",
+   "rank_learn_levels": [
+    24
+   ],
+   "spell_id": 2836,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "passive",
+   "school": null,
+   "notes": "Passive. Needed for The Manor, Ravenholdt (Icy Veins class quests).",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Cheap Shot",
+   "rank_learn_levels": [
+    26
+   ],
+   "spell_id": 1833,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "opener",
+   "school": null,
+   "energy": 60,
+   "notes": "Stuns for 4 s from Stealth, awards 2 combo points. Icy Veins milestone: Cheap Shot unlock at 26. Dirty Deeds cuts the cost; Initiative adds a point.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Disarm Trap",
+   "rank_learn_levels": [
+    30
+   ],
+   "spell_id": 1842,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "utility",
+   "school": null,
+   "notes": "2 s cast, 5 yd; needs Thieves' Tools (endgametools tooltip).",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Kidney Shot",
+   "rank_learn_levels": [
+    30,
+    50
+   ],
+   "spell_id": 8643,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cc",
+   "school": null,
+   "energy": 25,
+   "notes": "2 ranks: stun 1-5 s (rank 2: 2-6 s) by combo points, 20 s cooldown. Improved Kidney Shot makes stunned targets take 10% more damage from your attacks and poisons.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/utility/"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank 2 level (50) comes only from endgametools; rank 1 at 30 also on wowfdb.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blind",
+   "rank_learn_levels": [
+    34
+   ],
+   "spell_id": 2094,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cc",
+   "school": null,
+   "reagent": "Blinding Powder",
+   "energy": 30,
+   "notes": "10 s disorient, 10 yd, 5 min cooldown; needs Blinding Powder (item 5530 per endgametools; made with the Poisons skill from 34 per wowfdb). Icy Veins milestone: Blind unlock at 34. Dirty Tricks halves the cost; Elusiveness shortens the cooldown.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/",
+    "https://endgametools.com/en/wow-forever/spells/rogue",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Safe Fall",
+   "rank_learn_levels": [
+    40
+   ],
+   "category": "passive",
+   "school": null,
+   "notes": "Passive: reduces falling damage.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Riposte (talent)",
+   "rank_learn_levels": [
+    20
+   ],
+   "spell_id": 14251,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "talent_tree": "Combat",
+   "notes": "Combat row 3, 1 point (10 points in Combat, reachable at 20). Usable after you parry: 150% weapon damage and disarms the target for 6 s. Icy Veins: Riposte at 20 is a big leveling power spike; use it whenever it procs.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Premeditation (talent)",
+   "rank_learn_levels": [
+    20
+   ],
+   "spell_id": 14183,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "opener",
+   "school": null,
+   "talent_tree": "Subtlety",
+   "notes": "Subtlety row 3, 1 point (reachable at 20). Adds 2 combo points; use or add to them within 20 s.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Cold Blood (talent)",
+   "rank_learn_levels": [
+    25
+   ],
+   "spell_id": 14177,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cooldown",
+   "school": null,
+   "talent_tree": "Assassination",
+   "notes": "Assassination row 4, 1 point (16-point medal, reachable at 25). Next Sinister Strike, Backstab, Ambush, Eviscerate or Mutilate is a guaranteed crit. Icy Veins: pair it with a 5-point Eviscerate.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ghostly Strike (talent)",
+   "rank_learn_levels": [
+    25
+   ],
+   "spell_id": 14278,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "talent_tree": "Subtlety",
+   "notes": "Subtlety row 4, 1 point (16-point medal, reachable at 25). 125% weapon damage (180% with a main-hand dagger), +15% dodge for 7 s, and your next Ambush or Garrote within 7 s works without Stealth. Icy Veins: use on cooldown, follow with Garrote.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blade Flurry (talent)",
+   "rank_learn_levels": [
+    30
+   ],
+   "spell_id": 13877,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cooldown",
+   "school": null,
+   "talent_tree": "Combat",
+   "notes": "Combat row 5, 1 point (reachable at 30). +20% melee attack speed and melee attacks hit an extra nearby enemy for 15 s. Icy Veins milestone: Blade Flurry at 30.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Hemorrhage (talent)",
+   "rank_learn_levels": [
+    30
+   ],
+   "spell_id": 16511,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "talent_tree": "Subtlety",
+   "energy": 30,
+   "notes": "Subtlety row 5, 1 point (reachable at 30; Icy Veins 'earliest possible Hemorrhage' at 30). 100% weapon damage (145% with a dagger), target takes 15% more Rupture and Garrote damage from you for 15 s, 1 combo point. Icy Veins: costs only 30 Energy; Subtlety's only builder once learned.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Preparation (talent)",
+   "rank_learn_levels": [
+    30
+   ],
+   "spell_id": 14185,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cooldown",
+   "school": null,
+   "talent_tree": "Subtlety",
+   "notes": "Subtlety row 5, 1 point (reachable at 30). Finishes the cooldown of your other Rogue abilities (Icy Veins: not Shank).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Venom (talent)",
+   "rank_learn_levels": [
+    30
+   ],
+   "spell_id": 1329328,
+   "id_source": "Icy Veins calculator data 70959 (rank spell id); Icy Veins guide pages link Venom as 1310703",
+   "category": "passive",
+   "school": "Nature",
+   "talent_tree": "Assassination",
+   "notes": "Assassination row 5, 1 point (reachable at 30; Icy Veins milestone 'Venom available through talents' at 30). Passive: Shank raises your Poison damage by 30% and your chance to apply Poisons by 20% for 6 s. Replaced the deep dive's 31-point Venom finisher.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Adrenaline Rush (talent)",
+   "rank_learn_levels": [
+    40
+   ],
+   "spell_id": 13750,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "cooldown",
+   "school": null,
+   "talent_tree": "Combat",
+   "notes": "Combat row 7, 1 point (reachable at 40). +100% Energy regeneration for 15 s. Icy Veins milestone: Adrenaline Rush at 40.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Mutilate (talent)",
+   "rank_learn_levels": [
+    40,
+    50,
+    60
+   ],
+   "spell_id": 399956,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "builder",
+   "school": "Physical",
+   "talent_tree": "Assassination",
+   "energy": 60,
+   "notes": "Assassination row 7, 1 point (30 points in the tree, reachable at 40 per the talent data and Icy Veins milestones). Both weapons for 90% weapon damage plus a bonus, +20% against poisoned targets, 2 combo points; needs daggers in both hands. 60 Energy (Blizzard deep dive, endgametools). Ranks 2 and 3 at 50/60 from endgametools. Learn level is a recorded conflict.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+    "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "unconfirmed": true,
+   "flag": "Ranks 2-3 (50, 60) come only from endgametools.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Death Mark (talent)",
+   "rank_learn_levels": [
+    40,
+    48,
+    56,
+    60
+   ],
+   "spell_id": 1316709,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "finisher",
+   "school": null,
+   "talent_tree": "Subtlety",
+   "energy": 25,
+   "notes": "Subtlety row 7 capstone, 1 point (reachable at 40), replaced Thousand Cuts. Finisher (a Curse) that marks the target and stores part of the damage your attacks deal per combo point (Garrote and Rupture at twice the rate); after 6 s the stored damage is dealt, up to a cap raised by Attack Power and crit. 25 Energy, 20 yd, 10 s cooldown (endgametools, wowfdb). Icy Veins: main finisher once learned.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://wowfdb.com/classes/rogue/",
+    "https://endgametools.com/en/wow-forever/spells/rogue"
+   ],
+   "unconfirmed": true,
+   "flag": "Ranks 2-4 (48, 56, 60) come only from endgametools.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Poisons",
+   "rank_learn_levels": [
+    20
+   ],
+   "category": "poison",
+   "school": null,
+   "quest": "Level-20 poison class quest (Alliance Mathias and the Defias / Klaven's Tower; Horde The Shattered Salute / Mission: Possible But Not Probable)",
+   "notes": "Poisons is its own secondary skill line with a spellbook tab (like First Aid); each poison rank is an item you make. Unlocked by the level-20 class quest (Icy Veins). wowfdb notes quest data teaching it at 24-26 (recorded conflict).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://wowfdb.com/classes/rogue/abilities/"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Instant Poison",
+   "rank_learn_levels": [
+    20,
+    28,
+    36,
+    44,
+    52,
+    60
+   ],
+   "spell_id": 8681,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "poison",
+   "school": "Nature",
+   "notes": "6 ranks; 30 min on a weapon; 20% chance per hit; charges 60/85/105/(1800 tooltip bug)/150/250. Base damage a third lower than Classic, attack-power coefficient 0.01 (wowfdb). Icy Veins: main hand.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels and charges come only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Crippling Poison",
+   "rank_learn_levels": [
+    20,
+    50
+   ],
+   "spell_id": 3420,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "poison",
+   "school": "Nature",
+   "notes": "2 ranks; 30% chance per hit, 50% (rank 2: 70%) slow for 12 s. Icy Veins: for mobs that run.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels come only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Mind-numbing Poison",
+   "rank_learn_levels": [
+    24,
+    38,
+    52
+   ],
+   "category": "poison",
+   "school": "Nature",
+   "notes": "3 ranks; 20% chance per hit; casting time +40/50/60%; 75/115/225 charges.",
+   "unconfirmed": true,
+   "flag": "Rank levels come only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Deadly Poison",
+   "rank_learn_levels": [
+    30,
+    38,
+    46,
+    54,
+    60
+   ],
+   "spell_id": 2835,
+   "id_source": "Icy Veins db link (rank of the linked id not stated; match by name)",
+   "category": "poison",
+   "school": "Nature",
+   "notes": "5 ranks; 30% chance per hit, stacks 5 times; charges 90/115/135/240/240 in the wowfdb table (its note says 180 at rank V). Attack-power coefficient 0.009. Icy Veins: off hand, keep 5 stacks.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities"
+   ],
+   "unconfirmed": true,
+   "flag": "Rank levels and charges come only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Wound Poison",
+   "rank_learn_levels": [
+    32,
+    40,
+    48,
+    56
+   ],
+   "category": "poison",
+   "school": "Nature",
+   "notes": "4 ranks; 30% chance per hit, stacks 5 times, reduces healing received. Mostly PvP.",
+   "unconfirmed": true,
+   "flag": "Rank levels come only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blinding Powder",
+   "rank_learn_levels": [
+    34
+   ],
+   "spell_id": 6510,
+   "id_source": "Icy Veins Subtlety leveling link (6510)",
+   "category": "poison",
+   "school": null,
+   "notes": "Made with the Poisons skill from 34; reagent for Blind.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling"
+   ],
+   "unconfirmed": true,
+   "flag": "Level comes only from wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  }
+ ],
+ "talent_and_other_spell_ids": [
+  {
+   "name": "Improved Gouge",
+   "spell_id": 13741,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Increases the duration of your Gouge ability by 1.5 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Remorseless Attacks",
+   "spell_id": 14144,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: After killing a non-trivial enemy, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Mutilate, or Ghostly Strike. Lasts 20 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Malice",
+   "spell_id": 14138,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Increases your critical strike chance with all attacks and Poisons by 5%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ruthlessness",
+   "spell_id": 14156,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Gives your finishing moves a 60% chance to add a Combo Point to your target.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Expose Armor",
+   "spell_id": 14168,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Slice and Dice",
+   "spell_id": 14165,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Increases the duration of your Slice and Dice ability by 45%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Vigor",
+   "spell_id": 14983,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Increases your maximum Energy by 10. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blood Splatter",
+   "spell_id": 1329256,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Increases the duration of your Rupture ability by 6 sec and your Garrote ability by 9 sec. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Lethality",
+   "spell_id": 14128,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Vile Poisons",
+   "spell_id": 16513,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Increases the damage dealt by your poisons by 20% and gives your poisons an additional 40% chance to resist dispel effects.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Cold Blood",
+   "spell_id": 14177,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Poisons",
+   "spell_id": 14113,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Increases the chance to apply Poisons to your target by 10%, and gives Poison applications a 50% chance to not consume a charge. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Relentless Strikes",
+   "spell_id": 14179,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Venom",
+   "spell_id": 1329328,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Causes your Shank ability to increase your Poison damage by 30% and your chance to apply Poisons by 20% for 6 sec. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Kidney Shot",
+   "spell_id": 14174,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Enemies Stunned by your Kidney Shot ability take 10% increased damage from your poisons and attacks. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Seal Fate",
+   "spell_id": 14186,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 25,
+   "notes": "Row 6, reachable at level 35. Max rank: Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Mutilate",
+   "spell_id": 399956,
+   "tree": "Assassination",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Row 7, reachable at level 40. Max rank: Instantly attacks with both weapons for 90% weapon damage plus an additional 40 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Coup de Grace",
+   "spell_id": 14162,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Efficient Strikes",
+   "spell_id": 13732,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Reduces the Energy cost of your Sinister Strike and Hemorrhage abilities by 5. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Lightning Reflexes",
+   "spell_id": 13712,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Increases your Dodge chance by 5%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Puncturing Wounds",
+   "spell_id": 1224716,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Deflection",
+   "spell_id": 13713,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Increases your Parry chance by 6%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Precision",
+   "spell_id": 13705,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Improves your chance to hit by 3%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Sprint",
+   "spell_id": 13743,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Endurance",
+   "spell_id": 13742,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Reduces the cooldown of your Sprint and Evasion abilities by 60%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Riposte",
+   "spell_id": 14251,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Composure",
+   "spell_id": 1329265,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Increases the Energy cost reduction of your Poised ability by 10. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Kick",
+   "spell_id": 13754,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Gives your Kick ability a 100% chance to Silence the target for 2 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Flawless Execution",
+   "spell_id": 1310711,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Reduces the Energy cost of your Eviscerate ability by 15. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Weapon Expertise",
+   "spell_id": 30919,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Reduces the chance for your attacks to be Dodged or Parried by 2%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Aggression",
+   "spell_id": 18427,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Increases the damage of your Sinister Strike and Eviscerate abilities by 15%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Dual Wield Specialization",
+   "spell_id": 13715,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Increases the damage done by your off-hand weapon by 50%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blade Flurry",
+   "spell_id": 13877,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Hack and Slash",
+   "spell_id": 13960,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Gives your melee weapon attacks a benefit depending on the weapon. Axe/Sword: Your successful melee attacks have a 5% chance to trigger an extra attack on the target. Dagger/Fist: Increases your critical strike chance by 5%. Mace: Your attacks ignore 15% of your target's armor. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Flash of Steel",
+   "spell_id": 1329284,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 25,
+   "notes": "Row 6, reachable at level 35. Max rank: Increases the Energy generated by your Shank ability by 15 and reduces its cooldown by 2 sec. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Adrenaline Rush",
+   "spell_id": 13750,
+   "tree": "Combat",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Row 7, reachable at level 40. Max rank: Increases your Energy regeneration rate by 100% for 15 sec.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Setup",
+   "spell_id": 13983,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Gives you a 45% chance to add a Combo Point to your target after Dodging their attack or fully resisting one of their spells.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Master of Deception",
+   "spell_id": 13958,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 levels higher. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Opportunity",
+   "spell_id": 14057,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 0,
+   "notes": "Row 1, reachable at level 10. Max rank: Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 20%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Dirty Deeds",
+   "spell_id": 14082,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Camouflage",
+   "spell_id": 13975,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 6 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Improved Ambush",
+   "spell_id": 14079,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Increases the critical strike chance of your Ambush ability by 45%.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Dirty Tricks",
+   "spell_id": 1224782,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 5,
+   "notes": "Row 2, reachable at level 15. Max rank: Reduces the Energy cost of your Sap and Blind abilities by 50%. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Initiative",
+   "spell_id": 13976,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Premeditation",
+   "spell_id": 14183,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Serrated Blades",
+   "spell_id": 14171,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 3,
+   "required_points": 10,
+   "notes": "Row 3, reachable at level 20. Max rank: Causes your attacks to ignore 9% of your target's Armor and increases the damage dealt by your Rupture ability by 30%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Elusiveness",
+   "spell_id": 13981,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Reduces the cooldown of your Vanish and Blind abilities by 90 sec. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ghostly Strike",
+   "spell_id": 14278,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage, increases your chance to dodge by 15% for 7 sec, and causes your next Ambush or Garrote cast within 7 sec to not require Stealth. Awards 1 combo point. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Quick Getaway",
+   "spell_id": 1310728,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 15,
+   "notes": "Row 4, reachable at level 25. Max rank: Increases the maximum number of targets you may have Sapped by 1, and increases your movement speed by 30% for 3 sec after Sapping a target. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Heightened Senses",
+   "spell_id": 30894,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 2,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: Increases your Stealth detection as if you were 3 levels higher and reduces your chance to be hit by spells and ranged attacks by 4%. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Preparation",
+   "spell_id": 14185,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: When activated, this ability immediately finishes the cooldown on your other Rogue abilities.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Hemorrhage",
+   "spell_id": 16511,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 20,
+   "notes": "Row 5, reachable at level 30. Max rank: An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture and Garrote damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point. (calculator marks it 'changed')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Boot Knife",
+   "spell_id": 1329286,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 5,
+   "required_points": 25,
+   "notes": "Row 6, reachable at level 35. Max rank: Grants your Shank ability a 100% chance to add 2 Combo Points to the target. (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Death Mark",
+   "spell_id": 1316709,
+   "tree": "Subtlety",
+   "kind": "talent",
+   "max_rank": 1,
+   "required_points": 30,
+   "notes": "Row 7, reachable at level 40. Max rank: Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After 6 sec, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance: 1 point : 12% stored, [((63 + 102 + 0.04 * ) * ( / 100 + 1)) * 1] damage cap 2 points: 24% stored, [((63 + 204 + 2 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 3 points: 36% stored, [((63 + 306 + 3 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 4 points: 48% stored, [((63 + 408 + 4 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap 5 points: 60% stored, [((63 + 510 + 5 * 0.04 * ) * ( / 100 + 1)) * 1] damage cap (calculator marks it 'new')",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Slice and Dice",
+   "spell_id": 6774,
+   "kind": "buff",
+   "notes": "Player buff to keep up (Icy Veins rotations). Id = Icy Veins link (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Stealth",
+   "spell_id": 1787,
+   "kind": "buff",
+   "notes": "Icy Veins link id (rank 1).",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Vanish",
+   "spell_id": 1857,
+   "kind": "buff",
+   "notes": "Icy Veins link id; Vanish puts you into an improved Stealth for 10 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Adrenaline Rush",
+   "spell_id": 13750,
+   "kind": "buff",
+   "notes": "+100% Energy regeneration for 15 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blade Flurry",
+   "spell_id": 13877,
+   "kind": "buff",
+   "notes": "+20% attack speed and cleave for 15 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Evasion",
+   "spell_id": 5277,
+   "kind": "buff",
+   "notes": "+50% dodge for 15 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Sprint",
+   "spell_id": 11305,
+   "kind": "buff",
+   "notes": "Icy Veins link id (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Cold Blood",
+   "spell_id": 14177,
+   "kind": "buff",
+   "notes": "Next eligible ability is a guaranteed crit.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Rupture",
+   "spell_id": 11275,
+   "kind": "debuff",
+   "notes": "Bleed on the target. Icy Veins link id (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Garrote",
+   "spell_id": 11290,
+   "kind": "debuff",
+   "notes": "Bleed on the target. Icy Veins link id (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Expose Armor",
+   "spell_id": 11198,
+   "kind": "debuff",
+   "notes": "Armor debuff on the target. Icy Veins link id (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Death Mark",
+   "spell_id": 1316709,
+   "kind": "debuff",
+   "notes": "Subtlety capstone mark on the target (6 s, then the stored damage is dealt).",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Hemorrhage",
+   "spell_id": 16511,
+   "kind": "debuff",
+   "notes": "Target takes 15% more Rupture and Garrote damage from you for 15 s.",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ghostly Strike",
+   "spell_id": 14278,
+   "kind": "buff",
+   "notes": "+15% dodge for 7 s and next Ambush or Garrote works without Stealth.",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Sap",
+   "spell_id": 11297,
+   "kind": "debuff",
+   "notes": "Icy Veins link id (rank not stated). Up to 45 s at max rank.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Blind",
+   "spell_id": 2094,
+   "kind": "debuff",
+   "notes": "10 s disorient.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Kidney Shot",
+   "spell_id": 8643,
+   "kind": "debuff",
+   "notes": "Icy Veins link id (rank not stated).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Cheap Shot",
+   "spell_id": 1833,
+   "kind": "debuff",
+   "notes": "4 s stun.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Gouge",
+   "spell_id": 11286,
+   "kind": "debuff",
+   "notes": "Icy Veins link id (rank not stated). 4 s incapacitate.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Deadly Poison",
+   "spell_id": 2835,
+   "kind": "debuff",
+   "notes": "Icy Veins link id (rank not stated). Stacks 5 times.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Touch of Zanzil",
+   "spell_id": 9991,
+   "kind": "debuff",
+   "notes": "Debuff from the level-20 poison quest chests; cured by the follow-up quest or a poison dispel (Icy Veins class quests).",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Venom",
+   "spell_id": null,
+   "kind": "buff",
+   "notes": "Buff from Shank with the Venom talent (+30% poison damage, +20% poison apply chance, 6 s). Aura id not sourced (talent data rank id 1329328; Icy Veins pages link 1310703). Detect by name.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Poised",
+   "spell_id": null,
+   "kind": "buff",
+   "notes": "Buff at maximum Energy out of combat (next ability -10 Energy). Aura id not sourced; detect by name.",
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Riposte",
+   "spell_id": null,
+   "kind": "proc",
+   "notes": "Riposte becomes usable after you parry (talent data). No separate aura id is sourced; detect usability of the Riposte spell (talent rank id 14251).",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Touch of the Grave",
+   "spell_id": 1260189,
+   "kind": "racial",
+   "notes": "Undead racial; Icy Veins: most consistent Horde DPS racial. Race: Undead.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Eureka!",
+   "spell_id": 1259813,
+   "kind": "racial",
+   "notes": "Gnome racial: damage up and Energy cost down for 8 s. Race: Gnome.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Escape Artist",
+   "spell_id": 20589,
+   "kind": "racial",
+   "notes": "Gnome racial: breaks snares and slows. Race: Gnome.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "name": "Ruthless",
+   "spell_id": 20597,
+   "kind": "racial",
+   "notes": "Human racial, +1% crit (id from Tristan's Addon research, Icy Veins Ret guide link). Race: Human.",
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  }
+ ],
+ "milestones": {
+  "items": [
+   {
+    "level": 1,
+    "what": "Eviscerate, Sinister Strike, Stealth; Redirect (new, store combo points for 15 s).",
+    "notes": "Redirect appears only in the endgametools client list (unconfirmed). Pick Lock is also listed at 1 in the client (learn level disputed).",
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 4,
+    "what": "Pick Pocket and Backstab.",
+    "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 6,
+    "what": "Gouge, Sinister Strike rank 2.",
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 8,
+    "what": "Evasion, Eviscerate rank 2.",
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 10,
+    "what": "Talents start (first point at 10).",
+    "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 10,
+    "what": "Dual Wield unlock.",
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 10,
+    "what": "Level-10 class quest for every race except Skyborne; all reward Blade of Cunning (item 7298). Human: Seek out SI:7 (Keryn Sylvius, Goldshire).",
+    "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 10,
+    "what": "Sap, Slice and Dice, Sprint.",
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 12,
+    "what": "Kick.",
+    "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 14,
+    "what": "Garrote, Expose Armor (Icy Veins Subtlety: Stealth has little use until Garrote at 14).",
+    "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 15,
+    "what": "Lockpicking class quest (Icy Veins milestone table; learn level disputed: see conflicts).",
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 16,
+    "what": "Pick Lock from the trainer and the lockpicking quests (Alliance Redridge Rendezvous / Alther's Mill; Horde Wrenix of Ratchet / Plundering the Plunderers). Feint.",
+    "unconfirmed": true,
+    "flag": "Level 16 and the quest names come from conquestcapped/warcrafttavern/kickegg (secondary).",
+    "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 18,
+    "what": "Ambush unlock (Icy Veins); Poised passive (new).",
+    "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 20,
+    "what": "Poison Crafting class quest (Alliance Mathias and the Defias, Horde The Shattered Salute; needs Lockpicking 75). Riposte available through talents (Combat). Horn of Xelthos (solo, both factions). Rupture, Stealth rank 2.",
+    "also_sources": [
+     "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+    ],
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 22,
+    "what": "Vanish unlock (Flash Powder). Distract.",
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 24,
+    "what": "Shank (new; use on cooldown). Detect Traps.",
+    "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 25,
+    "what": "16-point medal talents reachable: Cold Blood, Flawless Execution, Ghostly Strike.",
+    "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 26,
+    "what": "Cheap Shot unlock.",
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 30,
+    "what": "Blade Flurry (Combat), earliest Hemorrhage (Subtlety), Venom (Assassination) through talents. Kidney Shot, Disarm Trap.",
+    "also_sources": [
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling"
+    ],
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 30,
+    "what": "The Manor, Ravenholdt (city Rogue trainer; needs Detect Traps) and The Eye of Bhossca (needs Horn of Xelthos done and Lockpicking 75; reward Ruby-Adorned Blade 277246).",
+    "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 34,
+    "what": "Blind unlock (Blinding Powder).",
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 40,
+    "what": "Adrenaline Rush (Combat), Mutilate (Assassination; level disputed), Death Mark (Subtlety) through talents. Dual Specialization. Safe Fall, Stealth rank 3.",
+    "also_sources": [
+     "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+     "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+     "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+    ],
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 40,
+    "what": "Mount at level 40 (Icy Veins Subtlety guide).",
+    "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 44,
+    "what": "Shank rank 2 (25 Energy generated).",
+    "unconfirmed": true,
+    "flag": "Only endgametools.",
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 50,
+    "what": "Ravenholdt questline available (A Simple Request).",
+    "also_sources": [
+     "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+    ],
+    "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+    "checked": "2026-11-19"
+   },
+   {
+    "level": 60,
+    "what": "Final ranks: Backstab, Death Mark, Eviscerate, Feint, Gouge, Mutilate, Rupture, Stealth; Deadly Poison V, Instant Poison VI.",
+    "also_sources": [
+     "https://wowfdb.com/classes/rogue/utility/"
+    ],
+    "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+    "checked": "2026-11-19"
+   }
+  ],
+  "talent_milestones": "Talents from level 10; one-point gold medal talents at 11, 21 and 31 points plus a new 16-point medal (Blizzard deep dive). Current medals by tree (Icy Veins calculator data 70959): Assassination - Blood Splatter (11th point, level 20), Cold Blood (16th, 25), Venom (21st, 30), Mutilate (31st, 40); Combat - Riposte (11th, 20), Flawless Execution (16th, 25), Blade Flurry (21st, 30), Adrenaline Rush (31st, 40); Subtlety - Premeditation (11th, 20), Ghostly Strike (16th, 25), Preparation and Hemorrhage (both 21st, 30), Death Mark (31st, 40).",
+  "trainer_costs": "Training all ranks 1-60 costs 206-207 gold for every class after Blizzard's pre-launch notes (foreverguide; unconfirmed). Pick Lock is trained free of charge at 16 (conquestcapped; unconfirmed). Per-rank costs not sourced.",
+  "respec": "Talents (and Legacy talents) are changed at a class trainer in a major city; Dual Specialization at level 40 (Blizzard deep dive).",
+  "also_sources": [
+   "https://foreverguide.net/classes/rogue/",
+   "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json"
+  ],
+  "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+  "checked": "2026-11-19"
+ },
+ "talent_changes": [
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Poisons: more charges on all poisons; can be applied together with temporary enchantments such as Weightstones and Sharpening Stones.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Feint: threat reduction doubled.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Sap no longer breaks Stealth.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Distract also reduces affected enemies' Stealth detection for 10 s (and tells enemy players a rogue is near).",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Expose Armor reduction raised to match 5 Sunder Armor applications at about the same level; it no longer prevents Sunder Armor, and Sunder does not overwrite it unless weaker.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Rogues can learn one-handed axes.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Assassination",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Improved Gouge moved to Assassination row 1; Malice also covers Poisons; Improved Expose Armor redesigned (Energy cost cut, combo point refund at 5 points); Cold Blood moved to the 16-point medal and works with Mutilate; Improved Poisons adds a chance not to consume charges; Vigor became 2 points; Mutilate added as the 21-point medal (60 Energy, two daggers, 2 combo points); Seal Fate no longer needs Cold Blood and triggers once per Mutilate; Venom added as a 31-point 25-Energy finisher (+30% poison damage, +10% application).",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Combat",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Improved Eviscerate moved to row 1; Puncturing Wounds (was Improved Backstab) also crits Mutilate and can add a combo point; Deflection doubled; Precision covers spells and Poisons; Endurance is a percentage cut to Sprint and Evasion; Flawless Execution new 16-point medal (-10 Eviscerate Energy); Hack and Slash replaces Dagger/Mace/Sword/Fist Specialization and adds Axes; Weapon Expertise reduces dodge/parry; Aggression also boosts Backstab.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Subtlety",
+   "stage": "deep dive (2026-10-07)",
+   "change": "Camouflage, Setup, Initiative, Dirty Tricks (was Improved Sap; halves Sap/Blind cost), Improved Ambush, Ghostly Strike, Hemorrhage, Premeditation (16-point medal, 20 s), Serrated Blades, Dirty Deeds changed; new Improved Distract, Quietus, Cutthroat and Thousand Cuts (31-point). Sleight of Hand and Deadliness removed.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "Nov 2 notes / client 70755 (wowfdb, 2026-11-03)",
+   "change": "New abilities Shank (level 24) and Poised (level 18).",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Assassination",
+   "stage": "Nov 2 notes / client 70755 (wowfdb, 2026-11-03)",
+   "change": "Venom became a passive row-5 talent that Shank triggers (+30% Poison damage, +20% Poison application, 6 s); Mutilate moved to row 7 (90% weapon damage); Blood Splatter added; Lethality 2 points; Relentless Strikes row 5, 5 points; Seal Fate 3 points; Improved Expose Armor row 2; Vigor row 3; Murder removed.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Combat",
+   "stage": "Nov 2 notes / client 70755 (wowfdb, 2026-11-03)",
+   "change": "Improved Eviscerate became Coup de Grace (also boosts Death Mark); Improved Sinister Strike became Efficient Strikes; new Composure (Poised discount) and Flash of Steel (Shank Energy and cooldown); Flawless Execution now -15 Eviscerate Energy (was 10); Aggression row 4 (Sinister Strike and Eviscerate +5/10/15%); Dual Wield Specialization row 5, 2 points; Improved Sprint row 2; Weapon Expertise row 4.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Subtlety",
+   "stage": "Nov 2 notes / client 70755 (wowfdb, 2026-11-03)",
+   "change": "Thousand Cuts replaced by Death Mark (row-7 finisher curse, capstone at 40); Quietus became Quick Getaway; new Boot Knife (Shank adds 2 combo points); Cutthroat and Improved Distract removed, Ghostly Strike now lets the next Ambush work without Stealth; Hemorrhage also raises Garrote damage; Premeditation row 3; Opportunity 5 points; Setup row 1 (15/30/45%); Dirty Deeds row 2; Camouflage 3 points; Elusiveness row 4; Heightened Senses row 5.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "Nov 2 notes / client 70755 (wowfdb, 2026-11-03)",
+   "change": "Instant Poison attack-power coefficient 0.005 -> 0.01; Deadly Poison 0.0045 -> 0.009; Slice and Dice no longer stands a sitting target up.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "hotfix (2026-11-16)",
+   "change": "Rogue Poison ranks can no longer go above the maximum rank; Shank no longer removes your combo points on other targets when Boot Knife is not talented.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Assassination",
+   "stage": "hotfix (2026-11-16)",
+   "change": "Mutilate (and Execute) no longer get an extra attempt to activate Windfury Totem; Nov 13: off-hand strikes such as Mutilate's do not activate Windfury, the main-hand strike still does.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "tree": "Baseline",
+   "stage": "hotfix (2026-11-06)",
+   "change": "Shank tooltip now shows Rank 1 and Rank 2; with Boot Knife it shows the combo points granted.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  }
+ ],
+ "builds": [
+  {
+   "spec": "Assassination",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-1122233322c8855a9999gRRRRfffR9dAAAAAhhhjjmmmkkk66nn~70755-6b631983",
+   "notes": "Icy Veins 'Leveling Talent Build' (level slider). Decodes 31/15/5: Mutilate, Seal Fate, Relentless Strikes, Venom, Cold Blood, Lethality, Remorseless Attacks; Combat Precision, Puncturing Wounds, Coup de Grace; Subtlety Opportunity 5. Mutilate needs two daggers and is the main builder from 40. Page updated Nov 18, 2026. Calculator data 70755-6b631983.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Assassination",
+   "purpose": "Mutilate Assassination (endgame PvE)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-2222233355c7788a99999RRRRRgfffdhhhjjmmmkkk66b5nnrvv~70755-6b631983",
+   "notes": "Icy Veins 'Mutilate Assassination', points 33/18/0 (page text agrees). Two daggers required; Venom via Shank, Improved Poisons; Combat Precision, Puncturing Wounds, Flawless Execution, Weapon Expertise. Page last updated Nov 4, 2026. Calculator data 70755-6b631983.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Combat",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-iihhhmmlllom66nrvvwwtuuuusssssxuwSS1122233322c8855a~70755-6b631983",
+   "notes": "Icy Veins 'Leveling Talent Build' (level slider). Decodes 16/35/0: Efficient Strikes (Icy Veins calls it Improved Sinister Strike), Precision, Riposte (20), Flawless Execution, Blade Flurry (30), Hack and Slash, Flash of Steel, Adrenaline Rush (40); Assassination Ruthlessness, Malice, Lethality, Blood Splatter, Cold Blood. Page updated Nov 18, 2026. Calculator data 70755-6b631983.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Combat",
+   "purpose": "Sinister Strike Combat (endgame PvE)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-iihhhmmmpp66nnjrvvwwwSStuuuuusssssx2222233377555c8a~70755-6b631983",
+   "notes": "Icy Veins 'Sinister Strike Combat', points 16/35/0 (page text agrees). Non-dagger main hand; Adrenaline Rush, Blade Flurry, Hack and Slash, Flash of Steel, Lightning Reflexes 1 and Improved Sprint 2. Page last updated Nov 4, 2026. Calculator data 70755-6b631983.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Combat",
+   "purpose": "Backstab Combat (endgame PvE)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-iihhhkkkmmmnn66wwvvwrSStuuuuusssssx2222233377555c8a~70755-6b631983",
+   "notes": "Icy Veins 'Backtstab Combat' (heading typo on the page), 16/35/0. Dagger main hand, Backstab builder: Puncturing Wounds 3 instead of Lightning Reflexes and Improved Sprint; keeps Efficient Strikes for when you can't get behind. Page last updated Nov 4, 2026. Calculator data 70755-6b631983.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Subtlety",
+   "purpose": "Leveling",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-AAAAAyyyLLJFFFKGKKzzNMBBBPPPPPQii2222233355chhhmmm5~70755-c04a9251",
+   "notes": "Icy Veins 'Leveling Talent Build' (level slider). Decodes 12/8/31: all Subtlety until Hemorrhage (30), then Death Mark (40) and Boot Knife; Combat Coup de Grace, Efficient Strikes, Precision; Assassination Malice, Ruthlessness, Improved Slice and Dice, Blood Splatter. Master of Deception instead of Camouflage if you get detected (e.g. the level-20 class quest). Optional respec at 30. Page updated Nov 4, 2026. Calculator data 70755-c04a9251.",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Subtlety",
+   "purpose": "Subtlety Bleed Build (endgame PvE)",
+   "talent_calc_url": "https://www.icy-veins.com/wow-forever/rogue-talent-calculator#tc-AAAAAEEEBBKKKJLGByyNiiMFFFPPPPPQhhh1122233322c855L8~70755-c04a9251",
+   "notes": "Icy Veins 'Subtlety Bleed Build', points 15/5/31 (page text agrees). Rupture/Garrote focus with Hemorrhage builder, Death Mark, Boot Knife, Improved Ambush; Combat Coup de Grace and Efficient Strikes. Page last updated Nov 4, 2026. Calculator data 70755-c04a9251.",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-spec-builds-talents",
+   "checked": "2026-11-19"
+  }
+ ],
+ "rotations": {
+  "assassination": "Icy Veins Assassination (Nov 4, 2026), a priority list: 1) maintain buffs and debuffs: Poisons on both weapons (Instant Poison main hand, Deadly Poison off hand, keep 5 Deadly stacks), Expose Armor if no stronger armor debuff is on the target, Slice and Dice always, Rupture if the target will live through it; 2) open from Stealth with Garrote; 3) Shank on cooldown to keep Venom up (not when Energy is nearly full); 4) Mutilate to build combo points; 5) at 5 combo points Eviscerate if Slice and Dice and Rupture are up and Shank is on cooldown. No AoE. Cooldowns: Cold Blood with a 5-point Eviscerate once threat is established; Vanish for mechanics, threat drop or a Garrote refresh. Leveling (Icy Veins, Nov 18): Instant Poison on both weapons (Crippling Poison for runners), open with Cheap Shot or Garrote, Backstab (Sinister Strike if you can't get behind; Mutilate from 40), Slice and Dice if more targets are coming else Eviscerate at 5 combo points.",
+  "combat": "Icy Veins Combat (Nov 4, 2026): maintain Poisons (Instant Poison main hand, Deadly Poison off hand), Expose Armor if no stronger armor debuff, Slice and Dice always, Rupture if the target will live; open from Stealth with Garrote; Shank on cooldown if it won't overcap Energy; Sinister Strike to build (Backstab in the dagger variant); at 5 combo points Eviscerate if Slice and Dice and Rupture are up and Shank is on cooldown. Blade Flurry whenever a second target is in range (or on cooldown for its attack speed); Adrenaline Rush after the opening Energy is spent and threat is established; Cold Blood on a 5-point Eviscerate; Vanish for mechanics or a threat drop. Leveling (Icy Veins, Nov 18): Instant Poison on both weapons (Crippling Poison for runners), open with Cheap Shot or Garrote, Riposte whenever it procs, Sinister Strike to build, Slice and Dice if you are confident there will be targets for its duration, else Eviscerate at 5 combo points; Blade Flurry from 30 for two targets.",
+  "subtlety": "Icy Veins Subtlety (Nov 4, 2026): pool Energy around Death Mark windows. 1) maintain: Instant Poison main hand, Deadly Poison off hand; Rupture (5 combo points), Death Mark (5 combo points), Garrote if the target will live, Slice and Dice (5 combo points); 2) cooldowns: Shank on cooldown at 0-3 combo points (Boot Knife adds 2), Ghostly Strike on cooldown followed by Garrote (Initiative makes it 2 combo points), Premeditation on cooldown; 3) builders: Ambush as the Stealth opener, Hemorrhage as the main builder (30 Energy). Hold Vanish and Preparation for dangerous moments. Don't use multi-point generators at 4 combo points; stand behind the boss. Leveling (Icy Veins, Nov 4): Garrote to open once learned (14), Backstab or Sinister Strike to build until Hemorrhage (30), then Hemorrhage only; Shank and Ghostly Strike on cooldown; Slice and Dice early, Rupture on durable targets from 30, Death Mark as the main finisher from 40 (sample opener: Garrote, Hemorrhage, Shank to 5 combo points, Death Mark, then Hemorrhage and Eviscerate).",
+  "energy": "Energy regenerates continuously at about 10 per second (Icy Veins; wowfdb: no longer in 2-second ticks); never overcap it. Combo points stay on a target when you switch targets and are lost only when you start building on another enemy or the target dies (Icy Veins, wowfdb). Energy refunds: Shank (+15, +25 at rank 2, Flash of Steel more), Relentless Strikes, Adrenaline Rush; Poised cuts the next ability by 10 Energy when you start a fight at full Energy. Switching specs no longer refills Energy (wowfdb, Oct 16).",
+  "poisons": "Poisons are learned through the level-20 class quest and are their own skill line; each poison is an item made with that skill and lasts 30 minutes on a weapon. Icy Veins: Instant Poison on the main hand and Deadly Poison on the off hand at endgame; Instant Poison on both weapons while leveling, Crippling Poison for enemies that run. Forever: more charges, poisons can crit (Malice) and use hit (Precision), and Blizzard says a poison can sit on a weapon together with a Sharpening Stone or Weightstone (client data did not show the stacking yet per wowfdb). Venom (via Shank) and Improved Poisons are the Assassination poison talents. Some mobs are immune to poisons (Icy Veins).",
+  "sources": [
+   "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+   "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+   "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+   "https://wowfdb.com/classes/rogue/",
+   "https://wowfdb.com/classes/rogue/utility/",
+   "https://wowfdb.com/classes/rogue/changes/",
+   "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-rotation-cooldowns-abilities",
+  "checked": "2026-11-19"
+ },
+ "stat_priority": [
+  {
+   "spec": "Assassination",
+   "priority": "Expertise (to 6.5%) > Hit (to 8%) > Agility > Weapon damage > Crit",
+   "notes": "Icy Veins, last updated Nov 4, 2026. Melee ability hit cap vs a +3 boss is 8% (with 300 weapon skill); dual-wield auto-attack cap 27%. Two daggers are mandatory for Mutilate. Precision counts toward hit. Haste not evaluated. wowfdb's own list differs (dagger damage > hit > Agility > crit > Attack power > Stamina).",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-stat-priority",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Combat",
+   "priority": "Expertise (to 6.5%) > Hit (to 8%) > Agility > Weapon damage > Crit",
+   "notes": "Icy Veins, last updated Nov 4, 2026. Same caps as Assassination (8% ability hit vs +3 boss, 27% dual-wield auto-attack). Expertise matters twice as much when you must attack from the front (parry). wowfdb: main-hand weapon damage > hit > Agility > crit > Strength > Stamina.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-stat-priority",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Subtlety",
+   "priority": "Weapon damage > Expertise (to 6.5%) > Hit (to 8%) > Agility",
+   "notes": "Icy Veins, last updated Nov 4, 2026: Weapon Damage > Expertise (to 6.5%) > Hit Chance (to 8%) > Weapon Skill > Agility. Weapon Skill (not a token here) sits between Hit and Agility; it reduces the glancing-blow penalty. Prefer slower weapons: '100 DPS 1.9 speed' loses to '90 DPS 2.8 speed'.",
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-stat-priority",
+   "checked": "2026-11-19"
+  },
+  {
+   "spec": "Leveling",
+   "priority": "Weapon damage > Hit > Expertise > Agility > Crit > Strength > Stamina",
+   "notes": "Icy Veins Assassination and Combat leveling (Nov 18, 2026): Weapon Damage, then Hit & Expertise (rare while leveling, take them when you can), Agility, Critical Strike, Strength, Stamina. Combat wants a slow main hand (Sinister Strike, Riposte); Assassination two high top-end daggers. Subtlety leveling (Nov 4) puts raw Attack power between Agility and Crit ('if an item has more than twice as much AP as Agility/Strength, the AP item is likely better') and prefers slow weapons: '15 DPS 1.9 speed < 14 DPS 2.8 speed'.",
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-leveling",
+   "checked": "2026-11-19"
+  }
+ ],
+ "quests": [
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Human",
+   "faction": "Alliance",
+   "name": "Seek out SI:7",
+   "zone": "Elwynn Forest (Goldshire Inn) -> Stormwind -> south Elwynn coast",
+   "start_npc": "Keryn Sylvius (Rogue trainer, Goldshire Inn)",
+   "npcs": [
+    {
+     "name": "Keryn Sylvius",
+     "npc_id": 917
+    },
+    {
+     "name": "Master Mathias Shaw",
+     "npc_id": 332
+    },
+    {
+     "name": "Defias Dockmaster",
+     "npc_id": 6846
+    }
+   ],
+   "steps": [
+    "Keryn Sylvius (Goldshire Inn) sends you to Master Mathias Shaw in Stormwind",
+    "Mathias Shaw asks for the Defias Shipping Schedule",
+    "Go to the small pier on the southern border of Elwynn Forest (straight south of Goldshire)",
+    "Stealth and Pick Pocket the Defias Shipping Schedule from the Defias Dockmaster (it does not drop when you kill him); avoid the campfire, it damages you and breaks Stealth",
+    "Return to Mathias Shaw"
+   ],
+   "reward": "Blade of Cunning",
+   "reward_items": [
+    {
+     "name": "Blade of Cunning",
+     "item_id": 7298
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Defias Shipping Schedule",
+     "item_id": 7675
+    }
+   ],
+   "needs": "Stealth + Pick Pocket",
+   "notes": "Rip (Human, Alliance) can do this at 10. Quest IDs not linked on the page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Dwarf/Gnome",
+   "faction": "Alliance",
+   "name": "Road to Salvation",
+   "zone": "Dun Morogh (Kharanos) -> Ironforge -> outside Gnomeregan",
+   "start_npc": "Hogral Bakkan (Rogue trainer, Kharanos)",
+   "npcs": [
+    {
+     "name": "Hogral Bakkan",
+     "npc_id": 1234
+    },
+    {
+     "name": "Hulfdan Blackbeard",
+     "npc_id": 5165
+    },
+    {
+     "name": "Onin MacHammar",
+     "npc_id": 6886
+    }
+   ],
+   "steps": [
+    "Hogral Bakkan (Kharanos) sends you to Hulfdan Blackbeard, the Ironforge Rogue trainer",
+    "Hulfdan sends you to Onin MacHammar, on top of the pillar with a ramp just outside Gnomeregan",
+    "Return to Hulfdan in Ironforge"
+   ],
+   "reward": "Blade of Cunning",
+   "reward_items": [
+    {
+     "name": "Blade of Cunning",
+     "item_id": 7298
+    }
+   ],
+   "notes": "Quest IDs not linked on the page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Night Elf",
+   "faction": "Alliance",
+   "name": "The Apple Falls",
+   "zone": "Teldrassil (Dolanaar) -> Darnassus -> Teldrassil",
+   "start_npc": "Jannok Breezesong (Rogue trainer, Dolanaar)",
+   "npcs": [
+    {
+     "name": "Jannok Breezesong",
+     "npc_id": 3599
+    },
+    {
+     "name": "Syurna",
+     "npc_id": 4163
+    },
+    {
+     "name": "Sethir the Ancient",
+     "npc_id": 6909
+    }
+   ],
+   "steps": [
+    "Jannok Breezesong (Dolanaar) sends you to Syurna in Darnassus",
+    "Syurna asks for Sethir's Journal",
+    "Stealth and Pick Pocket Sethir's Journal from Sethir the Ancient (it does not drop); the area is dense, consider level 11-12",
+    "Return to Syurna"
+   ],
+   "reward": "Blade of Cunning",
+   "reward_items": [
+    {
+     "name": "Blade of Cunning",
+     "item_id": 7298
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Sethir's Journal",
+     "item_id": 7737
+    }
+   ],
+   "needs": "Stealth + Pick Pocket",
+   "notes": "Quest IDs not linked on the page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Orc/Troll",
+   "faction": "Horde",
+   "name": "Therzok",
+   "zone": "Durotar (Razor Hill) -> Orgrimmar (Cleft of Shadows) -> The Barrens (pirate camp south of Ratchet) -> Orgrimmar",
+   "start_npc": "Kaplak (Rogue trainer, Razor Hill)",
+   "npcs": [
+    {
+     "name": "Kaplak",
+     "npc_id": 3170
+    },
+    {
+     "name": "Therzok",
+     "npc_id": 6446
+    },
+    {
+     "name": "Tazan",
+     "npc_id": 6494
+    },
+    {
+     "name": "Gamon",
+     "npc_id": 6466
+    }
+   ],
+   "steps": [
+    "Kaplak (Razor Hill) sends you to Therzok in the Cleft of Shadows, Orgrimmar",
+    "Kill Tazan (patrols the pirate camp coast south of Ratchet, north of Northwatch Hold) for Tazan's Satchel; dense area, consider 11-12",
+    "Return to Therzok; next step: unlock the satchel",
+    "Stealth and Pick Pocket Tazan's Key from Gamon (Tauren in the Valley of Strength inn, Orgrimmar)",
+    "Open the satchel and return to Therzok"
+   ],
+   "reward": "Blade of Cunning",
+   "reward_items": [
+    {
+     "name": "Blade of Cunning",
+     "item_id": 7298
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Tazan's Satchel",
+     "item_id": 7209
+    },
+    {
+     "name": "Tazan's Key",
+     "item_id": 7208
+    }
+   ],
+   "needs": "Stealth + Pick Pocket",
+   "notes": "Name is the Icy Veins section heading. Quest IDs not linked on the page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Undead",
+   "faction": "Horde",
+   "name": "Mennet Carkad",
+   "zone": "Tirisfal Glades -> Undercity -> Tirisfal/Silverpine road -> Undercity",
+   "start_npc": "Marion Call (Tirisfal Glades)",
+   "npcs": [
+    {
+     "name": "Marion Call",
+     "npc_id": 2130
+    },
+    {
+     "name": "Mennet Carkad",
+     "npc_id": 6467
+    },
+    {
+     "name": "Astor Hadren",
+     "npc_id": 6497
+    },
+    {
+     "name": "Andron Gant",
+     "npc_id": 6522
+    },
+    {
+     "name": "Varimathras",
+     "npc_id": 2425
+    }
+   ],
+   "steps": [
+    "Marion Call sends you to Mennet Carkad in the Undercity",
+    "Get Astor's Letter of Introduction from Astor Hadren (patrols the road from Brill to the Sepulcher; talk to him and pick the dialog options to make him hostile, then kill him)",
+    "Return to Mennet; he sends you to Andron Gant in The Apothecarium",
+    "Take Andron's Ledger from the bookshelf behind Andron and bring it to Mennet",
+    "Bring Andron's Ledger to Varimathras in the Hall of the Dark Lady"
+   ],
+   "reward": "Blade of Cunning",
+   "reward_items": [
+    {
+     "name": "Blade of Cunning",
+     "item_id": 7298
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Astor's Letter of Introduction",
+     "item_id": 7231
+    },
+    {
+     "name": "Andron's Ledger",
+     "item_id": 7294
+    }
+   ],
+   "notes": "Name is the Icy Veins section heading, not necessarily the quest title. Quest IDs not linked on the page.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 10,
+   "races": "Skyborne",
+   "faction": "Both",
+   "name": "(no level-10 class quest)",
+   "notes": "Icy Veins: Skyborne do not receive a level-10 class quest (so no Blade of Cunning). wowfdb says Skyborne start on Zephras Isle 'with its own Rogue quest' (recorded conflict).",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "lockpicking",
+   "level": 16,
+   "races": "All",
+   "faction": "Alliance",
+   "name": "Redridge Rendezvous",
+   "quest_id": 2281,
+   "zone": "Stormwind -> Redridge Mountains (Lakeshire)",
+   "start_npc": "Renzik \"The Shiv\" (Stormwind; warcrafttavern: Old Town)",
+   "npcs": [
+    {
+     "name": "Renzik \"The Shiv\"",
+     "npc_id": 6946
+    }
+   ],
+   "steps": [
+    "Train Pick Lock, take Redridge Rendezvous from Renzik \"The Shiv\" in Stormwind",
+    "Go to Lucius in Lakeshire (by the pier)"
+   ],
+   "notes": "Breadcrumb to Alther's Mill. Quest and NPC IDs from Wowhead/warcraftdb links on conquestcapped and warcrafttavern.",
+   "unconfirmed": true,
+   "flag": "Quest names, IDs and level 16 only from conquestcapped/warcrafttavern (secondary, low reliability); Icy Veins only says 'Lockpicking class quest' at 15.",
+   "also_sources": [
+    "https://www.warcrafttavern.com/forever/guides/lockpicking/"
+   ],
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "lockpicking",
+   "level": 16,
+   "races": "All",
+   "faction": "Alliance",
+   "name": "Alther's Mill",
+   "quest_id": 2282,
+   "zone": "Redridge Mountains",
+   "start_npc": "Lucius (Lakeshire)",
+   "coords": "46.6, 45.0 (Alther's Mill practice lockboxes)",
+   "npcs": [
+    {
+     "name": "Lucius",
+     "npc_id": 6966
+    }
+   ],
+   "steps": [
+    "Take Alther's Mill from Lucius; it gives Thieves' Tools",
+    "Open the 4 Practice Lockboxes around Alther's Mill (Redridge 46.6, 45.0) and Lucius's Lockbox",
+    "Stay until Lockpicking 80 (cap at 16) before the level-20 poison quest"
+   ],
+   "reward_items": [
+    {
+     "name": "Thieves' Tools",
+     "item_id": 5060
+    }
+   ],
+   "notes": "Forever added level 19-20 Greater Tarantulas at the mill (respawn fast, eggs interrupt the cast); come with a friend, at 20, or use the Horde pirate ship (both spots work for both factions). Foreman Oslow in Lakeshire has a new spider quest also named Alther's Mill (Wowhead quest 98386).",
+   "unconfirmed": true,
+   "flag": "Only conquestcapped/warcrafttavern (secondary, low reliability).",
+   "also_sources": [
+    "https://www.warcrafttavern.com/forever/guides/lockpicking/"
+   ],
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "lockpicking",
+   "level": 16,
+   "races": "All",
+   "faction": "Horde",
+   "name": "Wrenix of Ratchet",
+   "quest_id": 2382,
+   "zone": "Orgrimmar -> The Barrens (Ratchet)",
+   "start_npc": "Rogue trainer (conquestcapped: your trainer sends you at 16)",
+   "steps": [
+    "Take the quest from your trainer at 16 and go to Wrenix the Wretched in Ratchet"
+   ],
+   "notes": "Breadcrumb to Plundering the Plunderers.",
+   "unconfirmed": true,
+   "flag": "Only conquestcapped (secondary, low reliability).",
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "lockpicking",
+   "level": 16,
+   "races": "All",
+   "faction": "Horde",
+   "name": "Plundering the Plunderers",
+   "quest_id": 2381,
+   "zone": "The Barrens (pirate ship south of Ratchet)",
+   "start_npc": "Wrenix the Wretched (Ratchet)",
+   "coords": "65.0, 45.5",
+   "npcs": [
+    {
+     "name": "Wrenix the Wretched",
+     "npc_id": 7161
+    },
+    {
+     "name": "Wrenix's Gizmotronic Apparatus",
+     "npc_id": 7166
+    },
+    {
+     "name": "Polly",
+     "npc_id": 7167
+    }
+   ],
+   "steps": [
+    "Get Thieves' Tools and the E.C.A.C. from Wrenix's Gizmotronic Apparatus next to Wrenix (only if you already trained Pick Lock and never bought tools)",
+    "Pick the Buccaneer's Strongboxes on the middle deck at the stern of the ship (65.0, 45.5) for skill",
+    "Open the quest chest on the lowest deck; it calls Polly (level 50 parrot): use the E.C.A.C. on her first to shrink her to level 18",
+    "Return to Wrenix"
+   ],
+   "reward": "10 Thistle Tea",
+   "reward_items": [
+    {
+     "name": "Thistle Tea",
+     "item_id": 7676
+    },
+    {
+     "name": "Thieves' Tools",
+     "item_id": 5060
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "E.C.A.C.",
+     "item_id": 7970
+    }
+   ],
+   "notes": "Players report yellow locks up to 65 and a slow climb after.",
+   "unconfirmed": true,
+   "flag": "Only conquestcapped (secondary, low reliability).",
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "poisons",
+   "level": 20,
+   "races": "All",
+   "faction": "Alliance",
+   "name": "Mathias and the Defias",
+   "zone": "Stormwind -> Westfall (SE corner tree, Agent Kearnen) -> Klaven's tower -> Stormwind",
+   "start_npc": "Master Mathias Shaw (Stormwind, SI:7)",
+   "npcs": [
+    {
+     "name": "Master Mathias Shaw",
+     "npc_id": 332
+    },
+    {
+     "name": "Agent Kearnen",
+     "npc_id": 7024
+    },
+    {
+     "name": "Malformed Defias Drone",
+     "npc_id": 7051
+    },
+    {
+     "name": "Klaven Mortwake",
+     "npc_id": 7053
+    },
+    {
+     "name": "Doc Mixilpixil",
+     "npc_id": 7207
+    },
+    {
+     "name": "Bernard Gump",
+     "npc_id": 1302
+    }
+   ],
+   "steps": [
+    "Train Pick Pocket and Pick Lock (Lockpicking 75) before leaving Stormwind; take the quest from Mathias Shaw",
+    "Find Agent Kearnen (stealthed) by the large tree in the south-eastern corner of Westfall, just south of the road to Duskwood",
+    "Pick Pocket the Defias Tower Key from a Malformed Defias Drone",
+    "Stealth up the tower; Sap Klaven Mortwake (level 23) and open the small box beside him for Klaven Mortwake's Journal (Lockpicking 75); Hearthstone out",
+    "Return to Mathias Shaw: you can now make Poisons and Thistle Tea",
+    "Opening the box gives the Touch of Zanzil debuff: Mathias Shaw's follow-up sends you to Doc Mixilpixil (Simple Wildflowers from Bernard Gump, Spool of Light Chartreuse Silk Thread from Finest Thread, Bronze Tube, Leaded Vial), or get it dispelled / Anti-Venom / let it expire"
+   ],
+   "reward": "Poisons skill (craft Poisons) + Thistle Tea",
+   "reward_spell": "Poisons",
+   "quest_items": [
+    {
+     "name": "Defias Tower Key",
+     "item_id": 7923
+    },
+    {
+     "name": "Klaven Mortwake's Journal",
+     "item_id": 7908
+    }
+   ],
+   "chain_quests": [
+    {
+     "name": "Klaven's Tower",
+     "quest_id": 2359,
+     "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+     "unconfirmed": true
+    }
+   ],
+   "needs": "Lockpicking 75",
+   "notes": "The only truly required class quest (Icy Veins). At 20 put points in Master of Deception (or come back at 22-23, Icy Veins Subtlety leveling). conquestcapped: the chest is listed at 70 in game data, opened at 66 and failed at 55 on live (recorded conflict with 75).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-leveling",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "poisons",
+   "level": 20,
+   "races": "All",
+   "faction": "Horde",
+   "name": "The Shattered Salute",
+   "zone": "Orgrimmar (Cleft of Shadows) -> The Barrens (north of The Sludge Fen) -> Hillsbrad Foothills (Tarren Mill)",
+   "start_npc": "Shenthul (Cleft of Shadows, Orgrimmar)",
+   "npcs": [
+    {
+     "name": "Shenthul",
+     "npc_id": 3401
+    },
+    {
+     "name": "Taskmaster Fizzule",
+     "npc_id": 7233
+    },
+    {
+     "name": "Foreman Silixiz",
+     "npc_id": 7287
+    },
+    {
+     "name": "Grand Foreman Puzik Gallywix",
+     "npc_id": 7288
+    },
+    {
+     "name": "Serge Hinott",
+     "npc_id": 2391
+    }
+   ],
+   "steps": [
+    "Wait for Shenthul to salute you and /salute him while targeting him (abandon and retake if no credit)",
+    "Go to Taskmaster Fizzule north of The Sludge Fen; from a safe distance use the Flare Gun twice, then /salute him so he turns friendly",
+    "Fizzule's quest ('Mission: Possible But Not Probable'): kill 2 each of Mutated Venture Co. Drone, Venture Co. Lookout and Venture Co. Patroller in the tower to the west",
+    "Pick Pocket Silixiz's Tower Key from Foreman Silixiz outside the tower",
+    "Kill Grand Foreman Puzik Gallywix (level 23 elite) for Gallywix's Head and open his lockbox (Lockpicking 75) for the Cache of Zanzil's Altered Mixture",
+    "Return to Shenthul: you can now make Thistle Tea",
+    "Cure Touch of Zanzil: Shenthul sends you to Serge Hinott in Tarren Mill; wait for his cure, receive Hinott's Oil and learn to craft Poisons (or have a friend dispel it)"
+   ],
+   "reward": "Poisons skill (craft Poisons) + Thistle Tea + Hinott's Oil",
+   "reward_spell": "Poisons",
+   "reward_items": [
+    {
+     "name": "Hinott's Oil",
+     "item_id": 8095
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Flare Gun",
+     "item_id": 8051
+    },
+    {
+     "name": "Silixiz's Tower Key",
+     "item_id": 8072
+    },
+    {
+     "name": "Gallywix's Head",
+     "item_id": 8074
+    },
+    {
+     "name": "Cache of Zanzil's Altered Mixture",
+     "item_id": 8073
+    }
+   ],
+   "chain_quests": [
+    {
+     "name": "Mission: Possible But Not Probable",
+     "quest_id": 2478,
+     "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+     "unconfirmed": true
+    }
+   ],
+   "needs": "Lockpicking 75",
+   "notes": "The quest title 'Mission: Possible But Not Probable' and its ID come from conquestcapped's Wowhead link; Blizzard's Nov 9 hotfix calls it 'Mission: Possible not Probable' and fixed restarting it. On Horde the Poisons skill comes from Serge Hinott's cure step (Icy Veins).",
+   "also_sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 20,
+   "races": "All",
+   "faction": "Both",
+   "name": "Horn of Xelthos",
+   "zone": "Silverpine Forest (Pyrewood Village) -> Shadowfang Keep",
+   "start_npc": "Dead drop chest in the house directly right of the Pyrewood Village entrance",
+   "npcs": [
+    {
+     "name": "Veenix",
+     "npc_id": 4086
+    },
+    {
+     "name": "Gemela",
+     "npc_id": 211765
+    },
+    {
+     "name": "Gefell",
+     "npc_id": 211764
+    }
+   ],
+   "steps": [
+    "Start at the dead drop chest in the house right of the Pyrewood Village entrance (Silverpine); must be done solo",
+    "Get into Shadowfang Keep: Pick Pocket the Venture Co. Work Order from goblins in Windshear Crag (Stonetalon) and turn it in to Veenix for a Breaching Charge, or (with Vanish) talk to the NPC near the first boss to open the gate and Vanish",
+    "In the courtyard Pick Pocket Gemela (just inside the kitchen) and Gefell (just inside the keep) for the two key halves; combine them somewhere safe",
+    "Open the chest in the stables in the courtyard for the Horn of Xelthos",
+    "Next time you are in a major city a follow-up arrives in your mailbox: return to the dead drop for the reward"
+   ],
+   "reward": "Pyrewood Signet Ring",
+   "reward_items": [
+    {
+     "name": "Pyrewood Signet Ring",
+     "item_id": 277210
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Venture Co. Work Order",
+     "item_id": 210187
+    },
+    {
+     "name": "Breaching Charge",
+     "item_id": 210186
+    },
+    {
+     "name": "Horn of Xelthos",
+     "item_id": 210183
+    }
+   ],
+   "needs": "Stealth + Pick Pocket",
+   "notes": "Icy Veins: Master of Deception rank 3 is almost required at 20; use Distract to slip past enemies. Ring 'will last for quite a few levels'. Unlocks The Eye of Bhossca. Quest ID not linked. wowfdb (Nov 18) listed the chain as in quest data but not yet confirmed in game.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 30,
+   "races": "All",
+   "faction": "Both",
+   "name": "The Manor, Ravenholdt",
+   "zone": "Major city Rogue trainer -> Alterac Mountains (Ravenholdt Manor)",
+   "start_npc": "Rogue trainer in a major city (Horde: if Undercity does not offer it, use Orgrimmar)",
+   "npcs": [
+    {
+     "name": "Fahrad",
+     "npc_id": 6707
+    }
+   ],
+   "steps": [
+    "Talk to a major-city Rogue trainer and click through the dialog for the Elegant Letter",
+    "Go to Fahrad at Ravenholdt Manor (Alterac Mountains)",
+    "Ignore the trapped chest in the cave on the way (Detect Traps shows it) and complete the Rite of Cunning"
+   ],
+   "quest_items": [
+    {
+     "name": "Elegant Letter",
+     "item_id": 17126
+    }
+   ],
+   "needs": "Detect Traps",
+   "notes": "Hotfix Nov 17: a bin of mail in SI:7 quarters lets Mathias Shaw give rogues the letter they were missing for this quest. Quest ID and reward not on the page.",
+   "also_sources": [
+    "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 30,
+   "races": "All",
+   "faction": "Both",
+   "name": "The Eye of Bhossca",
+   "quest_id": 78676,
+   "zone": "Silverpine (Pyrewood dead drop) -> Scarlet Monastery (Graveyard, Library)",
+   "start_npc": "Dead drop outside Pyrewood Village (after Horn of Xelthos)",
+   "npcs": [
+    {
+     "name": "Scarlet Scryer",
+     "npc_id": 4293
+    }
+   ],
+   "steps": [
+    "Needs Horn of Xelthos completed and Lockpicking 75; start at the Pyrewood dead drop",
+    "Get the Scarlet Initiate's Uniform from the chest in the stable just behind Scarlet Monastery (left of the main entrance)",
+    "In the Graveyard wing, wearing the disguise, Pick Pocket a Scarlet Scryer for the Scryer's Key",
+    "In the Library, open the box in the Athenaeum (hallway before the last boss) for the Confidential Message",
+    "Back in the Graveyard courtyard (disguise no longer helps): sit on the south bench ('You hear a faint click'), then the north bench ('You hear the sound of stone moving'); take the Reliquary Key from the chest in the small building left of the north bench",
+    "In the Library, wear the disguise, go to the Gallery of Treasures: the eye in the first room on the left holds the Eye of Bhossca",
+    "Return to the dead drop; the next time you visit a major city a follow-up sends you back to the dead drop for the reward"
+   ],
+   "reward": "Ruby-Adorned Blade",
+   "reward_items": [
+    {
+     "name": "Ruby-Adorned Blade",
+     "item_id": 277246
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Scarlet Initiate's Uniform",
+     "item_id": 210955
+    },
+    {
+     "name": "Scryer's Key",
+     "item_id": 210963
+    },
+    {
+     "name": "Confidential Message",
+     "item_id": 210967
+    },
+    {
+     "name": "Reliquary Key",
+     "item_id": 210968
+    },
+    {
+     "name": "Eye of Bhossca",
+     "item_id": 210953
+    }
+   ],
+   "needs": "Lockpicking 75",
+   "notes": "Icy Veins: the Ruby-Adorned Blade is 'incredibly powerful, especially if you are able to complete this quest early'.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": 50,
+   "races": "All",
+   "faction": "Both",
+   "name": "A Simple Request",
+   "zone": "Major city -> Ravenholdt Manor -> Azshara -> Sunken Temple -> Ravenholdt Manor",
+   "start_npc": "Rogue trainer in any major city",
+   "npcs": [
+    {
+     "name": "Lord Jorach Ravenholdt",
+     "npc_id": 6768
+    },
+    {
+     "name": "Timbermaw Shaman",
+     "npc_id": 6188
+    },
+    {
+     "name": "Archmage Xylem",
+     "npc_id": 8379
+    },
+    {
+     "name": "Sanath Lim-yo",
+     "npc_id": 8395
+    },
+    {
+     "name": "Forest Ooze",
+     "npc_id": 8766
+    },
+    {
+     "name": "Morphaz",
+     "npc_id": 5719
+    }
+   ],
+   "steps": [
+    "A major-city Rogue trainer sends you to Lord Jorach Ravenholdt at Ravenholdt Manor",
+    "In northern Azshara, Pick Pocket Timbermaw Shaman until you get the Sealed Azure Bag",
+    "Talk to Sanath Lim-yo to be teleported to Archmage Xylem's tower (you may need 'A Meeting with the Master', quest 3381, first)",
+    "Collect 10 Encoded Fragments from Forest Ooze in north-easternmost Azshara (loot and Pick Pocket them: Pick Pocket before killing, up to 2 per ooze)",
+    "Get the key from Morphaz (patrols the lower level of Sunken Temple; group likely needed)",
+    "Return to Lord Jorach Ravenholdt: in Forever you get all 3 reward items instead of choosing one"
+   ],
+   "quest_items": [
+    {
+     "name": "Sealed Azure Bag",
+     "item_id": 19775
+    },
+    {
+     "name": "Encoded Fragment",
+     "item_id": 20023
+    }
+   ],
+   "reward": "All 3 reward items (names not given on the page)",
+   "notes": "Icy Veins milestone: 'Ravenholdt Questline Available' at 50. Prerequisite quest 'A Meeting with the Master' is 3381 (Icy Veins link). Reward item names are a gap.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "class",
+   "level": null,
+   "races": "All",
+   "faction": "Both",
+   "name": "The Perfect Poison",
+   "reward_items": [
+    {
+     "name": "Ravenholdt Slicer",
+     "item_id": 22378
+    },
+    {
+     "name": "The Thunderwood Poker",
+     "item_id": 22377
+    },
+    {
+     "name": "Fahrad's Reloading Repeater",
+     "item_id": 22347
+    }
+   ],
+   "notes": "endgametools' BiS lists source these three items as 'Quest: The Perfect Poison'. Level, giver and steps are not on any archived page, and no page ties it to A Simple Request.",
+   "unconfirmed": true,
+   "flag": "Only endgametools (secondary).",
+   "source_url": "https://endgametools.com/en/wow-forever/bis/rogue-combat",
+   "checked": "2026-11-19"
+  },
+  {
+   "type": "repeatable",
+   "level": null,
+   "races": "All",
+   "faction": "Both",
+   "name": "Junkboxes Needed",
+   "quest_id": 8249,
+   "zone": "Alterac Mountains (Ravenholdt Manor)",
+   "start_npc": "Fahrad",
+   "npcs": [
+    {
+     "name": "Fahrad",
+     "npc_id": 6707
+    }
+   ],
+   "steps": [
+    "Bring 5 Heavy Junkboxes (pickpocketed from level 51-60 enemies) to Fahrad"
+   ],
+   "reward": "Dusksteel Throwing Knife",
+   "reward_items": [
+    {
+     "name": "Dusksteel Throwing Knife",
+     "item_id": 20086
+    }
+   ],
+   "quest_items": [
+    {
+     "name": "Heavy Junkbox",
+     "item_id": 16885
+    }
+   ],
+   "notes": "IDs from conquestcapped's Wowhead links.",
+   "unconfirmed": true,
+   "flag": "Only conquestcapped (secondary, low reliability).",
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  }
+ ],
+ "class_trainers": {
+  "trainers": [
+   {
+    "name": "Keryn Sylvius",
+    "place": "Goldshire Inn, Elwynn Forest",
+    "faction": "Alliance",
+    "npc_id": 917
+   },
+   {
+    "name": "Hogral Bakkan",
+    "place": "Kharanos, Dun Morogh",
+    "faction": "Alliance",
+    "npc_id": 1234
+   },
+   {
+    "name": "Hulfdan Blackbeard",
+    "place": "Ironforge",
+    "faction": "Alliance",
+    "npc_id": 5165
+   },
+   {
+    "name": "Jannok Breezesong",
+    "place": "Dolanaar, Teldrassil",
+    "faction": "Alliance",
+    "npc_id": 3599
+   },
+   {
+    "name": "Kaplak",
+    "place": "Razor Hill, Durotar",
+    "faction": "Horde",
+    "npc_id": 3170
+   }
+  ],
+  "quest_npcs": [
+   {
+    "name": "Master Mathias Shaw",
+    "place": "SI:7, Stormwind",
+    "faction": "Alliance",
+    "npc_id": 332,
+    "role": "Human level-10 and Alliance level-20 poison quest giver; gives the Ravenholdt letter since the Nov 17 hotfix"
+   },
+   {
+    "name": "Syurna",
+    "place": "Darnassus",
+    "faction": "Alliance",
+    "npc_id": 4163,
+    "role": "Night Elf level-10 quest (The Apple Falls)"
+   },
+   {
+    "name": "Marion Call",
+    "place": "Tirisfal Glades",
+    "faction": "Horde",
+    "npc_id": 2130,
+    "role": "Undead level-10 quest start"
+   },
+   {
+    "name": "Mennet Carkad",
+    "place": "Undercity",
+    "faction": "Horde",
+    "npc_id": 6467,
+    "role": "Undead level-10 quest"
+   },
+   {
+    "name": "Therzok",
+    "place": "Cleft of Shadows, Orgrimmar",
+    "faction": "Horde",
+    "npc_id": 6446,
+    "role": "Orc/Troll level-10 quest"
+   },
+   {
+    "name": "Shenthul",
+    "place": "Cleft of Shadows, Orgrimmar",
+    "faction": "Horde",
+    "npc_id": 3401,
+    "role": "Horde level-20 poison quest giver; wowfdb: trains Windshaper Skyborne Rogues since Oct 1"
+   }
+  ],
+  "unconfirmed_trainers": [
+   {
+    "name": "Shenthul",
+    "place": "Cleft of Shadows, Orgrimmar",
+    "faction": "Horde",
+    "npc_id": 3401,
+    "flag": "Trainer role only from wowfdb (secondary): began training Skyborne (Windshaper) Rogues on Oct 1."
+   },
+   {
+    "name": "Jorik Kerridan",
+    "place": "Northshire Abbey, Elwynn Forest",
+    "faction": "Alliance",
+    "flag": "Named in BRIEF from Rip's session notes; not on any archived page."
+   }
+  ],
+  "unconfirmed": true,
+  "flag": "Trainer status is explicit on Icy Veins for Keryn Sylvius, Hogral Bakkan, Hulfdan Blackbeard, Jannok Breezesong and Kaplak; the quest NPCs may or may not train. Full city rosters (Stormwind, Darnassus, Undercity, Orgrimmar) and Skyborne trainers are a gap.",
+  "note": "Train at a Rogue trainer every even level for new ranks (endgametools level list). Pick Lock is taught by any Rogue trainer at 16 for free (conquestcapped; disputed). The Manor, Ravenholdt and A Simple Request start at a major-city Rogue trainer (Icy Veins). Flash Powder and Blinding Powder vendors are a gap.",
+  "respec_note": "Talents (and Legacy talents) are changed at a class trainer in a major city; Dual Specialization at 40 (Blizzard deep dive).",
+  "also_sources": [
+   "https://wowfdb.com/classes/rogue/changes/",
+   "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+  "checked": "2026-11-19"
+ },
+ "racials": [
+  {
+   "race": "Human",
+   "faction": "Alliance",
+   "spell": "Ruthless",
+   "spell_id": 20597,
+   "type": "passive",
+   "effect": "+1% critical strike chance (was 2%; replaced Sword Specialization on Oct 15, cut to 1% Oct 26).",
+   "id_source": "Icy Veins Ret guide link (copied from Tristan's Addon research)",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/changes/",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Human",
+   "faction": "Alliance",
+   "spell": "Will to Survive",
+   "type": "active",
+   "effect": "Breaks stuns (wowfdb). Cooldown not sourced here.",
+   "unconfirmed": true,
+   "flag": "Only wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Gnome",
+   "faction": "Alliance",
+   "spell": "Eureka!",
+   "spell_id": 1259813,
+   "type": "active",
+   "effect": "Damaging abilities cost 10% less Energy and hit 10% harder for 8 s (not bleeds or poison ticks; wowfdb: does not work correctly from Stealth). Icy Veins: best Alliance racial for Assassination and Combat.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/",
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Gnome",
+   "faction": "Alliance",
+   "spell": "Escape Artist",
+   "spell_id": 20589,
+   "type": "active",
+   "effect": "Breaks snares and slows (Icy Veins).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Gnome",
+   "faction": "Alliance",
+   "spell": "Expansive Mind",
+   "type": "passive",
+   "effect": "+5% maximum Energy (wowfdb; Icy Veins Subtlety: 'additional max Energy ... 5% more resources').",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Artisan's Precision",
+   "type": "passive",
+   "effect": "+1% hit with spells and attacks (replaced Earth Fury Oct 26). Icy Veins Subtlety: Dwarf's 1% Hit makes it one of the most desirable races.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "source_url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-15/2360696",
+   "checked": "2026-11-10"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Stoneform",
+   "spell_id": 20594,
+   "type": "active",
+   "effect": "Removes bleeds, poisons and diseases and cuts physical damage 10% for 8 s (wowfdb); Icy Veins: great mitigation that removes nasty debuffs.",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Dwarf",
+   "faction": "Alliance",
+   "spell": "Find Treasure",
+   "spell_id": 2481,
+   "type": "active",
+   "effect": "Tracks treasure; chance for extra items in most chests (copied from Tazu's Addon research).",
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Night Elf",
+   "faction": "Alliance",
+   "spell": "Quickness",
+   "type": "passive",
+   "effect": "Stealth counts one level higher; run-speed bonus now stacks with other speed boosts (wowfdb).",
+   "unconfirmed": true,
+   "flag": "Only wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Night Elf",
+   "faction": "Alliance",
+   "spell": "Shadowmeld",
+   "type": "active",
+   "effect": "Works in combat as a threat drop (wowfdb).",
+   "unconfirmed": true,
+   "flag": "Only wowfdb (secondary).",
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Night Elf",
+   "faction": "Alliance",
+   "spell": "Elune's Light",
+   "type": "active",
+   "effect": "+10% crit for 15 s (wowfdb). Icy Veins Subtlety: 'a strong burst DPS racial ability'.",
+   "unconfirmed": true,
+   "flag": "Effect numbers only from wowfdb (secondary).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide"
+   ],
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Orc",
+   "faction": "Horde",
+   "spell": "Blood Fury",
+   "spell_id": 20572,
+   "type": "active",
+   "effect": "+10% Attack Power and Spell Power for 15 s, 2 min cooldown (copied from Tazu's Addon research). Icy Veins Subtlety: Orc a top performer thanks to the Attack Power boost.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Orc",
+   "faction": "Horde",
+   "spell": "Hardiness",
+   "spell_id": 20573,
+   "type": "passive",
+   "effect": "Stun duration -20% (copied from Tazu's Addon research).",
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Orc",
+   "faction": "Horde",
+   "spell": "Command",
+   "type": "passive",
+   "effect": "Warlock and Hunter pet damage +5%; does nothing for a Rogue (wowfdb).",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Undead",
+   "faction": "Horde",
+   "spell": "Touch of the Grave",
+   "spell_id": 1260189,
+   "type": "passive",
+   "effect": "Drains health on hits; Icy Veins: the most consistent DPS increase of any Horde racial (best Horde race for Assassination and Combat, potentially strongest for Subtlety). Touch of the Dead procs 20% of the time for Rogues (internal cooldown 15 s or 25 s per wowfdb: recorded conflict).",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+    "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Undead",
+   "faction": "Horde",
+   "spell": "Will of the Forsaken",
+   "type": "active",
+   "effect": "Breaks fear, charm and sleep (wowfdb; Icy Veins Subtlety: 'Fear and Charm break').",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Undead",
+   "faction": "Horde",
+   "spell": "Cannibalize",
+   "type": "active",
+   "effect": "Heals between pulls (Icy Veins Subtlety: 'nice healing during leveling').",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+   "checked": "2026-11-19"
+  },
+  {
+   "race": "Troll",
+   "faction": "Horde",
+   "spell": "Berserking",
+   "spell_id": 20554,
+   "type": "active",
+   "effect": "+10% melee, ranged and spell haste, 3 min cooldown; duration 12 s per Icy Veins race guide vs 15 s per Blizzard Oct 26 notes and wowfdb (copied from Tazu's Addon research, conflict noted there).",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Troll",
+   "faction": "Horde",
+   "spell": "Beast Slaying",
+   "spell_id": 20557,
+   "type": "passive",
+   "effect": "+5% damage to Beasts. Icy Veins: Troll beats Undead only against Beasts.",
+   "also_sources": [
+    "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Troll",
+   "faction": "Horde",
+   "spell": "Regeneration",
+   "spell_id": 20555,
+   "type": "passive",
+   "effect": "20% of health regeneration continues in combat (copied from Tazu's Addon research).",
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Troll",
+   "faction": "Horde",
+   "spell": "Rapid Regeneration",
+   "spell_id": 1260270,
+   "type": "active",
+   "effect": "Regenerate 50% of maximum health over time, 3 min cooldown (copied from Tazu's Addon research).",
+   "source_url": "https://www.icy-veins.com/wow-forever/race-guide",
+   "checked": "2026-11-09"
+  },
+  {
+   "race": "Skyborne",
+   "faction": "Both",
+   "spell": "Wind Blessed",
+   "spell_id": 1259710,
+   "type": "passive",
+   "effect": "+2% spell, ranged and melee haste (was 3% in beta; copied from Parzelle's Addon research).",
+   "also_sources": [
+    "https://wowfdb.com/classes/rogue/changes/"
+   ],
+   "source_url": "https://www.icy-veins.com/wow-forever/skyborne",
+   "checked": "2026-11-10"
+  }
+ ],
+ "race_notes": {
+  "text": "Forever Rogue races: Human, Dwarf, Gnome, Night Elf and High Order Skyborne (Alliance); Orc, Troll, Undead and Windshaper Skyborne (Horde) - every race except Tauren. Icy Veins (Nov 18): for Assassination and Combat, Undead (Touch of the Grave) is the best Horde race (Troll only wins against Beasts) and Gnome (Eureka!, Escape Artist) the best Alliance race. Subtlety: racial differences are very minor; Orc (Blood Fury) and Undead (slim edge) for Horde; Dwarf (+1% hit, Stoneform), Night Elf (burst racial, harder to detect) and Gnome (Escape Artist, Eureka!, +5% max Energy) for Alliance. Human Ruthless (+1% crit, no sword needed) is the Alliance Combat pick per wowfdb. Skyborne need the Skyborne Heroic Pack and start on Zephras Isle; Icy Veins says they get no level-10 class quest. Rip is a Human Rogue (Alliance): Ruthless crit; level-10 quest Seek out SI:7.",
+  "also_sources": [
+   "https://www.icy-veins.com/wow-forever/assassination-rogue-melee-dps-pve-guide",
+   "https://www.icy-veins.com/wow-forever/subtlety-rogue-melee-dps-pve-guide",
+   "https://foreverguide.net/classes/rogue/",
+   "https://wowfdb.com/classes/rogue/",
+   "https://endgametools.com/en/wow-forever/spells/rogue"
+  ],
+  "source_url": "https://www.icy-veins.com/wow-forever/combat-rogue-melee-dps-pve-guide",
+  "checked": "2026-11-19"
+ },
+ "changes_log": [
+  {
+   "date": "2026-09-24",
+   "change": "Beta: Sap on a PvP-flagged target now flags the Rogue for PvP.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-01",
+   "change": "Beta: Blizzard announced Death Mark will replace Thousand Cuts; Shenthul (Orgrimmar) trains Windshaper Skyborne Rogues; a missed Expose Armor no longer costs combo points; Setup only adds points when your target is the enemy you dodged.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-07",
+   "change": "Blizzard Rogue and Warlock class deep dive: Sap keeps Stealth, Distract lowers detection, Expose Armor = 5 Sunders, Feint threat doubled, poisons with more charges stack with stones, one-handed axes, talent redesigns (Mutilate, Venom, Hack and Slash, Thousand Cuts).",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-08",
+   "change": "Beta build 70291: several weapon swaps fit inside one global cooldown (swap macros can switch a whole set).",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-15",
+   "change": "Beta: poisons no longer trigger against attackers; Sap can't trigger weapon procs; Cold Blood consumed when Mutilate crits; Human Sword Specialization replaced by Ruthless (+2% crit); Undead Touch of the Dead procs 20% for Rogues.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-16",
+   "change": "Beta: switching specializations no longer refills Energy.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-10-26",
+   "change": "Racials: Human Ruthless cut from 2% to 1% crit; Dwarf Artisan's Precision (+1% hit) replaces Earth Fury; Skyborne Wind Blessed 3% -> 2% haste.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-02",
+   "change": "Blizzard pre-launch notes (client 70755, datamined Nov 3): Shank (24) and Poised (18) added; talent rework (Venom passive via Shank, Mutilate row 7, Death Mark replaces Thousand Cuts, Coup de Grace, Efficient Strikes, Composure, Flash of Steel, Boot Knife, Quick Getaway, Blood Splatter; Murder, Cutthroat, Quietus, Improved Distract removed); Flawless Execution -15; poison AP coefficients doubled; training costs evened to 206-207 gold.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-04",
+   "change": "WoW Forever launch; wowfdb: Cutthroat removed, Ghostly Strike now lets the next Ambush work without Stealth; Death Mark is the Subtlety row-7 finisher.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-06",
+   "change": "Hotfix: Shank tooltip shows Rank 1 and Rank 2; with Boot Knife it shows the combo points granted.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-09",
+   "change": "Hotfix: restarting the Rogue quest 'Mission: Possible not Probable' works as intended.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-13",
+   "change": "Hotfix: Berserker Rage removes Sap; 'The Talisman of Kazdor' no longer sends rogues into the wrong version of Zul'Farrak; off-hand strikes (e.g. Mutilate's) don't activate Windfury Totem, main-hand strikes do.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-16",
+   "change": "Hotfix: Rogue Poison ranks can no longer exceed the maximum rank; Shank no longer removes combo points on other targets without Boot Knife; Mutilate no longer gets an extra Windfury Totem attempt; Witch Doctor Zum'rah spawns properly during 'The Talisman of Kazdor'.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  },
+  {
+   "date": "2026-11-17",
+   "change": "Hotfix: various Paletusks can no longer be pickpocketed; a bin of mail in SI:7 lets Mathias Shaw give rogues the letter for 'The Manor, Ravenholdt'.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  }
+ ],
+ "conflicts": [
+  {
+   "topic": "Pick Lock learn level",
+   "detail": "Client data lists Pick Lock at level 1 (wowfdb notes the Classic Era client also says 1 while its trainers taught it at 16, so the Forever level is unconfirmed; endgametools' level list does not include it). Icy Veins leveling milestone tables: 'Lockpicking Class Quest' at 15. conquestcapped, warcrafttavern and kickegg: Pick Lock from any Rogue trainer at 16 (conquestcapped: free; kickegg: completing the chain teaches it). Verify in game at 15-16.",
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Mutilate learn level",
+   "detail": "Blizzard deep dive (Oct 7): new 21-point gold medal talent (level 31). Current talent data (70959): row 7, 30 points required = level 40; Icy Veins Assassination leveling milestone and text: available at 40. The same Icy Veins page lists 'Massive Level 30 power spike with Mutilate' under Strengths. wowfdb: row 7 at level 40, but its Assassination leveling order spends it at 48 ('comes online at 48'; earlier at 30). endgametools lists Mutilate ranks 2 and 3 at 50 and 60.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Venom level and spell id",
+   "detail": "Talent data and Icy Veins milestone: Venom is row 5 (20 points) = level 30. wowfdb's Assassination page says Venom 'from 45' / 'from 47' (its leveling order). Spell id: talent data rank id 1329328; Icy Veins guide pages link Venom as 1310703.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Flawless Execution Energy reduction",
+   "detail": "Blizzard deep dive (Oct 7) and wowguide: reduces Eviscerate's Energy cost by 10. wowfdb changes (Nov 3, client 70755) and the current Icy Veins calculator data (70959): by 15; wowfdb's own Eviscerate note on its Poisons & utility page still says 10.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Feint threat reduction",
+   "detail": "Blizzard deep dive: Feint threat reduction doubled. wowfdb: the tooltip is unchanged but the hidden threat drop is about five times larger in game data (per rank 150->750, 240->1,200, 390->1,950, 600->3,000, 800->4,000).",
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Poisons unlock level",
+   "detail": "Client lists Poisons at 20 and Icy Veins puts the poison class quest at 20; wowfdb notes the quest data has Klaven's Tower and Hinott's Assistance teaching it at 24-26 and asks whether it can be trained without the quest. Icy Veins Subtlety leveling recommends doing the quest at 22-23.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Lockpicking needed for the level-20 poison quest chest",
+   "detail": "Icy Veins: 75 Lockpicking for Klaven's box and Gallywix's lockbox. conquestcapped: game data lists the chest at 70; players opened it at 66 and failed at 55; get 80 to be safe.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Skyborne level-10 class quest",
+   "detail": "Icy Veins class quests (Nov 18): Skyborne do not receive a level-10 class quest. wowfdb overview: Skyborne start on Zephras Isle 'with its own Rogue quest'.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Poison + Sharpening Stone/Weightstone stacking",
+   "detail": "Blizzard deep dive: poisons can be applied together with Weightstones and Sharpening Stones. wowfdb: the client data does not show that yet; Windfury Totem interaction unconfirmed.",
+   "source_url": "https://news.blizzard.com/en-us/article/24310968/world-of-warcraft-forever-class-deep-dives-rogue-and-warlock",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Deadly Poison V charges",
+   "detail": "wowfdb's poison table gives 240 charges for Deadly Poison IV and V, while its own note says '90 charges at rank 1 and 180 at rank V'.",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Undead Touch of the Dead internal cooldown",
+   "detail": "wowfdb changes (Oct 15): procs 20% of the time for Rogues on a 25-second internal cooldown. wowfdb overview races table: 15-second internal cooldown.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "topic": "Mission: Possible quest title",
+   "detail": "conquestcapped (Wowhead link, quest 2478): 'Mission: Possible But Not Probable'. Blizzard Nov 9 hotfix: 'Mission: Possible not Probable'. Icy Veins does not name it.",
+   "source_url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-17-2026",
+   "checked": "2026-11-19"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "Rank levels after the first rank for Sinister Strike, Eviscerate, Backstab, Garrote, Ambush, Rupture, Expose Armor, Slice and Dice, Kidney Shot, Shank, Mutilate and Death Mark come only from the endgametools client spell list (secondary). Sinister Strike and Backstab first-rank levels (1, 4) are also endgametools-only. Verify at the trainer.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Per-rank spell IDs are not sourced; Icy Veins links one id per spell, often a high rank (Sinister Strike 11294, Backstab 25300, Eviscerate 31016, Sprint 11305). Detect spells by name. No spell ids for Redirect, Poised, Feint, Safe Fall, Mind-numbing or Wound Poison.",
+   "source_url": "https://www.icy-veins.com/wow-forever/assassination-rogue-leveling",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Aura ids for Venom, Poised and the Riposte proc are not sourced; detect by name or spell usability.",
+   "source_url": "https://static.icy-veins.com/r2/icydb/wowf/talents/70959-a8fe1dab/rogue.json",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Energy costs of Riposte, Ghostly Strike, Premeditation, Cold Blood, Blade Flurry, Adrenaline Rush, Preparation and Evasion are not on any archived page.",
+   "source_url": "https://endgametools.com/en/wow-forever/spells/rogue",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Pick Lock learn level (1/15/16) and whether the trainer or the quest teaches it: verify on Rip at 15-16.",
+   "source_url": "https://wowfdb.com/classes/rogue/abilities/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Lockpicking class quest names, IDs and levels come only from conquestcapped/warcrafttavern/kickegg; Icy Veins only gives 'Lockpicking Class Quest' at 15 without names.",
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Quest IDs are not linked for the level-10 chains, the level-20 poison chains (except conquestcapped's Wowhead ids 2359/2478), Horn of Xelthos, The Manor, Ravenholdt and A Simple Request. Follow-up (mailed) quests of Horn of Xelthos and The Eye of Bhossca are unnamed.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "A Simple Request rewards: Icy Veins says you get all 3 items in Forever but does not name them. endgametools lists Ravenholdt Slicer 22378, The Thunderwood Poker 22377 and Fahrad's Reloading Repeater 22347 as 'Quest: The Perfect Poison'; the link between the two quests is not sourced.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Full class trainer rosters (Stormwind, Darnassus, Undercity, Orgrimmar, Northshire, Brill) and the Skyborne starting-zone trainers; Flash Powder, Blinding Powder and poison reagent vendors in Forever.",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Poison recipes and reagents in Forever are not on any archived page; poison rank levels come only from wowfdb.",
+   "source_url": "https://wowfdb.com/classes/rogue/utility/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Do poisons scale with attack power? A wowfdb test found none despite the announced coefficients (0.01 Instant, 0.009 Deadly).",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Does Vanish still need Flash Powder? Client reagent data says yes (one Flash Powder) unless the Reagent Economy legacy perk is taken (wowfdb).",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Do Expose Armor and Sunder Armor add together? Probably one shared slot (wowfdb); untested in game.",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Known issue: enemies can parry and block from behind at close range (hurts Backstab and Ambush); no fix announced (wowfdb).",
+   "source_url": "https://wowfdb.com/classes/rogue/changes/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Junkbox/lockbox skill values are Classic values (the Forever database shows a placeholder of 1); whether Junkboxes Needed and junkboxes need a Lockpicking skill check is unverified.",
+   "source_url": "https://conquestcapped.com/guides/wow-forever/wow-forever-lockpicking/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Racial ids for Night Elf (Quickness, Shadowmeld, Elune's Light), Human Will to Survive, Undead Will of the Forsaken/Cannibalize, Gnome Expansive Mind and Skyborne (except Wind Blessed) are not sourced; Night Elf effects only from wowfdb.",
+   "source_url": "https://wowfdb.com/classes/rogue/",
+   "checked": "2026-11-19"
+  },
+  {
+   "gap": "Icy Veins class overview (Oct 27) and Subtlety pages (Nov 4) predate parts of the Nov 2 rework in places (overview still describes Quietus, Cutthroat and Thousand Cuts; leveling pages call Efficient Strikes 'Improved Sinister Strike').",
+   "source_url": "https://www.icy-veins.com/wow-forever/rogue-class-overview",
+   "checked": "2026-11-19"
+  }
+ ]
+}

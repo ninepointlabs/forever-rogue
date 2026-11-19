@@ -1,0 +1,74 @@
+## Interface: 16001
+## Title: Forever Rogue
+## Notes: The do-everything Rogue companion for WoW Forever: Pick Pocket log and earnings, best pickpocket targets, junkboxes and Lockpicking, poisons, a Rogue bar (Pick Lock and poison buttons), rotation help, talents, gear and bags, leveling, class quests, gold, PvP and Learn the Rogue.
+## Author: Nine Point Labs
+## Version: @project-version@
+## X-Website: https://github.com/ninepointlabs/forever-rogue
+## Category: Class
+## IconTexture: Interface\Icons\Ability_Stealth
+## AddonCompartmentFunc: ForeverRogue_OnCompartmentClick
+## OptionalDeps: Auctionator
+## SavedVariables: ForeverRogueDB
+## SavedVariablesPerCharacter: ForeverRogueCharDB
+
+Core\Init.lua
+Data\Meta.lua
+Data\Spells.lua
+Data\Quests.lua
+Data\Builds.lua
+Data\Gear.lua
+Data\World.lua
+Data\Notes.lua
+Data\Rogue.lua
+Data\PvP.lua
+Data\Talents.lua
+Data\ItemSources.lua
+Data\Learn.lua
+Data\Changes.lua
+Core\Spec.lua
+Core\DB.lua
+Core\DualSpec.lua
+Modules\Auras.lua
+Modules\Stats.lua
+Modules\Training.lua
+Modules\Progress.lua
+Modules\Rogue.lua
+Modules\Pockets.lua
+Modules\Gold.lua
+Modules\Locks.lua
+Modules\Poisons.lua
+Modules\BagSpace.lua
+Modules\Cooldowns.lua
+Modules\Reminders.lua
+Modules\Rotation.lua
+Modules\Summary.lua
+Modules\Changes.lua
+Modules\Learn.lua
+Modules\Tooltip.lua
+Modules\Map.lua
+Modules\PvP.lua
+UI\Widgets.lua
+UI\Main.lua
+UI\Panels\Home.lua
+UI\Panels\Rotation.lua
+UI\Panels\Learn.lua
+UI\Panels\Leveling.lua
+UI\Panels\Talents.lua
+UI\Panels\Gear.lua
+UI\Panels\Pockets.lua
+UI\Panels\Poisons.lua
+UI\Panels\Gold.lua
+UI\Panels\PvP.lua
+UI\Panels\Quests.lua
+UI\Panels\Training.lua
+UI\Panels\Mounts.lua
+UI\Panels\Reminders.lua
+UI\Panels\Changes.lua
+UI\Panels\Sources.lua
+UI\Panels\Options.lua
+UI\Hud.lua
+UI\Bags.lua
+UI\RogueBar.lua
+UI\RogueButtons.lua
+UI\Minimap.lua
+Core\Boot.lua
