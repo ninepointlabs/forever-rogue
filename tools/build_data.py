@@ -373,7 +373,8 @@ def build(data: dict, learn: dict | None, talents: dict | None = None, sources: 
     write("PvP.lua", {"PvP": data.get("pvp")}, src, files)
 
     write("Notes.lua", {
-        "Gaps": merged(data, "gaps"),
+        # Parts write gaps as {gap} or {topic, detail}; the addon reads `gap`.
+        "Gaps": [dict(g, gap=g.get("gap") or ": ".join(x for x in (g.get("topic"), g.get("detail")) if x)) for g in merged(data, "gaps")],
         "Conflicts": merged(data, "conflicts"),
         "ChangesLog": merged(data, "changes_log"),
         "ChangeSources": merged(data, "change_sources"),

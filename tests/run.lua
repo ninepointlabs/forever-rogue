@@ -130,6 +130,8 @@ test("generated data present", function()
     truthy(#ns.Data.LockpickRoute >= 5, "lockpick route")
     truthy(ns.Data.PvP and #ns.Data.PvP.battlegrounds >= 1, "PvP data")
     truthy(#ns.Data.Conflicts >= 10 and #ns.Data.Gaps >= 10, "conflicts and gaps")
+    for _, g in ipairs(ns.Data.Gaps) do truthy(g.gap and g.gap ~= "", "every gap has text") end
+    for _, c in ipairs(ns.Data.Conflicts) do truthy(c.topic and c.detail, "every conflict has topic and detail") end
     -- every research record cites a source
     for _, list in ipairs({ ns.Data.PickpocketTargets, ns.Data.Junkboxes, ns.Data.Poisons, ns.Data.Bags, ns.Data.LockpickRoute, ns.Data.Quests }) do
         for _, r in ipairs(list) do truthy(r.source_url and r.checked, "source on " .. tostring(r.name or r.mob)) end
