@@ -10,15 +10,27 @@ It's the fifth sibling of [Andric's Addon](https://andricsaddon.myazerothlife.co
 [Tristan's Addon](https://tristans-addon.myazerothlife.com) (Paladin) and
 [Tazu's Addon](https://tazus-addon.myazerothlife.com) (Shaman), from the makers of [My Azeroth Life](https://myazerothlife.com).
 
-> **Status:** v0.1 in development on a local branch. Not released, not published anywhere yet. See `STATUS.md`.
+> **Status:** [v0.1.0](https://github.com/ninepointlabs/forever-rogue/releases/tag/v0.1.0). Not tested in game yet; see `STATUS.md` for the checklist.
 
 - Website (text only for now): files in `docs/`, planned for `forever-rogue.myazerothlife.com` (the domain isn't set up).
 - WoW Forever only (`WOW_PROJECT_ID 18`), Interface `16001`. No Ace3; Blizzard API only. MIT.
 
 ## Install
 
-Not released yet. From a checkout, `tools/install-dev.sh <AddOns folder>` copies only the files WoW needs into
-`<AddOns folder>/ForeverRogue`. Then `/reload` and `/frogue`.
+### With OmaForge (Linux)
+
+Search for "forever rogue" in OmaForge, or:
+
+```sh
+omaforge install -c forever github:ninepointlabs/forever-rogue
+omaforge update -c forever          # later versions
+```
+
+### By hand (any OS)
+
+Download the zip from [GitHub Releases](https://github.com/ninepointlabs/forever-rogue/releases) and unzip it so the folder is
+`World of Warcraft/_forever_/Interface/AddOns/ForeverRogue`. From a checkout, `tools/install-dev.sh <AddOns folder>` copies
+only the files WoW needs. Then `/reload` and `/frogue`.
 
 ## Getting started
 
