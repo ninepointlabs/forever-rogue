@@ -7,6 +7,7 @@
   - **GitHub Actions never started on push events in this repo** (not for the pushes to `main`, not for the tag), although Actions is enabled and GitHub's status page showed no incident. CI was run by hand (`workflow_dispatch`, run 44571153136: all steps pass).
   - So the release zip was **built locally from the `v0.1.0` tag** the way the BigWigs packager does it (Tazu's v0.1.1 zip used as the reference): `ForeverRogue/` with the two TOCs (`## Version: v0.1.0`), LICENSE, Core, Data, Modules, UI and a short CHANGELOG.md (71 files), plus `release.json` (flavor `forever`, interface 16001). Uploaded with `gh release create`. Release notes are a short feature summary; no autonomix-cli line because the release ships no Linux executables.
   - `release.yml` now also has `workflow_dispatch`, so a future tag can be packaged by hand if push events still don't fire. Worth checking why push triggers don't fire (repo settings / GitHub support).
+- **Released:** **v0.1.1** on 2026-11-19 at Tim's request: https://github.com/ninepointlabs/forever-rogue/releases/tag/v0.1.1 (annotated tag on `447bdcc`, `main`, after fast-forwarding `feature/minimap-pins`). `omaforge clients` still reported 1.60.1.70959 / 16001. Push events again started no workflow, so the **Release workflow was run by hand on the tag** (run 44576105449, success): the BigWigs packager built `ForeverRogue-v0.1.1.zip` (73 files, `## Version: v0.1.1`) and `release.json` (forever, 16001). Its commit-list notes were replaced with a short summary. `omaforge search -c forever ninepointlabs/forever-rogue` resolves v0.1.1, compatible (I cleared its cached release list for this repo).
 - **OmaForge:** `omaforge search -c forever ninepointlabs/forever-rogue` resolves `github:ninepointlabs/forever-rogue` **v0.1.0, compatible**. A plain search ("forever rogue", "rogue") lists it after the CurseForge results (`-p github` shows it first). I cleared five stale entries from omaforge's 1-hour search cache (`~/.cache/omaforge/http`) that predated GitHub indexing the repo. I did **not** run `omaforge install` against the live AddOns folder.
 - `main` and `feature/initial-addon` point at the same commits: Tim asked for a push and an OmaForge-installable addon, not a PR, so `main` was fast-forwarded to the branch (no base-commit-plus-PR as in Tazu's repo).
 - **Not done (not authorized):** no CurseForge/Wago, no Pages setting, no DNS (`docs/CNAME` is the file only), no email or social posts. Nothing was installed into the live WoW folder.
@@ -208,7 +209,7 @@ In game: `/reload`, then `/frogue`. Debug the bar with `/frogue bar debug`.
 - `ca51cab` Forever Rogue v0.1: Rogue companion for WoW Forever
 - The STATUS/gap-normalization commit that follows it (see `git log`)
 
-## Unreleased (branch `feature/minimap-pins`, 2026-11-19)
+## v0.1.1 (2026-11-19): minimap pins
 
 - **Minimap pins for pickpocket spots** (Tim's idea, built at his request): `Modules/PocketPins.lua` + `UI/MinimapPins.lua`.
   - Shows researched spots that carry sourced coordinates (6 fan-guide targets + the GoldScout junkbox hotspots), filtered to 10 levels below / 5 above you, plus **your own spots**: every Pick Pocket in the open world now records where you stood (rounded, one spot per mob per ~2% of the map, 8 per mob).
