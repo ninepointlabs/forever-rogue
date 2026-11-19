@@ -10,6 +10,8 @@ on:
   push:
     tags:
       - "v*"
+  # Fallback: run it by hand on a tag (gh workflow run release.yml --ref vX.Y.Z).
+  workflow_dispatch:
 
 permissions:
   contents: write
