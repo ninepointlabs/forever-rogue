@@ -2,8 +2,9 @@
 
 **What it is:** the WoW Forever-only, do-everything Rogue companion. It covers every Rogue race and both factions; **Rip** (Human Rogue, Alliance, realm `CAMWOWUS2Realm1PvE`, Normal/PvE, level 4 in Northshire Valley) is the test character and the persona in About and the docs. Its headline feature is a **Pick Pocket log with earnings**. It follows Tazu's Addon's structure, window, data pipeline and tests, and Tristan's Addon's PvP module pattern. Tim approved coding on 2026-11-19.
 
-**Repo:** local only, `/home/tim/Projects/forever-rogue`, branch **`feature/initial-addon`**. There is no `main` commit, no remote, and no GitHub repo. Commits use `Nine Point Labs <179739321+ninepointlabs@users.noreply.github.com>` (repo-local git config).
-- **Not done (needs Tim's OK):** no GitHub repo, no remote, no push, no tag or release, no CurseForge/Wago, no Pages, no DNS (`docs/CNAME` is the file only), no email or social posts. Nothing was installed into the live WoW folder; `tools/install-dev.sh` was only run into a scratch folder, and it now requires an explicit path (no default to the live install).
+**Repo:** https://github.com/ninepointlabs/forever-rogue (public, default branch `main`, topics `wow-addon` + `world-of-warcraft`), local `/home/tim/Projects/forever-rogue`, `origin` set. Created and pushed 2026-11-19 at Tim's request. Commits use `Nine Point Labs <179739321+ninepointlabs@users.noreply.github.com>` (repo-local git config).
+- `main` and `feature/initial-addon` point at the same commits: Tim asked for a push and an OmaForge-installable addon, not a PR, so `main` was fast-forwarded to the branch (no base-commit-plus-PR as in Tazu's repo).
+- **Not done (not authorized):** no CurseForge/Wago, no Pages setting, no DNS (`docs/CNAME` is the file only), no email or social posts. Nothing was installed into the live WoW folder.
 - **Kept local:** `BRIEF.md` is gitignored because it names Tim's account/WTF path. `research/raw/` (archived pages) is gitignored, as in the sister repos.
 
 ## Decisions
