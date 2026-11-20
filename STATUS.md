@@ -223,6 +223,7 @@ In game: `/reload`, then `/frogue`. Debug the bar with `/frogue bar debug`.
 - **Bug (reported by Tim in game):** "Seek out SI:7" kept being reminded after he turned it in at 10. It has no quest ID in the research, so completion couldn't be read, and the reminder ran for 5 levels regardless.
 - **Fix:** class quests without a researched ID now count as done when (a) you turn them in (`QUEST_COMPLETE` title / `C_QuestLog.GetTitleForQuestID` matched to the quest name, case-insensitive; the learned ID is stored), (b) a quest you already completed has a matching title at login (`C_QuestLog.GetAllCompletedQuestIDs`), or (c) you press **Mark done** on Leveling › Class quests (**Not done** undoes it). Stored per character in `ForeverRogueCharDB.questLog`. No IDs are invented.
 - Tests: 42/42 (1 new: turn-in, unrelated turn-in, login scan, Mark done/undo).
+- **Released** 2026-11-19 at Tim's request: https://github.com/ninepointlabs/forever-rogue/releases/tag/v0.1.2 (tag on `7e3e4f8`). Push events again started no workflow; Release workflow run by hand (44668195185, success): `ForeverRogue-v0.1.2.zip` (73 files, `## Version: v0.1.2`) + `release.json` (forever, 16001). Notes rewritten to a short summary. `omaforge search` resolves v0.1.2, compatible.
 
 ## Still to check in game
 
