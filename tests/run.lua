@@ -985,5 +985,47 @@ test("minimap pins: researched spots near your level plus your own spots; hidden
     ns.MinimapPins.Refresh()
 end)
 
+test("class quest without a researched ID: done on turn-in, from completed quests, or marked by hand", function()
+    local log = ns.db.char.questLog
+    local R = ns.Reminders
+    log.done, log.ids = {}, {}
+    eq(R.ClassQuest(10, "Human", "Alliance").name, "Seek out SI:7", "open at 10 before turn-in")
+    -- turn-in seen live: title from the quest frame (client doesn't return it by ID)
+    S.questFrameTitle = "Seek out SI:7"
+    M.Fire("QUEST_COMPLETE")
+    M.Fire("QUEST_TURNED_IN", 90001, 0, 0)
+    eq(log.done["Seek out SI:7"], true)
+    eq(log.ids["Seek out SI:7"], 90001)
+    local q = R.ClassQuest(11, "Human", "Alliance")
+    truthy(not q or q.name ~= "Seek out SI:7", "no reminder after turn-in")
+    truthy(ns.Progress.NextClassQuest("Human", "Alliance", 11).name ~= "Seek out SI:7", "Home moves on")
+    -- an unrelated quest doesn't mark anything
+    log.done, log.ids = {}, {}
+    S.questFrameTitle = "Wolves Across the Border"
+    M.Fire("QUEST_COMPLETE")
+    M.Fire("QUEST_TURNED_IN", 33, 0, 0)
+    eq(next(log.done), nil)
+    -- done before the addon was installed: found among completed quests by title
+    S.questsDone[90002] = true
+    S.questTitles = { [90002] = "Seek Out SI:7" }
+    eq(ns.Progress.ScanCompleted(), 1)
+    eq(ns.Progress.IsClassQuestDone({ name = "Seek out SI:7" }), true)
+    S.questsDone[90002], S.questTitles = nil, nil
+    -- by hand from Leveling > Class quests
+    log.done, log.ids = {}, {}
+    S.level = 11
+    M.texts = {}
+    ns.UI.Open("leveling", "Class quests")
+    truthy(textHas("Mark done"), "Mark done button for an ID-less quest")
+    ns.Progress.SetClassQuestDone("Seek out SI:7", true)
+    local open = R.ClassQuest(11, "Human", "Alliance")
+    truthy(not open or open.name ~= "Seek out SI:7", "no reminder after Mark done")
+    M.texts = {}
+    ns.UI.Open("leveling", "Class quests")
+    truthy(textHas("Not done"), "undo offered")
+    log.done, log.ids = {}, {}
+    S.questFrameTitle = nil
+end)
+
 print(("%d passed, %d failed"):format(passed, failed))
 os.exit(failed == 0 and 0 or 1)

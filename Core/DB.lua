@@ -75,6 +75,7 @@ DB.charDefaults = {
         lastByGuid = {},
         repeats = {},
     },
+    questLog = { done = {}, ids = {} }, -- class quests without a researched ID: done by name, learned IDs
     boxes = { opened = {}, openedTotal = 0 },
     lockpick = { history = {} },
     gold = { sessions = {} },

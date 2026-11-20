@@ -15,12 +15,14 @@ end
 Reminders.ItemCount = itemCount
 
 -- The class quest that's open for this character at this level: the earliest one
--- at or below your level (+0) that isn't done; quest ids missing from research
--- count as open (flagged in the UI).
+-- at or below your level (+0) that isn't done. Quests without a researched ID
+-- count as done once you turn them in or mark them done (Progress.IsClassQuestDone).
 function Reminders.ClassQuest(level, race, faction)
     for _, q in ipairs(ns.Progress.ClassQuests(race, faction)) do
         -- Quests without a researched id can't be checked: remind only within 5 levels of them.
-        local open = q.level and ((q.missing and (level or 1) - q.level <= 5) or (not q.missing and not ns.Progress.IsQuestDone(q.quest_id)))
+        -- If completion can't be read at all, stop reminding 5 levels later.
+        local done = ns.Progress.IsClassQuestDone(q)
+        local open = q.level and ((done == nil and (level or 1) - q.level <= 5) or done == false)
         if open and q.level <= (level or 1) and q.type ~= "repeatable" then
             return q
         end

@@ -13,6 +13,7 @@ end
 ns.CITIES = { ["Stormwind City"] = true, ["Ironforge"] = true, ["Darnassus"] = true, ["Orgrimmar"] = true,
     ["Undercity"] = true, ["Thunder Bluff"] = true }
 local lastZone
+local questTitle -- title from the quest frame (QUEST_COMPLETE), for QUEST_TURNED_IN
 
 local function OnLogin()
     if ns.disabled then
@@ -33,13 +34,14 @@ local function OnLogin()
     ns.Locks.Register()
     ns.RefreshBars()
     pcall(ns.MinimapPins.Refresh)
+    pcall(ns.Progress.ScanCompleted)
     ns.DualSpec.Register(f)
     lastZone = ns.Rogue.ZoneName()
 
     for _, ev in ipairs({ "PLAYER_LEVEL_UP", "PLAYER_REGEN_DISABLED", "PLAYER_REGEN_ENABLED", "UNIT_AURA",
         "PLAYER_EQUIPMENT_CHANGED", "BAG_UPDATE_DELAYED", "SPELLS_CHANGED", "PLAYER_TARGET_CHANGED", "GET_ITEM_INFO_RECEIVED", "GROUP_ROSTER_UPDATE",
         "UI_ERROR_MESSAGE", "ADDON_ACTION_BLOCKED", "ADDON_ACTION_FORBIDDEN",
-        "PLAYER_ENTERING_WORLD", "ZONE_CHANGED_NEW_AREA", "UNIT_INVENTORY_CHANGED", "UNIT_POWER_UPDATE" }) do
+        "PLAYER_ENTERING_WORLD", "ZONE_CHANGED_NEW_AREA", "UNIT_INVENTORY_CHANGED", "UNIT_POWER_UPDATE", "QUEST_COMPLETE" }) do
         pcall(f.RegisterEvent, f, ev)
     end
     pcall(f.RegisterUnitEvent, f, "UNIT_SPELLCAST_SUCCEEDED", "player")
@@ -176,8 +178,19 @@ f:SetScript("OnEvent", function(_, event, ...)
         ns.Gold.SetOpen("merchant", event == "MERCHANT_SHOW")
     elseif event == "MAIL_SHOW" or event == "MAIL_CLOSED" then
         ns.Gold.SetOpen("mail", event == "MAIL_SHOW")
+    elseif event == "QUEST_COMPLETE" then
+        local fn = rawget(_G, "GetTitleText")
+        local ok, t = pcall(fn or function() end)
+        questTitle = ok and t or nil
     elseif event == "QUEST_TURNED_IN" then
         ns.Gold.QuestTurnedIn()
+        local questID = ...
+        local ok, q = pcall(ns.Progress.NoteTurnIn, questID, questTitle)
+        questTitle = nil
+        if ok and q then
+            ns.Print("Class quest done: " .. q.name .. ".")
+            SoftRefresh()
+        end
     elseif event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" then
         ns.Locks.SetBankOpen(event == "BANKFRAME_OPENED")
     elseif event == "SKILL_LINES_CHANGED" then

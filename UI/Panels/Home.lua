@@ -38,7 +38,7 @@ local function questCard(c)
     end
     local body = "Level " .. q.level .. (q.reward_spell and (" · teaches " .. q.reward_spell) or "") .. (q.reward and (" · " .. q.reward) or "")
     if q.zone then body = body .. " · " .. q.zone end
-    if q.missing then body = body .. " · quest ID not in the research yet" end
+    if q.missing then body = body .. " · done already? Mark it on Class quests" end
     return { label = "Class quest", title = q.name, body = body,
         button = { label = "Show quest", onClick = function() UI.Select("leveling", "Class quests") end } }
 end
