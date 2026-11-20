@@ -164,7 +164,12 @@ G.C_UnitAuras = {
         return v and { name = name } or nil
     end,
 }
-G.C_QuestLog = { IsQuestFlaggedCompleted = function(id) return S.questsDone[id] == true end }
+G.C_QuestLog = {
+    IsQuestFlaggedCompleted = function(id) return S.questsDone[id] == true end,
+    GetTitleForQuestID = function(id) return S.questTitles and S.questTitles[id] end,
+    GetAllCompletedQuestIDs = function() local t = {} for id, v in pairs(S.questsDone) do if v then t[#t + 1] = id end end table.sort(t) return t end,
+}
+G.GetTitleText = function() return S.questFrameTitle end
 G.C_TooltipInfo = {
     -- Main-hand tooltip (slot 16): S.mainHandLines, for the imbue read.
     GetInventoryItem = function(unit, slot)

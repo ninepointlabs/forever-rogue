@@ -9,11 +9,11 @@ UI.LevelingSections["Class quests"] = function(L, c)
     local list = ns.Progress.ClassQuests(c.race, c.faction)
     if #list == 0 then L:Text("No class quests in the research for you yet.") end
     for _, q in ipairs(list) do
-        local done = ns.Progress.IsQuestDone(q.quest_id)
+        local done = ns.Progress.IsClassQuestDone(q)
         local chip
         if done then chip = { text = "Done", kind = "good" }
-        elseif q.missing and c.level >= (q.level or 0) then chip = { text = "Ready · ID unknown", kind = "warn" }
-        elseif q.missing then chip = { text = "Level " .. (q.level or "?") .. " · ID unknown", kind = "neutral" }
+        elseif q.missing and c.level >= (q.level or 0) then chip = { text = "Ready", kind = "info" }
+        elseif q.missing then chip = { text = "Level " .. (q.level or "?"), kind = "neutral" }
         elseif c.level >= (q.level or 0) then chip = { text = "Ready", kind = "info" }
         else chip = { text = "Level " .. (q.level or "?"), kind = "neutral" } end
         local sub = {}
@@ -25,8 +25,21 @@ UI.LevelingSections["Class quests"] = function(L, c)
         if q.unconfirmed then table.insert(sub, UI.FLAG_ICON .. " " .. UI.Hex(UI.C.warn) .. (q.flag or "unconfirmed") .. "|r") end
         if q.notes then table.insert(sub, q.notes) end
         if q.coords then table.insert(sub, "Starts at " .. (type(q.coords) == "table" and table.concat(q.coords, ", ") or tostring(q.coords))) end
-        if q.missing then L:Note(q.name .. ": quest ID not captured in the research, so completion can't be checked.") end
+        if q.missing and q.type ~= "repeatable" and q.level then
+            if done then
+                L:Note(q.name .. ": done (seen when you turned it in, or marked by you).")
+            else
+                L:Note(q.name .. ": the quest ID isn't in the research. The addon marks it done when you turn it in; if you already did, press Mark done.")
+            end
+        end
+        local name = q.name
         L:Row({
+            button = (q.missing and q.type ~= "repeatable" and q.level) and {
+                label = done and "Not done" or "Mark done",
+                onClick = function()
+                    ns.Progress.SetClassQuestDone(name, not done)
+                    UI.Refresh()
+                end } or nil,
             chip = chip, title = q.name, sub = table.concat(sub, " · "),
             right = "level " .. (q.level or "?") .. (q.quest_id and (" · #" .. q.quest_id) or ""),
             onEnter = q.reward_item_id and function(s)

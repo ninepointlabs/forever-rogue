@@ -37,6 +37,84 @@ function Progress.IsQuestDone(id)
     return nil
 end
 
+-- Class quests whose ID isn't in the research can still be finished: the addon
+-- notices the turn-in (QUEST_TURNED_IN + the quest's title), finds it among
+-- quests you already completed at login (by title, where the client knows it),
+-- or you mark it done on Leveling > Class quests. Stored per character.
+local function questLog()
+    local c = ns.db and ns.db.char
+    if not c then return nil end
+    c.questLog = c.questLog or { done = {}, ids = {} }
+    c.questLog.done = c.questLog.done or {}
+    c.questLog.ids = c.questLog.ids or {}
+    return c.questLog
+end
+
+local function norm(t) return tostring(t or ""):lower():gsub("^%s+", ""):gsub("%s+$", "") end
+
+-- Done? true / false, or nil when it can't be known.
+function Progress.IsClassQuestDone(q)
+    if q.quest_id then return Progress.IsQuestDone(q.quest_id) end
+    local log = questLog()
+    if not log then return nil end
+    if log.done[q.name] then return true end
+    local id = log.ids[q.name]
+    if id and Progress.IsQuestDone(id) then return true end
+    return false
+end
+
+function Progress.SetClassQuestDone(name, done)
+    local log = questLog()
+    if not log then return end
+    log.done[name] = done and true or nil
+end
+
+local function byTitle(title)
+    local t = norm(title)
+    if t == "" then return nil end
+    for _, q in ipairs(ns.Data.Quests or {}) do
+        if not q.quest_id and norm(q.name) == t then return q end
+    end
+    return nil
+end
+
+local function titleFor(id)
+    local fn = C_QuestLog and C_QuestLog.GetTitleForQuestID
+    if not fn then return nil end
+    local ok, t = pcall(fn, id)
+    if ok and type(t) == "string" then return t end
+    return nil
+end
+
+-- A quest was turned in (QUEST_TURNED_IN questID; title from the quest frame
+-- when the client doesn't return it by ID). Returns the matched quest or nil.
+function Progress.NoteTurnIn(questID, title)
+    local q = byTitle(titleFor(questID) or title)
+    local log = questLog()
+    if not q or not log then return nil end
+    log.done[q.name] = true
+    if questID then log.ids[q.name] = questID end
+    return q
+end
+
+-- At login: completed quest IDs whose titles match an ID-less class quest.
+function Progress.ScanCompleted()
+    local fn = C_QuestLog and C_QuestLog.GetAllCompletedQuestIDs
+    local log = questLog()
+    if not fn or not log then return 0 end
+    local ok, ids = pcall(fn)
+    if not ok or type(ids) ~= "table" then return 0 end
+    local n = 0
+    for _, id in ipairs(ids) do
+        local q = byTitle(titleFor(id))
+        if q and not log.done[q.name] then
+            log.done[q.name], log.ids[q.name] = true, id
+            n = n + 1
+        end
+    end
+    return n
+end
+
 -- Class quests for a race + faction (nil = show all). Quests without a
 -- researched ID are kept and flagged (`missing`), never given an invented ID.
 function Progress.ClassQuests(race, faction)
@@ -60,7 +138,7 @@ end
 -- The next class quest at or above level-ish that isn't completed.
 function Progress.NextClassQuest(race, faction, level)
     for _, q in ipairs(Progress.ClassQuests(race, faction)) do
-        if q.missing or not Progress.IsQuestDone(q.quest_id) then
+        if not Progress.IsClassQuestDone(q) then
             if q.level and q.type ~= "repeatable" and q.level >= (level or 1) - 10 then return q end
         end
     end
