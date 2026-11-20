@@ -10,7 +10,7 @@ It's the fifth sibling of [Andric's Addon](https://andricsaddon.myazerothlife.co
 [Tristan's Addon](https://tristans-addon.myazerothlife.com) (Paladin) and
 [Tazu's Addon](https://tazus-addon.myazerothlife.com) (Shaman), from the makers of [My Azeroth Life](https://myazerothlife.com).
 
-> **Status:** [v0.1.0](https://github.com/ninepointlabs/forever-rogue/releases/tag/v0.1.0). Not tested in game yet; see `STATUS.md` for the checklist.
+> **Status:** [v0.1.2](https://github.com/ninepointlabs/forever-rogue/releases/latest). Early in-game testing; see `STATUS.md` for the checklist.
 
 - Website (text only for now): files in `docs/`, planned for `forever-rogue.myazerothlife.com` (the domain isn't set up).
 - WoW Forever only (`WOW_PROJECT_ID 18`), Interface `16001`. No Ace3; Blizzard API only. MIT.

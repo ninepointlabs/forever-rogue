@@ -218,7 +218,15 @@ In game: `/reload`, then `/frogue`. Debug the bar with `/frogue bar debug`.
   - Placement: `C_Map.GetPlayerMapPosition`, `C_Map.GetWorldPosFromMapPos` (zone size in yards), `Minimap:GetZoom()`, `IsIndoors()`, `rotateMinimap` + `GetPlayerFacing()`, and the client's fixed yards-per-zoom table (same constants as HereBeDragons-Pins). Default = on is an addon default; Tim can turn it off.
   - Tests: 41/41 (2 new: placement math incl. rotation and edge clamp; spot selection, own-spot recording, instance hiding, toggles).
 
+## v0.1.2 (2026-11-19): class quest reminder fix
+
+- **Bug (reported by Tim in game):** "Seek out SI:7" kept being reminded after he turned it in at 10. It has no quest ID in the research, so completion couldn't be read, and the reminder ran for 5 levels regardless.
+- **Fix:** class quests without a researched ID now count as done when (a) you turn them in (`QUEST_COMPLETE` title / `C_QuestLog.GetTitleForQuestID` matched to the quest name, case-insensitive; the learned ID is stored), (b) a quest you already completed has a matching title at login (`C_QuestLog.GetAllCompletedQuestIDs`), or (c) you press **Mark done** on Leveling › Class quests (**Not done** undoes it). Stored per character in `ForeverRogueCharDB.questLog`. No IDs are invented.
+- Tests: 42/42 (1 new: turn-in, unrelated turn-in, login scan, Mark done/undo).
+
 ## Still to check in game
+
+0a. **Class quest done:** does turning in an ID-less class quest print "Class quest done"? Is the in-game title exactly "Seek out SI:7"? Does the login scan find quests finished before v0.1.2 (`GetTitleForQuestID` may return nil for uncached quests)?
 
 0. **Minimap pins:** do they line up with the real spots at every zoom level, indoors, and with "Rotate Minimap" on? Does `C_Map.GetPlayerMapPosition` work in the open world on Forever (it's secret/blocked in instances)? Does a Pick Pocket record your spot?
 
